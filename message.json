@@ -1,8 +1,8 @@
 [{
   "message": {
     "enabled": true,
-    "text": "Select your school's schedule",
-    "href": "/settings"
+    "text": "Introducing bell.plus!",
+    "href": "https://github.com/nicolaschan/bell/wiki/Introducing-bell.plus"
   }
 }, {
   "agent": {

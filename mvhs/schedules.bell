@@ -244,6 +244,50 @@
 14:45 {Period 7}
 15:30 Free
 
+* schedule-d # Schedule D
+7:10 Passing to {Period 0}
+7:15 {Period 0}
+8:15 Passing to {Period 2}
+8:20 {Period 2}
+9:20 Brunch
+9:30 Passing to {Period 4}
+9:35 {Period 4}
+10:35 Passing to {Period 6}
+10:40 {Period 6}
+11:40 Free
+
+* schedule-e # Schedule E
+8:05 Passing to {Period 1}
+8:10 {Period 1}
+9:10 Passing to {Period 2}
+9:15 {Period 2}
+10:15 Brunch
+10:25 Passing to {Period 5}
+10:30 {Period 5}
+11:30 Passing to {Period 7}
+11:35 {Period 7}
+12:35 Free
+
+* schedule-f # Schedule F
+7:25 Passing to {Period 0}
+7:30 {Period 0}
+8:00 Passing to {Period 1}
+8:05 {Period 1}
+8:35 Passing to {Period 2}
+8:40 {Period 2}
+9:10 Passing to {Period 3}
+9:15 {Period 3}
+9:45 Passing to {Period 4}
+9:50 {Period 4}
+10:20 Brunch
+10:30 Passing to {Period 5}
+10:35 {Period 5}
+11:05 Passing to {Period 6}
+11:10 {Period 6}
+11:40 Passing to {Period 7}
+11:45 {Period 7}
+12:15 Free
+
 * schedule-g # Schedule G
 7:15 Passing to {Period 0}
 7:20 {Period 0}

@@ -2,6 +2,34 @@
 
 * holiday # Holiday
 
+* even # Even Block
+8:15 Passing to {Period 2}
+8:20 {Period 2}
+9:50 Brunch
+10:00 Passing to {Period 4}
+10:05 {Period 4}
+11:35 Lunch
+12:05 Passing to {Period 6}
+12:15 {Period 6}
+13:45 InFocus
+13:55 Passing to Advisory
+14:05 Advisory
+14:50 Free
+
+* odd # Odd Block
+8:15 Passing to {Period 1}
+8:20 {Period 1}
+9:50 Brunch
+10:00 Passing to {Period 3}
+10:05 {Period 3}
+11:35 Lunch
+12:05 Passing to {Period 5}
+12:15 {Period 5}
+13:45 InFocus
+13:55 Passing to {Period 7}
+14:05 {Period 7}
+15:35 Free
+
 * c # C Schedule
 8:10 Passing to {Period 1}
 8:15 {Period 1}
@@ -98,6 +126,24 @@
 13:10 Free
 
 * minimum-day # Minimum Day
+8:15 Passing to {Period 1}
+8:20 {Period 1}
+8:50 Passing to {Period 2}
+9:00 {Period 2}
+9:30 Passing to {Period 3}
+9:40 {Period 3}
+10:10 Brunch
+10:15 Passing to {Period 4}
+10:25 {Period 4}
+10:55 Passing to {Period 5}
+11:05 {Period 5}
+11:35 Passing to {Period 6}
+11:45 {Period 6}
+12:15 Passing to {Period 7}
+12:25 {Period 7}
+12:55 Free
+
+* minimum-day-old # Minimum Day
 8:10 Passing to {Period 1}
 8:15 {Period 1}
 8:45 Passing to {Period 2}
@@ -160,3 +206,17 @@
 11:55 Passing to {Period 7}
 12:00 {Period 7}
 14:00 Free
+
+* even-extended-lunch # Even Extended Lunch
+8:15 Passing to {Period 2}
+8:20 {Period 2}
+9:50 Brunch
+10:00 Passing to {Period 4}
+10:05 {Period 4}
+11:35 Lunch
+12:30 Passing to {Period 6}
+12:40 {Period 6}
+14:10 InFocus
+14:20 Passing to Advisory
+14:30 Advisory
+15:00 Free

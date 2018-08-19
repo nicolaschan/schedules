@@ -1,22 +1,17 @@
 * Default Week
 Sun weekend
 Mon monday
-Tue flex-a
-Wed flex-b
-Thu a
-Fri b
+Tue block-1
+Wed block-2
+Thu block-1
+Fri block-2
 Sat weekend
 
 * Special Days
-03/16/2018 hof-rally # Hall of Fame Rally
-04/16/2018-04/20/2018 holiday # Spring Break
-05/21/2018 rally  # Senior Goodbye Rally
-05/22/2018 a # Flex A
-05/23/2018 b # Flex B
-05/24/2018 a # Flex A
-05/25/2018 finals-4-7 # Finals Day 1
-05/28/2018 holiday # Memorial Day
-05/29/2018 finals-1-3 # Finals Day 2
-05/30/2018 finals-5-6 # Finals Day 3
-05/31/2018 finals-2 # Finals Day 4
-06/01/2018-08/20/2018 holiday # Summer Break
+06/01/2018-08/19/2018 holiday # Summer Break
+09/03/2018 holiday # Labor Day
+10/15/2018 holiday # Non-Duty Day
+11/12/2018 holiday # Veterans Day
+11/22/2018-11/23/2018 holiday # Thanksgiving Break
+12/21/2018 holiday # Teacher Work Day
+12/24/2018-01/06/2018 holiday # Mid Year Break

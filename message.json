@@ -1,18 +1,12 @@
 [{
-  "message": {
-    "enabled": true,
-    "text": "Introducing bell.plus!",
-    "href": "https://github.com/nicolaschan/bell/wiki/Introducing-bell.plus"
-  }
-}, {
   "agent": {
     "browser": {
       "name": "Chrome"
     }
   },
   "message": {
-    "enabled": false,
+    "enabled": true,
     "text": "Install the Chrome Extension",
-    "href": "https://countdown.zone/xt"
+    "href": "https://bell.plus/xt"
   }
 }]

@@ -1,0 +1,12 @@
+[{
+  "agent": {
+    "browser": {
+      "name": "Chrome"
+    }
+  },
+  "message": {
+    "enabled": true,
+    "text": "Schedules have been updated!",
+    "href": "https://blog.bell.plus/"
+  }
+}]

@@ -1,0 +1,76 @@
+* normal # Normal Schedule 
+7:25 Passing to {1st Hour}
+7:30 {1st Hour}
+8:17 Passing to {2nd Hour}
+8:22 {2nd Hour}
+9:09 Passing to {3rd Hour}
+9:14 {3rd Hour}
+10:01 Passing to Titan Time
+10:06 Titan Time
+10:33 Passing to {4th Hour}
+10:38 {4th Hour}
+11:25 Passing to {5th Hour}
+11:30 {5th Hour}
+12:39 Passing to {6th Hour}
+12:44 {6th Hour}
+13:31 Passing to {7th Hour}
+13:36 {7th Hour}
+14:23 Free
+
+* wednesday # Wednesday 
+8:25 Passing to {1st Hour}
+8:30 {1st Hour}
+9:13 Passing to {2nd Hour}
+9:18 {2nd Hour}
+10:01 Passing to {3rd Hour}
+10:06 {3rd Hour}
+10:49 Passing to {4th Hour}
+10:54 {4th Hour}
+11:35 Passing to {5th Hour}
+11:42 {5th Hour}
+12:47 Passing to {6th Hour}
+12:52 {6th Hour}
+13:35 Passing to {7th Hour}
+13:40 {7th Hour}
+14:23 Free
+
+* early-release # Early Release
+7:25 Passing to {1st Hour}
+7:30 {1st Hour}
+8:04 Passing to {2nd Hour}
+8:09 {2nd Hour}
+8:43 Passing to {3rd Hour}
+8:48 {3rd Hour}
+9:22 Passing to {4th Hour}
+9:27 {4th Hour}
+10:01 Passing to {5th Hour}
+10:06 {5th Hour}
+10:39 Passing to {6th Hour}
+10:44 {6th Hour}
+11:17 Passing to {7th Hour}
+11:22 {7th Hour}
+11:55 Free
+
+* assembly # Assembly
+7:25 Passing to {1st Hour}
+7:30 {1st Hour}
+8:12 Passing to {2nd Hour}
+8:17 {2nd Hour}
+8:59 Pasing to {3rd Hour}
+9:04 {3rd Hour}
+9:46 Passing to {6th Hour}
+9:51 {6th Hour}
+10:33 Passing to {4th Hour}
+10:38 {4th Hour}
+11:20 Passing to {5th Hour}
+11:25 {5th Hour}
+12:31 Passing to {7th Hour}
+12:36 {7th Hour}
+13:18 Transition Time
+13:35 Passing to Assembly
+13:40 Assembly
+14:23 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

@@ -62,11 +62,11 @@
 * rally-fri # Rally (Friday)
 8:55 Passing to {Period 4}
 9:00 {Period 4}
-10:35 Passing to Rally 
-10:40 Rally
-11:15 Brunch
-11:30 Passing to {Period 5}
-11:35 {Period 5}
+10:30 Passing to Rally 
+10:35 Rally
+11:10 Brunch
+11:25 Passing to {Period 5}
+11:30 {Period 5}
 13:05 Lunch
 13:50 Passing to {Period 6}
 13:55 {Period 6}
@@ -84,6 +84,53 @@
 13:10 Lunch
 13:55 Passing to {Period 7}
 14:00 {Period 7}
+15:25 Free
+
+* hoco-monday # Homecoming Week (Monday)
+7:55 Passing to {Period 1}
+8:00 {Period 1}
+8:45 Passing to {Period 2}
+8:50 {Period 2}
+9:35 Passing to {Period 3}
+9:40 {Period 3}
+10:25 Passing to Tutorial
+10:30 Tutorial
+10:58 9th Grade Skit/Brunch
+11:25 Passing to {Period 4}
+11:30 {Period 4}
+12:15 Passing to {Period 5}
+12:20 {Period 5}
+13:05 Lunch
+13:45 Passing to {Period 6}
+13:50 {Period 6}
+14:35 Passing to {Period 7}
+14:40 {Period 7}
+15:25 Free
+
+* hoco-block-1 # Homecoming Week (Block Tuesday/Thursday)
+7:55 Passing to {Period 1}
+8:00 {Period 1}
+9:30 Passing to {Period 2}
+9:35 {Period 2}
+11:05 10th/12th Grade Skit/Brunch
+11:32 Passing to {Period 3}
+11:37 {Period 3}
+13:10 Lunch
+13:50 Passing to {Period 7}
+13:55 {Period 7}
+15:25 Free
+
+* hoco-block-2 # Homecoming Week (Block Wednesday)
+8:55 Passing to {Period 4}
+9:00 {Period 4}
+10:30 Passing to Tutorial
+10:35 Tutorial
+11:00 11th Grade Skit/Brunch
+11:27 Passing to {Period 5}
+11:32 {Period 5}
+13:05 Lunch
+13:50 Passing to {Period 6}
+13:55 {Period 6}
 15:25 Free
 
 * weekend # Weekend

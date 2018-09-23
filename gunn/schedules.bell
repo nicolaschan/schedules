@@ -40,7 +40,7 @@
 11:35 {D}
 12:55 Lunch
 13:25 Passing to {F}
-13:25 {F}
+13:35 {F}
 14:55 Free
 
 * thursday # Thursday
@@ -187,3 +187,21 @@
 10:20 Passing to {F}
 10:30 {F}
 12:10 Free
+
+* assembly # Assembly
+8:15 Passing to {D}
+8:25 {D}
+9:50 Brunch
+9:55 Passing to Assembly #1
+10:05 Assembly #1
+10:40 Passing to Assembly #2
+10:50 Assembly #2
+11:25 Passing to {E}
+11:35 {E}
+12:55 Lunch
+13:35 Passing to {G}
+14:55 Free
+
+* psat # PSAT
+8:30 PSAT/Assemblies
+12:00 Free

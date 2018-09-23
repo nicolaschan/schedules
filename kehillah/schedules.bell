@@ -3,91 +3,61 @@
 * holiday # Holiday
 
 * monday # Monday
-8:26 Passing to {Block 1}
 8:30 {Block 1}
-9:30 Passing to Advisory
-9:48 Passing to {Block 2}
-9:52 {Block 2}
-10:52 Passing to {Block 3}
-10:56 {Block 3}
-11:56 Lunch
-12:36 Passing to {Block 4}
-12:40 {Block 4}
-13:39 Passing to {Block 5}
-13:43 {Block 5}
-14:42 Passing to {Block 6}
-14:46 {Block 6}
-15:45 Free
+9:30 {Block 2}
+10:30 Advisory
+10:50 {Block 3}
+11:50 Lunch
+12:30 Passing to {Block 6}
+13:30 Passing to {Block 7}
+14:30 Break
+14:40 {Block 8}
+15:40 Free
 
 * tuesday # Tuesday
-8:26 Passing to {Block 1}
 8:30 {Block 1}
-9:28 Passing to Reflective Practice
-9:32 Reflective Practice
-9:55 Passing to {Block 2}
-9:59 {Block 2}
-10:57 Passing to {Block 3}
-11:01 {Block 3}
-11:59 Lunch
-12:39 Passing to {Block 7}
-12:43 {Block 7}
-13:41 Passing to {Block 8}
-13:45 {Block 8}
-14:43 Passing to {Block 9}
-14:47 {Block 9}
-15:45 Free
+9:30 {Block 4}
+10:30 Reflective Practice
+10:50 {Block 2}
+11:50 Lunch
+12:30 {Block 5}
+13:30 {Block 7}
+14:30 Break
+14:40 {Block 9}
+15:40 Free
 
 * wednesday # Wednesday
-8:26 Passing to {Block 4}
 8:30 {Block 4}
-9:30 Passing to Beit Midrash
-9:34 Beit Midrash
-10:31 Passing to {Block 9}
-10:35 {Block 9}
-11:34 Lunch
-12:14 Passing to {Block 6}
-12:18 {Block 6}
-13:16 Passing to Advisory
-13:20 Advisory
-13:40 Passing to {Block 7}
-13:44 {Block 7}
-14:43 Passing to {Block 5}
-14:47 {Block 5}
-15:45 Free
+9:30 Beit Midrash
+10:30 Advisory
+10:50 {Block 3}
+11:50 Lunch
+12:30 {Block 6}
+13:30 {Block 8}
+14:30 Break
+14:40 {Block 5]}
+15:40 Free
 
 * thursday # Thursday
-8:26 Passing to {Block 1}
-8:30 {Block 1}
-9:28 Passing to Reflective Practice
-9:32 Reflective Practice
-10:12 Passing to {Block 2}
-10:16 {Block 2}
-11:14 Passing to {Block 3}
-11:18 {Block 3}
-12:16 Lunch
-12:56 Passing to {Block 4}
-13:00 {Block 4}
-13:58 Passing to Grade-Level Seminars
-14:02 Grade-Level Seminars
-14:43 Passing to {Block 8}
-14:47 {Block 8}
-15:45 Free
+9:10 {Block 1}
+10:10 Reflective Practice
+10:50 {Block 2}
+11:50 Lunch
+12:30 {Block 9}
+13:30 {Block 8}
+14:30 Break
+14:40 {Block 7}
+15:40 Free
 
 * friday # Friday
-8:26 Passing to {Block 5}
-8:30 {Block 5}
-9:30 Passing to {Block 6}
-9:34 {Block 6}
-10:34 Passing to Kabbalat Shabbat
-10:38 Kabbalat Shabbat
-10:59 Pasing to {Block 7}
-11:03 {Block 7}
-12:03 Lunch
-12:46 Passing to {Block 8}
-12:50 {Block 8}
-13:51 Passing to {Block 9}
-13:55 {Block 9}
-14:55 Free
+8:30 {Block 4}
+9:30 {Block 5}
+10:30 Kabbalat Shabbat
+11:00 {Block 3}
+12:00 Lunch
+12:40 {Block 6}
+13:40 {Block 9}
+14:40 Free
 
 * yom-haatzmaut # Yom HaAtzmaut
 8:26 Passing to {Block 1}
@@ -229,4 +199,6 @@
 9:00 History
 11:00 Free
 
-
+* service # Service Learning Day
+8:30 Community Service
+16:00 Free

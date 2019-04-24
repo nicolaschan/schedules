@@ -1,0 +1,154 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* monday # Late Start
+8:00 Passing to {Period A}
+8:05 {Period A}
+8:55 Passing to {Period 1}
+9:00 {Period 1}
+9:50 Passing to {Period 2}
+9:55 {Period 2}
+10:45 Brunch
+10:55 Passing to {Period 3}
+11:00 {Period 3}
+11:50 Passing to {Period 4}
+11:55 {Period 4}
+12:45 Lunch
+13:20 Passing to {Period 5}
+13:25 {Period 5}
+14:15 Passing to {Period 6}
+14:20 {Period 6}
+15:10 Free
+
+* tuesday # Homeroom Schedule
+7:30 Passing to {Period A}
+7:35 {Period A}
+8:25 Passing to {Period 1}
+8:30 {Period 1}
+9:20 Passing to {Period 2}
+9:25 {Period 2}
+10:15 Passing to Homeroom
+10:20 Homeroom
+10:45 Brunch
+10:55 Passing to {Period 3}
+11:00 {Period 3}
+11:50 Passing to {Period 4}
+11:55 {Period 4}
+12:45 Lunch
+13:20 Passing to {Period 5}
+13:25 {Period 5}
+14:15 Passing to {Period 6}
+14:20 {Period 6}
+15:10 Free
+
+* wednesday # Modified Block: Odd
+8:55 Passing to {Period 1}
+9:00 {Period 1}
+10:25 Brunch
+10:40 Passing to Access
+10:45 Access
+11:25 Passing to {Period 3}
+11:30 {Period 3}
+12:55 Lunch
+13:30 Passing to {Period 5}
+13:35 {Period 5}
+15:00 Free
+
+* thursday # Modified Block: Even
+7:25 Passing to {Period A}
+7:30 {Period A}
+8:55 Passing to {Period 2}
+9:00 {Period 2}
+10:25 Brunch
+10:40 Passing to Acces
+10:45 Access
+11:25 Passing to {Period 4}
+11:30 {Period 4}
+12:55 Lunch
+13:30 Passing to {Period 6}
+13:35 {Period 6}
+15:00 Free
+
+* friday # Friday
+7:30 Passing to {Period A}
+7:35 {Period A}
+8:25 Passing to {Period 1}
+8:30 {Period 1}
+9:20 Passing to {Period 2}
+9:25 {Period 2}
+10:15 Brunch
+10:30 Passing to {Period 3}
+10:35 {Period 3}
+11:25 Passing to {Period 4}
+11:30 {Period 4}
+12:20 Lunch
+12:55 Passing to {Period 5}
+13:00 {Period 5}
+13:50 Passing to {Period 6}
+13:55 {Period 6}
+14:45 Free
+
+* rally # Rally Schedule
+7:30 Passing to {Period A}
+7:35 {Period A}
+8:25 Passing to {Period 1}
+8:30 {Period 1}
+9:10 Passing to {Period 2}
+9:15 {Period 2}
+9:55 Brunch
+10:05 Passing to {Period 3}
+10:10 {Period 3}
+10:50 Passing to {Period 4}
+10:55 {Period 4}
+11:35 Lunch
+12:10 Passing to {Period 5}
+12:15 {Period 5}
+12:55 Passing to {Period 6}
+13:00 {Period 6}
+13:40 Passing to Rally
+13:45 Rally
+14:45 Free
+
+* finals-1 # Finals (Day 1)
+7:25 Passing to {Period A}
+7:30 {Period A}
+9:30 Brunch
+9:40 Passing to {Period 1}
+9:45 {Period 1}
+10:30 Passing to {Period 2}
+10:35 {Period 2}
+11:20 Pasing to {Period 3}
+11:25 {Period 3}
+12:10 Lunch
+12:45 Passing to {Period 4}
+12:50 {Period 4}
+13:35 Passing to {Period 5}
+13:40 {Period 5}
+14:25 Passing to {Period 6}
+14:30 {Period 6}
+15:10 Free
+
+* finals-2 # Finals (Day 2)
+8:25 Passing to {Period 1}
+8:30 {Period 1}
+10:30 Brunch
+10:40 Passing to {Period 4}
+10:45 {Period 4}
+12:45 Free
+
+* finals-3 # Finals (Day 3)
+8:25 Passing to {Period 2}
+8:30 {Period 2}
+10:30 Brunch
+10:40 Passing to {Period 5}
+10:45 {Period 5}
+12:45 Free
+
+* finals-4 # Finals (Day 4)
+8:25 Passing to {Period 3}
+8:30 {Period 3}
+10:30 Brunch
+10:40 Passing to {Period 6}
+10:45 {Period 6}
+12:45 Free

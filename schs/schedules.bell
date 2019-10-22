@@ -1,0 +1,42 @@
+* normal # Normal
+7:24 Passing to {Period 1}
+7:30 {Period 1}
+8:20 Passing to {Period 2}
+8:26 {Period 2}
+9:16 Passing to {Period 3}
+9:22 {Period 3}
+10:12 SSR
+10:36 Passing to {Period 4}
+10:46 {Period 4}
+11:41 Lunch
+12:16 Passing to {Period 5}
+12:22 {Period 5}
+13:12 Passing to {Period 6}
+13:18 {Period 6}
+14:08 Passing to {Period 7}
+14:14 {Period 7}
+15:04 Free
+
+* wednesday # Wednesday
+9:54 Passing to {Period 3}
+10:00 {Period 3}
+11:30 Lunch
+12:04 Passing to {Period 5}
+12:10 {Period 5}
+13:34 Passing to {Period 7}
+13:40 {Period 7}
+15:04 Free
+
+* thursday # Thursday
+7:24 Passing to {Period 1}
+7:30 {Period 1}
+8:54 Passing to {Period 2}
+9:00 {Period 2}
+10:24 Passing to {Period 4}
+10:34 {Period 4}
+12:03 Lunch
+12:38 Passing to {Period 6}
+12:44 {Period 6}
+14:08 Free
+
+* weekend # Weekend

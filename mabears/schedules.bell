@@ -1,0 +1,94 @@
+* normal # Normal
+7:55 Passing to {Period 0}
+8:00 {Period 0}
+8:50 Passing to {Period 1}
+8:55 {Period 1}
+9:45 Brunch
+9:55 Passing to {Period 2}
+10:00 {Period 2}
+10:50 Passing to {Period 3}
+10:55 {Period 3}
+11:55 Passing to {Period 4}
+12:00 {Period 4}
+12:50 Lunch
+13:20 Passing to {Period 5}
+13:30 {Period 5}
+14:20 Passing to {Period 6}
+14:25 {Period 6}
+15:15 Free
+
+* wednesday # Wednesday
+7:45 Passing to {Period 0}
+7:50 {Period 0}
+9:15 Brunch
+9:25 Passing to {Period 2}
+9:30 {Period 2}
+11:00 Passing to {Period 4}
+11:10 {Period 4}
+12:35 Passing to Flex Time
+12:40 Flex Time
+13:10 Lunch
+13:40 Passing to {Period 6}
+13:50 {Period 6}
+15:15 Free
+
+* thursday # Thursday
+9:20 Passing to {Period 1}
+9:25 {Period 1}
+10:50 Brunch
+11:00 Passing to {Period 3}
+11:05 {Period 3}
+12:30 Passing to Flex Time
+12:35 Flex Time
+13:05 Lunch
+13:35 Passing to {Period 5}
+13:40 {Period 5}
+15:05 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+
+* minimum-day # Minimum Day
+8:15 Passing to {Period 0}
+8:20 {Period 0}
+8:50 Passing to {Period 1}
+8:55 {Period 1}
+9:25 Passing to {Period 2}
+9:30 {Period 2}
+10:00 Passing to {Period 3}
+10:05 {Period 3}
+10:35 Brunch
+10:45 Passing to {Period 4}
+10:50 {Period 4}
+11:20 Passing to {Period 5}
+11:25 {Period 5}
+11:55 Passing to {Period 6}
+12:00 {Period 6}
+12:30 Free
+
+* finals-mon # Monday Finals
+13:05 Passing to {Period 6}
+13:10 {Period 6}
+15:10 Free
+
+* finals-tue # Tuesday Finals
+8:50 Passing to {Period 0}
+8:55 {Period 0}
+10:55 Passing to {Period 1}
+11:10 {Period 1}
+13:10 Free
+
+* finals-wed # Wednesday Finals
+8:50 Passing to {Period 2}
+8:55 {Period 2}
+10:55 Passing to {Period 3}
+11:10 {Period 3}
+13:10 Free
+
+* finals-thu # Thursday Finals
+8:50 Passing to {Period 4}
+8:55 {Period 4}
+10:55 Passing to {Period 5}
+11:10 {Period 5}
+13:10 Free

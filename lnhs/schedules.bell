@@ -1,0 +1,37 @@
+* normal # Normal
+8:05 Passing to {1st Hour}
+8:10 {1st Hour}
+8:55 Passing to {2nd Hour}
+9:00 {2nd Hour}
+9:45 Passing to {3rd Hour}
+9:50 {3rd Hour}
+10:35 Passing to {4th Hour}
+10:40 {4th Hour}
+11:35 Passing to {5th Hour}
+11:40 {5th Hour}
+13:35 Passing to {6th Hour}
+13:40 {6th Hour}
+14:25 Passing to {7th Hour}
+14:30 {7th Hour}
+15:15 Free
+
+* late-start # Late Start
+8:25 Passing to {1st Hour}
+8:30 {1st Hour}
+9:15 Passing to {2nd Hour}
+9:20 {2nd Hour}
+10:05 Passing to {3rd Hour}
+10:10 {3rd Hour}
+10:55 Passing to {4th Hour}
+11:00 {4th Hour}
+11:55 Passing to {5th Hour}
+12:00 {5th Hour}
+13:35 Passing to {6th Hour}
+13:40 {6th Hour}
+14:25 Passing to {7th Hour}
+14:30 {7th Hour}
+15:15 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

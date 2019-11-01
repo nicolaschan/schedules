@@ -1,0 +1,31 @@
+* normal # Normal Schedule
+7:42 Passing to {Period 1}
+7:45 {Period 1}
+8:30 Passing to {Period 2}
+8:33 {Period 2}
+9:15 Passing to {Period 3}
+9:18 {Period 3}
+10:00 Passing to {Period 4}
+10:03 {Period 4}
+10:45 Passing to {Period 5A}
+10:48 {Period 5A}
+11:08 Passing to {Period 5B}
+11:10 {Period 5B}
+11:30 Passing to {Period 6A}
+11:33 {Period 6A}
+11:53 Passing to {Period 6B}
+11:55 {Period 6B}
+12:15 Passing to {Period 7A}
+12:18 {Period 7A}
+12:38 Passing to {Period 7B}
+12:40 {Period 7B}
+13:00 Passing to {Period 8}
+13:03 {Period 8}
+13:45 Passing to {Period 9}
+13:48 {Period 9}
+14:35 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+

@@ -40,3 +40,26 @@
 14:08 Free
 
 * weekend # Weekend
+
+* holiday # Holiday
+
+* finals-wed # Wednesday Finals
+8:10 {Period 1}
+10:10 Passing to {Period 2}
+10:20 {Period 2}
+12:20 {Lunch}
+13:01 {Period 7}
+15:01 Free
+
+* finals-thu # Thursday Finals
+8:10 {Period 3}
+10:10 Passing to {Period 4}
+10:30 {Period 4}
+12:30 Free
+
+
+* finals-fri # Friday Finals
+8:10 {Period 5}
+10:10 Passing to {Period 6}
+10:30 {Period 6}
+12:30 Free

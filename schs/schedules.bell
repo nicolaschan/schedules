@@ -67,3 +67,23 @@
 10:10 Passing to {Period 6}
 10:30 {Period 6}
 12:30 Free
+
+* extended-lunch # Extended Lunch
+
+7:24 Passing to {Period 1}
+7:30 {Period 1}
+8:20 Passing to {Period 2}
+8:26 {Period 2}
+9:16 Passing to {Period 3}
+9:22 {Period 3}
+10:12 SSR
+10:26 Passing to {Period 4}
+10:36 {Period 4}
+11:31 Lunch
+12:16 Passing to {Period 5}
+12:22 {Period 5}
+1:12 Passing to {Period 6}
+1:18 {Period 6}
+2:08 Passing to {Period 7}
+2:14 {Period 7}
+3:04 Free

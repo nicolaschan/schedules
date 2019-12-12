@@ -1,0 +1,43 @@
+* normal # Normal Schedule 
+7:26 Passing to HR/Flight
+7:30 HR/Flight
+7:48 Passing to {1st Hour}
+7:52 {1st Hour}
+8:38 Passing to {2nd Hour}
+8:42 {2nd Hour}
+9:28 Passing to {3rd Hour}
+9:32 {3rd Hour}
+10:18 Passing to {4th Hour}
+10:22 {4th Hour}
+11:29 Passing to {5th Hour}
+11:33 {5th Hour}
+12:18 Passing to {6th Hour}
+12:22 {6th Hour}
+13:07 Passing to {7th Hour}
+13:11 {7th Hour}
+13:56 Passing to SOAR
+14:00 SOAR
+14:25 Free
+
+* wednesday # Wednesday 
+7:01 Passing to Collaboration
+8:05 Collaboration
+8:26 Passing to {1st Hour}
+8:30 {1st Hour}
+9:15 Passing to {2nd Hour}
+9:17 {2nd Hour}
+10:00 Passing to {3rd Hour}
+10:04 {3rd Hour}
+10:47 Passing to {4th Hour}
+10:51 {4th Hour}
+11:58 Passing to {5th Hour}
+12:02 {5th Hour}
+12:47 Passing to {6th Hour}
+12:51 {6th Hour}
+13:36 Passing to {7th Hour}
+13:40 {7th Hour}
+14:25 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

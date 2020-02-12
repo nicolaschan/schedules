@@ -1,0 +1,50 @@
+* even # Even Block
+8:09 Passing to {Period 1}
+8:15 {Period 1}
+9:45 Break
+9:55 Passing to {Period 3}
+10:01 {Period 3}
+11:31 Lunch
+12:11 Passing to {Period 5}
+12:17 {Period 5}
+13:47 Passing to {Period 7}
+13:53 {Period 7}
+15:23 Free
+
+* odd # Odd Block
+8:09 Passing to {Period 2}
+8:15 {Period 2}
+9:45 Break
+9:55 Passing to {Period 4}
+10:01 {Period 4}
+11:31 Lunch
+12:11 Passing to Seminar
+12:17 Seminar
+13:17 Passing to {Period 6}
+13:23 {Period 6}
+14:53 Free
+
+* friday # Friday
+8:09 Passing to {Period 1}
+8:15 {Period 1}
+9:05 Passing to {Period 2}
+9:11 {Period 2}
+10:01 Break
+10:11 Passing to {Period 3}
+10:17 {Period 3}
+11:07 Passing to {Period 4}
+11:13 {Period 4}
+12:03 Lunch
+12:43 Passing to {Period 5}
+12:49 {Period 5}
+13:39 Passing to {Period 6}
+13:45 {Period 6}
+14:35 Passing to {Period 7}
+14:41 {Period 7}
+15:31 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+
+

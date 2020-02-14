@@ -1,0 +1,92 @@
+* regular # Regular Schedule
+7:13 Passing to {Period 1}
+7:20 {Period 1}
+8:13 Passing to {Period 2}
+8:20 {Period 2}
+9:13 Passing to {Period 3}
+9:20 {Period 3}
+10:20 Break
+10:35 Passing to {Period 4}
+10:42 {Period 4}
+11:35 Passing to {Period 5}
+11:42 {Period 5}
+12:35 Lunch
+13:05 Passing to {Period 6}
+13:12 {Period 6}
+14:05 Passing to {Period 7}
+14:12 {Period 7}
+15:05 Free
+
+* assembly # Assembly Schedule
+7:13 Passing to {Period 1}
+7:20 {Period 1}
+8:02 Passing to {Period 2}
+8:09 {Period 2}
+8:51 Passing to Assembly
+8:58 Assembly
+10:12 Break
+10:27 Passing to {Period 3}
+10:37 {Period 3}
+11:19 Passing to {Period 4}
+11:26 {Period 4}
+12:08 Lunch
+12:38 Passing to {Period 5}
+12:45 {Period 5}
+13:27 Passing to {Period 6}
+13:34 {Period 6}
+14:16 Passing to {Period 7}
+14:23 {Period 7}
+15:05 Free
+
+* early-release # Early Release
+8:13 Passing to {Period 1}
+8:20 {Period 1}
+8:50 Passing to {Period 2}
+8:57 {Period 2}
+9:27 Passing to {Period 3}
+9:34 {Period 3}
+10:04 Passing to {Period 4}
+10:11 {Period 4}
+10:41 Lunch
+11:14 Passing to {Period 5}
+11:21 {Period 5}
+11:51 Passing to {Period 6}
+11:59 {Period 6}
+12:29 Passing to {Period 7}
+12:36 {Period 7}
+13:06 Passing to Collab
+13:21 Collab
+15:05 Free
+
+* finals-1 # Finals Day 1
+7:13 Passing to {Period 1}
+7:20 {Period 1}
+9:20 Break
+9:35 Passing to {Period 2}
+9:42 {Period 2}
+11:42 Lunch
+12:12 Passing to {Period 7}
+12:19 {Period 7}
+14:19 Free
+
+* finals-2 # Finals Day 2
+8:13 Passing to {Period 3}
+8:20 {Period 3}
+10:20 Break
+10:35 Passing to {Period 4}
+10:42 {Period 4}
+12:42 Free
+
+* finals-3 # Finals Day 3
+8:13 Passing to {Period 5}
+8:20 {Period 5}
+10:20 Break
+10:35 Passing to {Period 6}
+10:42 {Period 6}
+12:42 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+
+

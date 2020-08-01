@@ -1,0 +1,41 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* normal # Normal Schedule
+8:05 {A Hour}
+8:55 Passing to {1st Hour}
+9:15 {1st Hour}
+10:12 Passing to {2nd Hour}
+10:17 {2nd Hour}
+11:05 Passing to {3rd Hour}
+11:10 {3rd Hour}
+11:58 {4th Hour}
+12:28 Passing to {5th Hour}
+12:33 {5th Hour}
+13:21 Passing to {6th Hour}
+13:26 {6th Hour}
+14:14 Passing to {7th Hour}
+14:19 {7th Hour}
+15:07 Passing to {8th Hour}
+15:12 {8th Hour}
+16:00 Free
+
+* wednesday # Wednesday
+8:05 {A Hour}
+8:55 Passing to {1st Hour}
+9:15 {1st Hour}
+9:54 Passing to {2nd Hour}
+9:59 {2nd Hour}
+10:30 Passing to {3rd Hour}
+10:35 {3rd Hour}
+11:06 {4th Hour}
+11:36 Passing to {5th Hour}
+11:41 {5th Hour}
+12:12 Passing to {6th Hour}
+12:17 {6th Hour}
+12:48 Passing to {7th Hour}
+12:53 {7th Hour}
+13:24 Passing to {8th Hour}
+13:29 {8th Hour}
+14:00 Free

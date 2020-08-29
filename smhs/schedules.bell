@@ -1,0 +1,38 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* monday # Minimum Day
+7:50 {Period 0/7}
+8:20 Passing to {Period 1}
+8:30 {Period 1}
+9:00 Passing to {Period 2}
+9:10 {Period 2}
+9:40 Passing to {Period 3}
+9:50 {Period 3}
+10:20 Passing to {Period 4}
+10:30 {Period 4}
+11:00 Lunch
+11:30 Passing to PLC
+11:35 PLC
+13:15 Prep
+15:45 Free
+
+* tuesday-friday # Tuesday/Friday
+7:00 {Period 0}
+8:20 Passing to {Period 1}
+8:30 {Period 1}
+9:50 Passing to {Period 2}
+10:00 {Period 2}
+11:20 Passing to Advisory
+11:30 Advisory
+12:00 Passing to Lunch
+12:10 Lunch
+12:40 Passing to {Period 3}
+12:50 {Period 3}
+14:10 Passing to {Period 4}
+14:20 {Period 4}
+15:40 Passing to {Period 7}
+15:50 {Period 7}
+16:50 Free
+

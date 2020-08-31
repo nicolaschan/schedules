@@ -20,43 +20,43 @@
 * covidMonday #Monday
 
 8:30 {Period 1}
-9:05 Passing to {Period 2}
+9:10 Passing to {Period 2}
 9:15 {Period 2}
-9:50 Passing to {Period 3}
+9:55 Passing to {Period 3}
 10:00 {Period 3}
-10:35 Passing to {Period 4}
+10:40 Passing to {Period 4}
 10:45 {Period 4}
-11:20 Lunch
-11:50 {Period 5}
-12:25 Passing to {Period 6}
-12:35 {Period 6}
-13:10 Passing to {Period 7}
-13:20 {Period 7}
-13:55 Free
+11:25 Lunch
+11:55 {Period 5}
+12:35 Passing to {Period 6}
+12:40 {Period 6}
+13:20 Passing to {Period 7}
+13:25 {Period 7}
+14:05 Free
 
 * covidTuesday # Tuesday
 
 8:30 {Period 1}
-9:45 Passing to {Period 3}
+9:50 Passing to {Period 3}
 9:55 {Period 3}
-11:10 Lunch
-11:40 Passing to {Period 5}
+11:15 Lunch
+11:45 Passing to {Period 5}
 11:50 {Period 5}
-13:05 Passing to {Period 7}
+13:10 Passing to {Period 7}
 13:15 {Period 7}
-14:30 Free
+14:35 Free
 
 * covidWednesday # Wednesday
 
 8:30 {Period 2}
-9:45 Passing to {Period 4}
+9:50 Passing to {Period 4}
 9:55 {Period 4}
-11:10 Lunch
-11:40 Passing to {Period 6}
+11:15 Lunch
+11:45 Passing to {Period 6}
 11:50 {Period 6}
-13:05 Passing to {Optional Student Support}
+13:10 Passing to {Optional Student Support}
 13:15 {Optional Student Support}
-14:30 Free
+14:35 Free
 
 * covidThursday # Thursday
 
@@ -74,14 +74,14 @@
 * covidFriday # Friday
 
 8:30 {Period 2}
-9:45 Passing to {Period 4}
+9:50 Passing to {Period 4}
 9:55 {Period 4}
-11:10 Lunch
-11:40 Passing to {Period 6}
+11:15 Lunch
+11:45 Passing to {Period 6}
 11:50 {Period 6}
-13:05 Passing to {Optional Student Support}
+13:10 Passing to {Optional Student Support}
 13:15 {Optional Student Support}
-14:30 Free
+14:35 Free
 
 
 * wednesday # Wednesday

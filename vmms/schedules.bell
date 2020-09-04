@@ -1,0 +1,44 @@
+* weekend # Weekend
+
+* holiday # Free
+
+* monday # Monday
+9:30 Advisory
+10:01 Passing to {Period 1}
+10:06 {Period 1}
+10:34 Passing to {Period 2}
+10:39 {Period 2}
+11:07 Passing to {Period 3}
+11:12 {Period 3}
+11:40 Passing to {Period 4}
+11:45 {Period 4}
+12:13 Lunch
+12:53 Passing to {Period 5}
+12:58 {Period 5}
+13:26 Passing to {Period 6}
+13:31 {Period 6}
+13:59 Passing to {Period 7}
+14:04 {Period 7}
+14:32 Passing to {Period 8}
+14:37 {Period 8}
+14:05 Free
+
+* tuesday-friday # Tuesday/Friday
+8:30 {Period 1}
+9:10 Passing to {Period 2}
+9:15 {Period 2}
+9:55 Passing to {Period 3}
+10:00 {Period 3}
+10:40 Passing to {Period 4}
+10:45 {Period 4}
+11:25 Lunch
+12:05 Passing to {Period 5}
+12:10 {Period 5}
+12:50 Passing to {Period 6}
+12:55 {Period 6}
+13:35 Passing to {Period 7}
+13:40 {Period 7}
+14:20 Passing to {Period 8}
+14:25 {Period 8}
+15:05 Free
+

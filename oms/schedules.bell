@@ -35,6 +35,26 @@
 14:10 {Period 7}
 14:45 Free
 
+* early-dismissal # Early Dismissal Schedule
+7:45 Homeroom
+7:50 Passing to {Period 1}
+7:53 {Period 1}
+8:24 Passing to {Period 2}
+8:27 {Period 2}
+8:59 Passing to {Period 3}
+9:02 {Period 3}
+9:34 Passing to {Period 5}
+9:37 {Period 5}
+10:09 Passing to {Period 6}
+10:12 {Period 6}
+10:44 Passing to {Period 4}
+10:47 {Period 4}
+11:17 Lunch
+11:47 {Period 4}
+12:17 Passing to {Period 7}
+12:20 {Period 7}
+12:52 Free
+
 * weekend # Weekend
 
 * holiday # Holiday

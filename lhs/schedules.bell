@@ -1,0 +1,41 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* normal # Normal Block
+7:00 {Hour 0}
+7:55 Passing to {Hour 1}
+8:00 {Hour 1}
+8:55 Passing to {Hour 2}
+9:00 {Hour 2}
+9:55 Passing to {Hour 3}
+10:00 {Hour 3}
+10:55 Passing to {Hour 4}
+11:00 {Hour 4}
+11:55 Lunch
+12:23 Passing to {Hour 5}
+12:26 {Hour 5}
+13:21 Passing to {Hour 6}
+13:26 {Hour 6}
+14:21 Passing to {Hour 7}
+14:26 {Hour 7}
+15:22 Free
+
+* wednesday # Wednesday
+7:25 {Hour 0}
+7:55 Pasing to {Hour 1}
+8:00 {Hour 1}
+8:47 Passing to {Hour 2}
+8:52 {Hour 2}
+9:39 Passing to {Hour 3}
+9:44 {Hour 3}
+10:31 Passing to {Hour 4}
+10:36 {Hour 4}
+11:23 Lunch
+11:51 Passing to {Hour 5}
+11:54 {Hour 5}
+12:41 Passing to {Hour 6}
+12:46 {Hour 6}
+13:33 Passing to {Hour 7}
+13:38 {Hour 7}
+14:26 Free

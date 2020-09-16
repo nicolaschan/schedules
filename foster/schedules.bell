@@ -1,0 +1,45 @@
+* block-1 # Block 1
+8:15 Student Work Time
+9:50 Advisory
+10:20 Passing to {Period 1}
+10:25 {Period 1}
+11:30 Lunch
+12:15 {Period 2}
+13:20 Passing to {Period 3}
+13:25 {Period 3}
+14:30 Student Work Time
+15:00 Free
+
+* block-2 # Block 2
+8:15 Student Work Time
+9:50 Advisory
+10:20 Passing to {Period 4}
+10:25 {Period 4}
+11:30 Lunch
+12:15 {Period 5}
+13:20 Passing to {Period 6}
+13:25 {Period 6}
+14:30 Student Work Time
+15:00 Free
+
+* wednesday # Wednesday
+8:00 Student Work Time
+10:45 Lunch
+11:30 {Period 1}
+11:55 Passing to {Period 2}
+12:00 {Period 2}
+12:25 Passing to {Period 3}
+12:30 {Period 3}
+12:55 Passing to {Period 4}
+13:00 {Period 4}
+13:25 Passing to {Period 5}
+13:30 {Period 5}
+13:55 Passing to {Period 6}
+14:25 {Period 6}
+14:30 Student Work Time
+15:00 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+

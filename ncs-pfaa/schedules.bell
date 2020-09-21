@@ -1,0 +1,46 @@
+* odd-block # Odd Block
+9:00 {Period 1}
+10:15 Break
+10:30 {Period 3}
+11:45 Lunch
+12:25 Passing to {Period 5}
+12:30 {Period 5}
+13:45 Break
+13:55 {Period 7}
+15:10 Break
+15:15 {Period 9}
+16:30 Free
+
+* even-block # Even Block
+9:00 {Period 2}
+10:15 Break
+10:30 {Period 4}
+11:45 Lunch
+12:25 Passing to {Period 6}
+12:30 {Period 6}
+13:45 Break
+13:55 {Period 8}
+15:10 Break
+15:15 {Period 9}
+15:55 Free
+
+* wed # Wednesday
+9:00 {Period 1}
+9:30 Advisory "Check-In"
+9:50 {Period 2}
+10:20 Break
+10:30 {Period 3}
+11:00 {Period 4}
+11:30 Lunch
+12:00 {Period 5}
+12:30 {Period 6}
+13:00 Break
+13:10 {Period 7}
+13:40 {Period 8}
+14:10 Advisory "Check-Out"
+15:00 Free
+
+* weekend # Weekend
+
+* holiday # Holiday
+

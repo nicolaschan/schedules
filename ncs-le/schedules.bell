@@ -1,34 +1,36 @@
 * mon-thu # Monday/Thursday
-8:15 {Period 1}
-9:40 Break
-9:50 {Period 2}
-11:15 Lunch
-11:45 {Period 3}
-13:10 Break
-13:20 {Period 4}
-14:45 Free
+8:25 {Period 1}
+9:30 Break
+9:40 {Period 2}
+10:50 Lunch
+11:30 {Period 3}
+12:40 Break
+12:50 {Period 4}
+14:00 Free
 
 * tue-fri # Tuesday/Friday
-8:15 Home Room
+8:20 Home Room
 8:50 Passing to Learning Lab
 8:55 Learning Lab
-9:40 Break
-9:50 {Period 2}
-11:15 Lunch
-11:45 {Period 3}
-13:10 Break
-13:20 {Period 4}
-14:45 Free
+9:30 Break
+9:40 {Period 5}
+10:50 Lunch
+11:30 {Period 6}
+12:40 Break
+12:50 {Period 7}
+14:00 Free
 
 * wed # Wednesday
-9:00 Start with Self Care
-9:30 Start Strong Routine
-10:00 Break
-10:15 Ms. G's Community Time
-10:30 Home Room
-11:00 Question Drop In
+8:30 Start with Self Care
+9:00 Start Strong Routine
+9:30 Ms. G's Community Time
+9:50 Break
+10:05 Wednesday Work Time
 11:30 Lunch
-12:00 Free
+12:00 Home Room
+12:30 Office Hours
+13:00 Wednesday Work Time
+14:30 Free
 
 * weekend # Weekend
 

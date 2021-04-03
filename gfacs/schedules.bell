@@ -1,42 +1,40 @@
 * regular # Regular Schedule
-9:00 House Huddle
-9:10 Passing to {1st Period}
-9:15 {1st Period}
-10:05 Passing to {2nd Period}
-10:10 {2nd Period}
-11:00 Snack and Brain Break
-11:05 Passing to {3rd Period}
-11:10 {3rd Period}
-12:00 Passing to {4th Period}
-12:05 {4th Period}
-12:55 Lunch
-13:20 Passing to {5th Period}
-13:25 {5th Period}
-14:15 Passing to {6th Period}
-14:20 {6th Period}
-15:10 Passing to {7th Period}
-15:15 {7th Period}
-16:05 Free
+7:55 Passing to {1st Period}
+8:00 {1st Period}
+9:00 Passing to {2nd Period}
+9:05 {2nd Period}
+9:55 Passing to {3rd Period}
+10:00 {3rd Period}
+11:05 Passing to {4th Period}
+11:10 {4th Period}
+12:00 Lunch
+12:50 Passing to {5th Period}
+12:55 {5th Period}
+13:45 Passing to {6th Period}
+13:50 {6th Period}
+14:40 Passing to {7th Period}
+14:45 {7th Period}
+15:35 Free
 
 * friday # Friday
-9:00 Friday Assembly
-10:00 Passing to {1st Period}
-10:10 {1st Period}
-10:50 Passing to {2nd Period}
-10:55 {2nd Period}
-11:35 Snack and Brain Break
-11:40 Passing to {3rd Period}
-11:45 {3rd Period}
-12:25 Passing to {4th Period}
-12:30 {4th Period}
-13:10 Lunch
-13:50 Passing to {5th Period}
-13:55 {5th Period}
-14:35 Passing to {6th Period}
-14:40 {6th Period}
-15:20 Passing to {7th Period}
-15:25 {7th Period}
-16:05 Free
+7:55 Passing to Assembly
+8:00 Assembly
+8:55 Passing to {1st Period}
+9:00 {1st Period}
+9:43 Passing to {2nd Period}
+9:48 {2nd Period}
+10:31 Passing to {3rd Period}
+10:36 {3rd Period}
+11:34 Passing to {4th Period}
+11:39 {4th Period}
+12:22 Lunch
+13:12 Passing to {5th Period}
+13:17 {5th Period}
+14:00 Passing to {6th Period}
+14:05 {6th Period}
+14:48 Passing to {7th Period}
+14:54 {7th Period}
+15:35 Free
 
 * weekend # Weekend
 

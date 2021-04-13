@@ -1,10 +1,10 @@
 * Default Week
 Sun weekend
-Mon normal
-Tue tutorial
-Wed even
-Thu odd
-Fri normal
+Mon distance-odd
+Tue distance-even 
+Wed async-workday
+Thu distance-odd
+Fri distance-even
 Sat weekend
 
 * Special Days
@@ -72,14 +72,101 @@ Sat weekend
 08/24/2018 assembly
 09/03/2018 holiday # Labor Day
 09/17/2018 tutorial
-09/19/2018-09/20/2018 minimum-day
+09/19/2018 modified-even # Flexible Even Block
+09/20/2018 modified-odd # Flexible Odd Block
+10/09/2018 extended-tutorial # STEAM Week Presentations
+10/10/2018 psat-testing
 10/11/2018 normal
 10/16/2018 assembly
+10/19/2018 minimum-day # Homecoming Schedule
+10/29/2018 tutorial
 11/12/2018 holiday # Veteran's Day
-11/21/2018 holiday # Teacher Service Day
-11/22/2018-11/23/2018 holiday # Thanksgiving Break
+11/16/2018 holiday # Poor Air Quality, No School
+11/19/2018 extended-tutorial # Digital Culture Activity
+11/21/2018-11/23/2018 holiday # Thanksgiving Break
 12/19/2018 finals-wed
 12/20/2018 finals-thu
 12/21/2018 finals-fri
 12/24/2018-01/04/2019 holiday # Holiday Break
 01/07/2019 holiday # Teacher Service Day
+01/08/2019 normal
+01/09/2019 tutorial # Challenge Day
+01/10/2019 tutorial # Challenge Day
+01/11/2019 challenge-day-assembly
+01/14/2019 tutorial
+01/15/2019 course-selection-odd
+01/16/2019 course-selection-even-primary
+01/17/2019 course-selection-odd
+01/18/2019 course-selection-even-secondary
+01/21/2019 holiday # MLK Day
+02/04/2019 assembly # Spirit Assembly
+02/06/2019 modified-even # Flexible Even Block
+02/07/2019 modified-odd # Flexible Odd Block
+02/12/2019 extended-tutorial # 9th Grade Poetry Slam
+02/18/2019-02/22/2019 holiday # Winter Recess
+03/18/2019-03/19/2019 holiday # Recess
+04/01/2019 tutorial # ASB & Class Council Elections
+04/12/2019 assembly # Diversity Assembly
+04/15/2019-04/19/2019 holiday # Spring Recess
+04/23/2019 sbac-even-a
+04/24/2019 sbac-odd
+04/25/2019 sbac-even-b
+04/26/2019 sbac-odd
+05/27/2019 holiday # Memorial Day
+06/03/2019 even # Senior Finals
+06/04/2019 odd # Senior Finals
+06/05/2019 finals-wed
+06/06/2019 finals-thu
+06/07/2019 finals-fri
+06/08/2019-08/18/2019 holiday # Summer Recess
+08/23/2019 assembly # Back To School Assembly
+09/16/2019 tutorial # Red Hide and Defend Drill
+09/18/2019 modified-even # Teachers Service Day
+09/19/2019 modified-odd # Teachers Service Day
+09/23/2019 normal # STEAM Week
+09/24/2019 extended-tutorial # STEAM Week
+09/25/2019 normal # STEAM Week
+09/26/2019 normal # STEAM Week
+09/27/2019 normal # STEAM Week
+10/14/2019 tutorial # Earthquake Drill
+10/16/2019 psat-testing # PSAT Testing
+10/17/2019 normal
+10/21/2019 normal # Homecoming Week
+10/22/2019 assembly # Homecoming Assembly
+10/23/2019 even # Homecoming Week
+10/24/2019 odd # Homecoming Week
+10/25/2019 minimum-day # Homecoming
+11/11/2019 holiday # Veterans Day
+11/25/2019 tutorial
+11/26/2019 extended-tutorial
+11/27/2019-12/01/2019 holiday # Thanksgiving Break
+12/16/2019 normal # Dead Day
+12/17/2019 tutorial # Dead Day
+12/18/2019 finals-wed # Finals
+12/19/2019 finals-thu # Finals
+12/20/2019 finals-fri # Finals
+12/21/2019-01/06/2020 holiday # Holiday Break
+01/07/2020 normal # First Day of School
+01/08/2020 normal # Challenge Day
+01/09/2020 normal # Challenge Day
+01/10/2020 normal # Challenge Day
+01/13/2020 tutorial
+01/14/2020 odd
+01/15/2020 even
+01/16/2020 odd
+01/17/2020 even
+01/20/2020 holiday # Martin Luther King Jr. Day
+02/05/2020 modified-even
+02/06/2020 modified-odd
+02/11/2020 extended-tutorial # Freshmen Poetry Slam
+02/14/2020 assembly # Valentine's Day
+02/17/2020-02/21/2020 holiday # Winter Break
+12/17/2020 finals-thu-distance
+12/18/2020 finals-fri-distance
+01/18/2020 holiday # MLK, Jr Day
+01/19/2020 distance-odd
+01/20/2020 distance-even
+01/26/2020 async-workday
+01/27/2020 distance-even
+04/27/2021 async-workday
+04/28/2021 distance-even

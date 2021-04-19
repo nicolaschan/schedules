@@ -43,3 +43,56 @@
 
 * holiday # Holiday
 
+* hybrid-block1 # Hybrid Block 1
+8:00 Student Work Time
+9:00 Passing to Office Hours
+9:25 Office Hours
+9:50 Lunch
+10:45 Student Arrival - Attestation
+11:00 Advisory
+11:30 Passing to {Period 1}
+11:35 {Period 1}
+12:30 Passing to {Period 2}
+12:35 {Period 2}
+13:30 Passing to {Period 3}
+13:35 {Period 3}
+14:30 Office Hours
+15:00 Free
+
+* hybrid-block2 # Hybrid Block 2
+8:00 Student Work Time
+9:00 Passing to Office Hours
+9:25 Office Hours
+9:50 Lunch
+10:45 Student Arrival - Attestation
+11:00 Advisory
+11:30 Passing to {Period 4}
+11:35 {Period 4}
+12:30 Passing to {Period 5}
+12:35 {Period 5}
+13:30 Passing to {Period 6}
+13:35 {Period 6}
+14:30 Office Hours
+15:00 Free
+
+* hybrid-wednesday # Hybrid Wednesday
+8:00 Student Work Time
+9:00 Passing to Office Hours
+9:25 Office Hours
+9:50 Lunch
+10:45 Student Arrival - Attestation
+11:00 Advisory
+11:25 Passing to {Period 1}
+11:30 {Period 1}
+11:55 Passing to {Period 2}
+12:00 {Period 2}
+12:25 Passing to {Period 3}
+12:30 {Period 3}
+12:55 Passing to {Period 4}
+13:00 {Period 4}
+13:25 Passing to {Period 5}
+13:30 {Period 5}
+13:55 Passing to {Period 6}
+14:00 {Period 6}
+14:30 Office Hours
+15:00 Free

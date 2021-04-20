@@ -1,10 +1,10 @@
 * Default Week
 Sun weekend
-Mon block-1 # Monday
-Tue block-1 # Tuesday
-Wed wednesday # Wednesday
-Thu block-2 # Thursday
-Fri block-2 # Friday
+Mon hybrid-block1 # Monday
+Tue hybrid-block2 # Tuesday
+Wed hybrid-wednesday # Wednesday
+Thu hybrid-block1 # Thursday
+Fri hybrid-block2 # Friday
 Sat weekend
 
 * Special Days

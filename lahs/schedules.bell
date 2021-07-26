@@ -1,72 +1,43 @@
-* normal # Normal Schedule
-7:10 Passing to {Period 0}
-7:15 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-9:00 Passing to {Period 2}
-9:05 {Period 2}
-10:00 Brunch
-10:10 Passing to {Period 3}
-10:15 {Period 3}
-11:05 Passing to {Period 4}
-11:10 {Period 4}
-12:00 Lunch
-12:45 Passing to {Period 5}
-12:50 {Period 5}
-13:40 Passing to {Period 6}
-13:45 {Period 6}
-14:35 Passing to {Period 7}
-14:40 {Period 7}
-15:30 Free
+* schedule-a # All Periods
+8:40 {Period 1}
+9:25 Passing to {Period 2}
+9:32 {Period 2}
+10:22 Brunch
+10:32 Passing to {Period 3}
+10:39 {Period 3}
+11:24 Passing to {Period 4}
+11:31 {Period 4}
+12:16 Lunch
+13:01 Passing to {Period 5}
+13:08 {Period 5}
+13:53 Passing to {Period 6}
+14:00 {Period 6}
+14:45 Passing to {Period 7}
+14:52 {Period 7}
+15:37 Free
 
-* tutorial # Tutorial Schedule
-7:15 Passing to {Period 0}
-7:20 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-8:55 Passing to {Period 2}
-9:00 {Period 2}
-9:50 Brunch
-10:00 Passing to {Period 3}
-10:05 {Period 3}
-10:50 Passing to Tutorial
-10:55 Tutorial
-11:25 Passing to {Period 4}
-11:30 {Period 4}
-12:15 Lunch
-13:00 Passing to {Period 5}
-13:05 {Period 5}
-13:50 Passing to {Period 6}
-13:55 {Period 6}
-14:40 Passing to {Period 7}
-14:45 {Period 7}
-15:30 Free
+* schedule-b # Odd Block
+8:40 {Period 1}
+10:10 Brunch
+10:20 Passing to {Period 3}
+10:27 {Period 3}
+11:52 Lunch
+12:37 Passing to {Period 5}
+12:44 {Period 5}
+14:09 Passing to {Period 7}
+14:16 {Period 7}
+15:41 Free
 
-* even # Even Block
-7:10 Passing to {Period 0}
-7:15 {Period 0}
-8:45 Passing to {Period 2}
-8:50 {Period 2}
-10:25 Brunch
-10:40 Passing to {Period 4}
-10:45 {Period 4}
-12:15 Lunch
-13:00 Passing to {Period 6}
-13:05 {Period 6}
-14:35 Free
-
-* odd # Odd Block
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-9:45 Brunch
-10:00 Passing to {Period 3}
-10:05 {Period 3}
-11:35 Lunch
-12:20 Passing to {Period 5}
-12:25 {Period 5}
-13:55 Passing to {Period 7}
-14:00 {Period 7}
-15:30 Free
+* schedule-c # Even Block
+8:40 {Period 2}
+10:10 Tutorial
+11:00 Brunch
+11:10 Passing to {Period 4}
+11:17 {Period 4}
+12:42 Lunch
+13:27 Passing to {Period 6}
+13:34 {Period 6}
+14:59 Free
 
 * weekend # Weekend
 
@@ -102,30 +73,6 @@
 10:10 {Period 4}
 11:45 Free
 
-* modified-even # Modified Even Block
-7:10 Passing to {Period 0}
-7:15 {Period 0}
-8:15 Passing to {Period 2}
-8:20 {Period 2}
-9:20 Brunch
-9:30 Passing to {Period 4}
-9:35 {Period 4}
-10:35 Passing to {Period 6}
-10:40 {Period 6}
-11:40 Free
-
-* modified-odd # Modified Odd Block
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-9:10 Passing to {Period 3}
-9:15 {Period 3}
-10:15 Brunch
-10:25 Passing to {Period 5}
-10:30 {Period 5}
-11:30 Passing to {Period 7}
-11:35 {Period 7}
-12:35 Free
-
 * minimum-day # Minimum Day
 7:30 Passing to {Period 0}
 7:35 {Period 0}
@@ -145,40 +92,6 @@
 11:45 Passing to {Period 7}
 11:50 {Period 7}
 12:20 Free
-
-* communication-even # Communication Even Block
-7:15 Passing to {Period 0}
-7:20 {Period 0}
-8:05 Passing to {Period 2}
-8:10 {Period 2}
-9:15 Brunch
-9:30 Passing to Assembly/Tutorial #1
-9:35 Assembly/Tutorial #1
-10:35 Passing to {Period 4}
-10:40 {Period 4}
-11:40 Lunch
-12:25 Passing to Assembly/Tutorial #2
-12:30 Assembly/Tutorial #2
-13:30 Passing to {Period 6}
-13:35 {Period 6}
-14:35 Free
-
-* communication-odd # Communication Odd Block
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-9:10 Passing to Assembly/Tutorial #3
-9:15 Assembly/Tutorial #3
-10:15 Brunch
-10:25 Passing to {Period 3}
-10:30 {Period 3}
-11:30 Lunch
-12:15 Passing to Assembly/Tutorial #4
-12:20 Assembly/Tutorial #4
-13:20 Passing to {Period 5}
-13:25 {Period 5}
-14:25 Passing to {Period 7}
-14:30 {Period 7}
-15:30 Free
 
 * sbac-even-a # SBAC Even Block Tuesday
 8:05 Passing to Junior SBAC Testing
@@ -268,43 +181,6 @@
 14:40 Passing to {Period 7}
 14:45 {Period 7}
 15:30 Free
-
-* intersession # Intersession
-8:25 Passing to Homeroom
-8:30 Homeroom
-8:45 Passing to Session 1
-8:50 Session 1
-10:25 Brunch
-10:40 Passing to Session 2
-10:45 Session 2
-12:15 Lunch
-13:00 Passing to Session 3
-13:05 Session 3
-14:35 Free
-
-* extended-tutorial # Extended Tutorial
-7:20 Passing to {Period 0}
-7:25 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-8:50 Passing to {Period 2}
-8:55 {Period 2}
-9:40 Brunch
-9:50 Passing to {Period 3}
-9:55 {Period 3}
-10:35 Passing to Extended Tutorial
-10:40 Extended Tutorial
-11:30 Passing to {Period 4}
-11:35 {Period 4}
-12:15 Lunch
-13:00 Passing to {Period 5}
-13:05 {Period 5}
-13:45 Passing to {Period 6}
-13:50 {Period 6}
-14:30 Passing to {Period 7}
-14:35 {Period 7}
-15:15 Free
-
 
 * psat-testing # Student Activity/PSAT Testing
 8:05 Passing to Student Activity/PSAT Testing

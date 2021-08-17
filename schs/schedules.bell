@@ -1,156 +1,154 @@
-* normal # Normal
-7:24 Passing to {Period 1}
-7:30 {Period 1}
-8:20 Passing to {Period 2}
-8:26 {Period 2}
-9:16 Passing to {Period 3}
-9:22 {Period 3}
-10:12 SSR
-10:36 Passing to {Period 4}
-10:46 {Period 4}
-11:41 Lunch
-12:16 Passing to {Period 5}
-12:22 {Period 5}
-13:12 Passing to {Period 6}
-13:18 {Period 6}
-14:08 Passing to {Period 7}
-14:14 {Period 7}
-15:04 Free
+* monday # Monday
+8:39 Passing to {Period 1}
+8:45 {Period 1}
+9:35 Passing to {Period 2}
+9:41 {Period 2}
+10:31 Passing to {Period 3}
+10:37 {Period 3}
+11:27 Passing to {Period 4}
+11:33 {Period 4}
+12:27 Lunch
+13:02 Passing to {Period 5}
+13:08 {Period 5}
+13:58 Passing to {Period 6}
+14:04 {Period 6}
+14:54 Passing to {Period 7}
+15:00 {Period 7}
+15:50 Free
 
-* covidMonday #Monday
+* odd # Odd
+8:39 Passing to {Period 1}
+8:45 {Period 1}
+10:20 Passing to {Period 3}
+10:30 {Period 3}
+12:09 Lunch
+12:44 Passing to {Period 5}
+12:50 {Period 5}
+14:25 Passing to {Period 7}
+14:35 {Period 7}
+16:10 Free
 
-8:30 {Period 1}
-9:10 Passing to {Period 2}
-9:15 {Period 2}
-9:55 Passing to {Period 3}
-10:00 {Period 3}
-10:40 Passing to {Period 4}
-10:45 {Period 4}
-11:25 Lunch
-11:55 {Period 5}
-12:35 Passing to {Period 6}
-12:40 {Period 6}
-13:20 Passing to {Period 7}
-13:25 {Period 7}
-14:05 Free
-
-* covidTuesday # Tuesday
-
-8:30 {Period 1}
-9:40 Passing to {Period 3}
-9:50 {Period 3}
-11:00 Passing to {Period 5}
-11:10 {Period 5}
-12:20 Lunch
-13:05 Passing to {Period 7}
-13:15 {Period 7}
-14:25 Free
-
-* covidWednesday # Wednesday
-
-8:30 {Period 2}
-9:40 Passing to {Period 4}
-9:50 {Period 4}
-11:00 Passing to {Period 6}
-11:10 {Period 6}
-12:20 Lunch
-13:05 Passing to {Optional Student Support}
-13:15 {Optional Student Support}
-14:35 Free
-
-* covidThursday # Thursday
-
-8:30 {Period 1}
-9:40 Passing to {Period 3}
-9:50 {Period 3}
-11:00 Passing to {Period 5}
-11:10 {Period 5}
-12:20 Lunch
-13:05 Passing to {Period 7}
-13:15 {Period 7}
-14:25 Free
-
-
-* covidFriday # Friday
-
-8:30 {Period 2}
-9:40 Passing to {Period 4}
-9:50 {Period 4}
-11:00 Passing to {Period 6}
-11:10 {Period 6}
-12:20 Lunch
-13:05 Passing to {Optional Student Support}
-13:15 {Optional Student Support}
-14:35 Free
-
-
-* wednesday # Wednesday
-9:54 Passing to {Period 3}
-10:00 {Period 3}
-11:30 Lunch
-12:04 Passing to {Period 5}
-12:10 {Period 5}
-13:34 Passing to {Period 7}
-13:40 {Period 7}
-15:04 Free
-
-* thursday # Thursday
-7:24 Passing to {Period 1}
-7:30 {Period 1}
-8:54 Passing to {Period 2}
-9:00 {Period 2}
-10:24 Passing to {Period 4}
-10:34 {Period 4}
-12:03 Lunch
-12:38 Passing to {Period 6}
-12:44 {Period 6}
-14:08 Free
+* even # Even
+8:39 Passing to {Period 2}
+8:45 {Period 2}
+10:20 Passing to {Period 4}
+10:30 {Period 4}
+12:44 Passing to Support/Tutorial
+12:50 Support/Tutorial
+13:25 {Period 6}
+15:00 Free
 
 * weekend # Weekend
 
 * holiday # Holiday
 
-* finals-wed # Wednesday Finals
-8:00 Passing to {Period 1}
-8:10 {Period 1}
-10:10 Passing to {Period 2}
-10:20 {Period 2}
-12:20 {Lunch}
-12:55 Passing to {Period 7}
-13:01 {Period 7}
-15:01 Free
+* rally-thu # Thursday Rally
+8:49 Passing to {Period 1}
+8:55 {Period 1}
+10:20 Passing to {Period 3}
+11:59 Lunch
+12:34 Passing to {Period 5}
+12:40 {Period 5}
+14:05 Passing to {Period 7}
+14:15 {Period 7}
+15:40 Free
 
-* finals-thu # Thursday Finals
-8:00 Passing to {Period 3}
-8:10 {Period 3}
-10:10 Passing to {Period 4}
-10:30 {Period 4}
-12:30 Free
+* rally-fri # Friday Rally
+8:39 Passing to {Period 2}
+8:45 {Period 2}
+10:14 Passing to Rally
+10:24 Rally
+11:19 Lunch
+11:54 Passing to {Period 4}
+12:00 {Period 4}
+13:25 Passing to {Period 6}
+13:35 {Period 6}
+15:00 Free
 
+* homecoming-thu # Homecoming Thursday
+9:14 Passing to {Period 1}
+9:20 {Period 1}
+10:20 Passing to {Period 3}
+10:30 {Period 3}
+11:34 Lunch
+12:09 Passing to {Period 5}
+12:15 {Period 5}
+13:15 Passing to {Period 7}
+13:25 {Period 7}
+14:25 Free
 
-* finals-fri # Friday Finals
-8:00 Passing to {Period 5}
-8:10 {Period 5}
-10:10 Passing to {Period 6}
-10:30 {Period 6}
-12:30 Free
+* homecoming-fri # Homecoming Friday
+8:30 Parade Set-up
+9:00 Parade Starts
+10:19 Passing to {Period 2}
+10:25 {Period 2}
+11:29 Passing to Rally
+11:39 Rally
+12:13 Lunch
+12:48 Passing to {Period 4}
+12:54 {Period 4}
+13:54 Passing to {Period 6}
+14:00 {Period 6}
+15:00 Free
 
-* extended-lunch # Extended Lunch
+* goodbye-thu # Goodbye Thursday
+8:39 Passing to {Period 1}
+8:45 {Period 1}
+9:25 Passing to {Period 2}
+9:31 {Period 2}
+10:11 Passing to {Period 3}
+10:17 {Period 3}
+11:01 Passing to Rally
+11:11 Rally
+12:01 Lunch
+12:36 Passing to {Period 4}
+12:42 {Period 4}
+13:22 Passing to {Period 5}
+13:28 {Period 5}
+14:08 Passing to {Period 6}
+14:14 {Period 6}
+14:54 Passing to {Period 7}
+15:00 {Period 7}
+15:40 Free
 
-7:24 Passing to {Period 1}
-7:30 {Period 1}
-8:20 Passing to {Period 2}
-8:26 {Period 2}
-9:16 Passing to {Period 3}
-9:22 {Period 3}
-10:12 SSR
-10:26 Passing to {Period 4}
-10:36 {Period 4}
-11:31 Lunch
-12:16 Passing to {Period 5}
-12:22 {Period 5}
-13:12 Passing to {Period 6}
-13:18 {Period 6}
-14:08 Passing to {Period 7}
-14:14 {Period 7}
-15:04 Free
+* finals-1 # Finals Day 1
+8:39 Passing to {Period 1}
+8:45 {Period 1}
+10:45 Passing to {Period 2}
+12:55 {Period 2}
+13:30 Passing to {Period 7}
+13:36 {Period 7}
+15:36 Free
+
+* finals-2 # Finals Day 2
+8:39 Passing to {Period 3}
+8:45 {Period 3}
+10:45 Passing to {Period 4}
+11:05 {Period 4}
+13:05 Free
+
+* finals-3 # Finals Day 3
+8:39 Passing to {Period 5}
+8:45 {Period 5}
+10:45 Passing to {Period 6}
+11:05 {Period 6}
+13:05 Free
+
+* caaspp-cast # CAASPP/CAST Test
+8:39 Passing to CAASPP/CAST Test
+10:35 Passing to {Period 1}
+10:45 {Period 1}
+11:20 Passing to {Period 2}
+11:26 {Period 2}
+12:01 Lunch
+12:36 Passing to {Period 3}
+12:42 {Period 3}
+13:17 Passing to {Period 4}
+13:23 {Period 4}
+13:58 Passing to {Period 5}
+14:04 {Period 5}
+14:39 Passing to {Period 6}
+14:45 {Period 6}
+15:20 Passing to {Period 7}
+15:26 {Period 7}
+16:01 Free

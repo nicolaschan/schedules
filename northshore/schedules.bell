@@ -1,28 +1,23 @@
 * normal # Normal Schedule
 8:00 E3 Squad
-8:15 {Period 1}
-8:45 Passing to {Period 2}
-8:50 {Period 2}
-9:20 Passing to {Period 3}
-9:25 {Period 3}
-9:55 Passing to {Period 4}
-10:00 {Period 4}
-10:30 Passing to {Period 5}
-10:35 {Period 5}
-11:05 Passing to {Period 6}
-11:10 {Period 6}
-11:40 Passing to {Period 7}
-11:45 {Period 7}
-12:15 Passing to {Period 8}
-12:20 {Period 8}
-12:50 Passing to {Period 9}
-12:55 {Period 9}
-13:25 Passing to {Period 10}
-13:30 {Period 10}
-14:00 Passing to {Period 11}
-14:05 {Period 11}
-14:35 Passing to Announcements
-14:40 Announcements
+8:10 Passing to {Period 1}
+8:13 {Period 1}
+8:53 Passing to {Period 2}
+8:57 {Period 2}
+9:37 Passing to {Period 3}
+9:41 {Period 3}
+10:21 Passing to {Period 4}
+10:25 {Period 4}
+11:05 Passing to {Period 5}
+11:09 {Period 5}
+11:50 Passing to {Period 6}
+11:54 {Period 6}
+12:35 Passing to {Period 7}
+12:39 {Period 7}
+13:20 Passing to {Period 8}
+13:24 {Period 8}
+14:05 Passing to {Period 9}
+14:09 {Period 9}
 14:50 Free
 
 * weekend # Weekend

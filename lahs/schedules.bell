@@ -39,6 +39,63 @@
 13:34 {Period 6}
 14:59 Free
 
+* schedule-d # AM Modified Odd Block
+11:30 {Period 1}
+12:15 Lunch
+13:00 Passing to {Period 3}
+13:07 {Period 3}
+13:52 Passing to {Period 5}
+13:59 {Period 5}
+14:44 Passing to {Period 7}
+14:51 {Period 7}
+15:36 Free
+
+* schedule-e # AM Modified Even Block
+11:30 {Period 2}
+12:15 Lunch
+13:00 Passing to {Period 4}
+13:07 {Period 4}
+13:52 Passing to {Period 6}
+13:59 {Period 6}
+14:44 Free
+
+* schedule-f # Minimum Day
+8:40 {Period 1}
+9:08 Passing to {Period 2}
+9:15 {Period 2}
+9:43 Passing to {Period 3}
+9:50 {Period 3}
+10:18 Passing to {Period 4}
+10:25 {Period 4}
+10:53 Brunch
+11:03 Passing to {Period 5}
+11:10 {Period 5}
+11:38 Passing to {Period 6}
+11:45 {Period 6}
+12:13 Passing to {Period 7}
+12:20 {Period 7}
+12:48 Free
+
+* schedule-h # PM Modified Odd Block
+8:40 {Period 1}
+9:25 Passing to {Period 3}
+9:32 {Period 3}
+10:22 Brunch
+10:32 Passing to {Period 5}
+10:39 {Period 5}
+11:24 Passing to {Period 7}
+11:31 {Period 7}
+12:16 Free
+
+* schedule-i # PM Modified Even Block
+8:40 {Period 2}
+9:25 Passing to {Period 4}
+9:32 {Period 4}
+10:22 Brunch
+10:32 Passing to {Period 6}
+10:39 {Period 6}
+11:24 Free
+
 * weekend # Weekend
 
 * holiday # Holiday

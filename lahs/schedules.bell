@@ -61,20 +61,42 @@
 
 * schedule-f # Minimum Day
 8:40 {Period 1}
-9:08 Passing to {Period 2}
-9:15 {Period 2}
-9:43 Passing to {Period 3}
-9:50 {Period 3}
-10:18 Passing to {Period 4}
-10:25 {Period 4}
-10:53 Brunch
-11:03 Passing to {Period 5}
-11:10 {Period 5}
-11:38 Passing to {Period 6}
-11:45 {Period 6}
-12:13 Passing to {Period 7}
-12:20 {Period 7}
-12:48 Free
+9:10 Passing to {Period 2}
+9:17 {Period 2}
+9:47 Passing to {Period 3}
+9:54 {Period 3}
+10:24 Passing to {Period 4}
+10:31 {Period 4}
+11:01 Brunch
+11:11 Passing to {Period 5}
+11:18 {Period 5}
+11:48 Passing to {Period 6}
+11:55 {Period 6}
+12:25 Passing to {Period 7}
+12:32 {Period 7}
+13:02 Free
+
+* schedule-g # Assembly Schedule
+8:40 {Period 1}
+9:15 Passing to {Period 2}
+9:22 {Period 2} or Rally A
+9:54 Passing to ACT
+10:01 ACT
+10:33 Passing to {Period 2}
+10:40 {Period 2} or Rally B
+11:12 Brunch
+11:22 Passing to {Period 3}
+11:29 {Period 3}
+12:04 Lunch
+12:49 Passing to {Period 4}
+12:56 {Period 4}
+13:31 Passing to {Period 5}
+13:38 {Period 5}
+14:13 Passing to {Period 6}
+14:20 {Period 6}
+14:55 Passing to {Period 7}
+15:02 {Period 7}
+15:37 Free
 
 * schedule-h # PM Modified Odd Block
 8:40 {Period 1}
@@ -129,26 +151,6 @@
 10:05 Passing to {Period 4}
 10:10 {Period 4}
 11:45 Free
-
-* minimum-day # Minimum Day
-7:30 Passing to {Period 0}
-7:35 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-8:40 Passing to {Period 2}
-8:45 {Period 2}
-9:15 Passing to {Period 3}
-9:20 {Period 3}
-9:50 Passing to {Period 4}
-9:55 {Period 4}
-10:25 Brunch
-10:35 Passing to {Period 5}
-10:40 {Period 5}
-11:10 Passing to {Period 6}
-11:15 {Period 6}
-11:45 Passing to {Period 7}
-11:50 {Period 7}
-12:20 Free
 
 * sbac-even-a # SBAC Even Block Tuesday
 8:05 Passing to Junior SBAC Testing

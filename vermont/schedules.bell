@@ -1,0 +1,84 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* unknown # Unknown
+
+* schedule-1 # Schedule 1
+8:00 Faculty Meeting
+8:40 Passing to H/Advisory
+8:45 H/Advisory
+9:25 Passing to {A}
+9:30 {A}
+10:20 Passing to {D}
+10:25 {D}
+11:15 Passing to Community Meeting
+11:20 Community Meeting
+12:05 Lunch
+13:00 {G} Lab
+14:10 Passing to {C} Lab
+14:15 {C} Lab
+15:25 Free
+
+* schedule-2 # Schedule 2
+8:00 {G}
+8:50 Passing to {A}
+8:55 {A}
+9:45 Passing to {B}
+9:50 {B}
+10:40 Passing to {D} Lab
+10:45 {D} Lab
+11:55 Lunch
+12:50 {H}
+13:30 Passing to {F} Lab
+13:35 {F} Lab
+14:45 Passing to {E}
+14:50 {E}
+15:40 Free
+
+* schedule-3 # Schedule 3
+8:00 {F}
+8:50 Passing to {G}
+8:55 {G}
+9:45 Passing to {B}
+9:50 {B}
+10:40 Passing to ADV
+10:45 ADV
+11:15 Passing to {A}
+11:20 {A}
+12:10 Lunch
+13:00 Free
+
+* schedule-4 # Schedule 4
+8:00 {D}
+8:50 Passing to {G}
+8:55 {G}
+9:45 Passing to {H}
+9:50 {H}
+10:30 Passing to {E} Lab
+10:35 {E} Lab
+11:45 Lunch
+12:40 {F}
+13:30 Passing to {B} Lab
+13:35 {B} Lab
+14:45 Passing to {C}
+14:50 {C}
+15:40 Free
+
+* schedule-5 # Schedule 5
+8:00 Residential Life Meeting
+8:40 Passing to {B}
+8:45 {B}
+9:35 Passing to {C}
+9:40 {C}
+10:30 Passing to {E}
+10:45 {E}
+11:25 Lunch
+12:15 ADV
+12:45 Pasing to {H}
+12:50 {H}
+13:30 Passing to {A} Lab
+13:35 {A} Lab
+14:45 Passing to {F}
+14:50 {F}
+15:40 Free

@@ -95,3 +95,18 @@
 11:20 {B}
 12:10 Lunch
 13:00 Free
+
+* schedule-7 # Schedule 7
+8:00 {A}
+8:50 Passing to {G}
+8:55 {G}
+9:45 Passing to {H}
+9:50 {H}
+10:30 Passing to {E}
+10:35 {E}
+11:25 Lunch
+12:30 Passing to {F}
+12:35 {F}
+13:25 Passing to {C}
+13:30 {C}
+14:20 Free

@@ -121,3 +121,87 @@
 10:40 {E}
 11:25 Lunch
 13:00 Free
+
+* schedule-9 # Schedule 9
+8:00 Department meetings
+8:40 Passing to H/Advisory
+8:45 H/Advisory
+9:25 Passing to {A}
+9:30 {A}
+10:15 Passing to {G}
+10:20 {G}
+11:20 Passing to Community Meeting
+11:25 Community Meeting 
+12:00 Lunch
+12:55 {C}
+13:40 Passing to {E}
+13:45 {E}
+14:30 Passing to {B}
+14:35 {B}
+15:20 Free
+
+* schedule-10 # Schedule 10
+8:00 {D}
+8:45 Passing to {H}
+8:50 {H}
+9:30 Passing to {F}
+9:35 {F}
+10:35 Passing to Advisory
+10:40 Advisory 
+11:10 Passing to {E}
+11:15 {E}
+12:00 Lunch
+12:30 Free
+
+* schedule-11 # Schedule 11
+8:00 {G}
+8:45 Passing to {A}
+8:50 {A}
+9:50 Passing to {B}
+9:55 {B}
+10:55 Passing to {H}
+11:00 {H}
+11:40 lunch
+13:00 Free
+
+* schedule-12 # Schedule 12
+8:00 {E}
+9:00 Passing to {B}
+9:05 {B}
+9:50 Passing to {G}
+9:55 {G}
+10:40 Passing to {A}
+10:45 {A}
+11:30 Lunch
+12:15 {F}
+13:00 Passing to {D}
+13:05 {D}
+14:05 Passing to {H}
+14:10 {H}
+14:50 Passing to {C}
+14:55 {C}
+15:40 Free
+
+* schedule-13 # Schedule 13
+8:00 Residential Life Meeting
+8:40 Passing to {D}
+8:45 {D}
+9:30 Passing to {C}
+9:35 {C}
+10:35 Passing to Advisory
+10:40 Advisory
+11:10 Passing to {F}
+11:15 {F}
+12:00 Lunch
+13:00 Free
+
+* schedule-14 # Schedule 14
+8:45 {B}
+9:30 Passing to {C}
+9:35 {C}
+10:20 Passing to {G}
+10:25 {G}
+11:10 Passing to {A}
+11:15 {A}
+12:00 Lunch
+13:00 Free 

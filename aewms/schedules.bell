@@ -1,0 +1,39 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* normal # Normal Schedule
+7:45 Passing to {Period 0}
+7:50 {Period 0}
+8:40 Passing to {Period 1}
+8:50 {Period 1}
+9:48 Passing to {Period 2}
+9:53 {Period 2}
+10:44 Nutrition
+10:54 {Period 3}
+11:45 Passing to {Period 4}
+11:50 {Period 4}
+12:41 Lunch
+13:20 Passing to {Period 5}
+13:25 {Period 5}
+14:16 Passing to {Period 6}
+14:21 {Period 6}
+15:12 Free
+
+* wednesday # Wednesday
+7:45 Passing to {Period 0}
+7:50 {Period 0}
+8:40 Passing to {Period 1}
+8:50 {Period 1}
+9:35 Passing to {Period 2}
+9:40 {Period 2}
+10:22 Passing to {Period 3}
+10:27 {Period 3}
+11:09 Passing to {Period 4}
+11:14 {Period 4}
+11:56 Lunch
+12:26 Passing to {Period 5}
+12:31 {Period 5}
+13:13 Passing to {Period 6}
+13:18 {Period 6}
+14:00 Free

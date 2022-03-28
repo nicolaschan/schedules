@@ -205,3 +205,87 @@
 11:15 {A}
 12:00 Lunch
 13:00 Free 
+
+* schedule-15 # Schedule 15
+8:00 Department meetings
+8:40 Passing to H/Advisory
+8:45 H/Advisory
+9:25 Passing to {A}
+9:30 {A}
+10:20 Passing to {D}
+10:25 {D}
+11:15 Passing to Community Meeting
+11:20 Community Meeting 
+12:05 Lunch
+1:00 {G}
+14:10 Passing to {C}
+14:15 {C}
+15:25 Free
+
+* schedule-16 # Schedule 16
+8:00 {G}
+8:50 Passing to {A}
+8:55 {A}
+9:45 Passing to {B}
+9:50 {B}
+10:40 Passing to {D}
+10:45 {D}
+11:55 Lunch
+12:50 {H}
+13:30 Passing to {F}
+13:35 {F}
+14:45 Passing to {E}
+15:40 Free
+
+* schedule-17 # Schedule 17
+8:00 First Block
+8:50 Passing to Second Block
+8:55 Second Block
+9:45 Passing to Third Block
+9:50 Third Block
+10:40 Passing to Advisory
+10:45 Advisory
+11:15 Passing to Fourth Block
+11:20 Fourth Block 
+12:10 Lunch
+13:00 Free
+
+* schedule-18 # Schedule 18
+8:00 {D}
+8:50 Passing to {G}
+8:55 {G}
+9:45 Passing to {H}
+9:50 {H}
+10:30 Passing to {E}
+11:45 Lunch
+12:40 {F}
+13:30 Passing to {B}
+13:35 {B}
+14:45 Passing to {C}
+14:50 {C}
+15:40 Free
+
+* schedule-19 # Schedule 19
+8:45 {B}
+9:35 Passing to {C}
+9:40 {C}
+10:30 Passing to {E}
+10:35 {E}
+11:25 Lunch
+12:15 Advisory 
+12:45 Passing to {H}
+12:50 {H}
+13:30 Passing to {A}
+13:35 {A}
+14:45 Passing to {F}
+14:50 {F}
+15:40 Free
+
+* schedule-20 # Schedule 20
+8:45 First Block
+9:35 Passing to Second Block
+9:40 Second Block
+10:30 Passing to Third Block
+10:35 Third Block
+11:25 Lunch
+13:00 Free

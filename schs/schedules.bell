@@ -19,25 +19,26 @@
 * odd # Odd
 8:39 Passing to {Period 1}
 8:45 {Period 1}
-10:20 Passing to {Period 3}
-10:30 {Period 3}
-12:09 Lunch
-12:44 Passing to {Period 5}
-12:50 {Period 5}
-14:25 Passing to {Period 7}
-14:35 {Period 7}
-16:10 Free
+10:15 Passing to {Period 3}
+10:25 {Period 3}
+11:59 Lunch
+12:34 Passing to {Period 5}
+12:40 {Period 5}
+14:10 Passing to {Period 7}
+14:20 {Period 7}
+15:50 Free
 
 * even # Even
 8:39 Passing to {Period 2}
 8:45 {Period 2}
-10:20 Passing to {Period 4}
-10:30 {Period 4}
-12:09 Lunch
-12:44 Passing to Support/Tutorial
-12:50 Support/Tutorial
-13:25 {Period 6}
-15:00 Free
+10:19 Passing to Tutorial
+10:29 Tutorial
+11:19 Lunch
+11:54 Passing to {Period 4}
+12:00 {Period 4}
+13:30 Passing to {Period 6}
+13:40 {Period 6}
+15:10 Free
 
 * weekend # Weekend
 
@@ -57,14 +58,14 @@
 * rally-fri # Friday Rally
 8:39 Passing to {Period 2}
 8:45 {Period 2}
-10:14 Passing to Rally
-10:24 Rally
+10:19 Passing to Rally
+10:29 Rally
 11:19 Lunch
 11:54 Passing to {Period 4}
 12:00 {Period 4}
-13:25 Passing to {Period 6}
-13:35 {Period 6}
-15:00 Free
+13:30 Passing to {Period 6}
+13:40 {Period 6}
+15:10 Free
 
 * homecoming-thu # Homecoming Thursday
 9:14 Passing to {Period 1}
@@ -85,12 +86,12 @@
 10:25 {Period 2}
 11:29 Passing to Rally
 11:39 Rally
-12:13 Lunch
-12:48 Passing to {Period 4}
-12:54 {Period 4}
-13:54 Passing to {Period 6}
-14:00 {Period 6}
-15:00 Free
+12:19 Lunch
+12:54 Passing to {Period 4}
+13:00 {Period 4}
+14:00 Passing to {Period 6}
+14:10 {Period 6}
+15:10 Free
 
 * goodbye-thu # Goodbye Thursday
 8:39 Passing to {Period 1}
@@ -137,19 +138,20 @@
 
 * caaspp-cast # CAASPP/CAST Test
 8:39 Passing to CAASPP/CAST Test
-10:35 Passing to {Period 1}
-10:45 {Period 1}
-11:20 Passing to {Period 2}
-11:26 {Period 2}
-12:01 Lunch
-12:36 Passing to {Period 3}
-12:42 {Period 3}
-13:17 Passing to {Period 4}
-13:23 {Period 4}
-13:58 Passing to {Period 5}
-14:04 {Period 5}
-14:39 Passing to {Period 6}
-14:45 {Period 6}
-15:20 Passing to {Period 7}
-15:26 {Period 7}
-16:01 Free
+8:45 CAASPP/CAST Test
+10:25 Passing to {Period 1}
+10:35 {Period 1}
+11:09 Passing to {Period 2}
+11:15 {Period 2}
+11:55 Lunch
+12:30 Passing to {Period 3}
+12:36 {Period 3}
+13:10 Passing to {Period 4}
+13:16 {Period 4}
+13:50 Passing to {Period 5}
+13:56 {Period 5}
+14:30 Passing to {Period 6}
+14:36 {Period 6}
+15:10 Passing to {Period 7}
+15:16 {Period 7}
+15:50 Free

@@ -5,7 +5,7 @@
     }
   },
   "message": {
-    "enabled": true,
+    "enabled": false,
     "text": "Install the Chrome Extension",
     "href": "https://bell.plus/xt"
   }

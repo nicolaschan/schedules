@@ -5,7 +5,7 @@
     }
   },
   "message": {
-    "enabled": true,
+    "enabled": false,
     "text": "Schedules have been updated!",
     "href": "https://blog.bell.plus/"
   }

@@ -78,20 +78,21 @@
 
 * schedule-g # Assembly Schedule
 8:40 {Period 1}
-9:15 Passing to {Period 2}
-9:22 {Period 2} or Rally
-11:12 Brunch
-11:22 Passing to {Period 3}
-11:29 {Period 3}
-12:04 Lunch
-12:49 Passing to {Period 4}
-12:56 {Period 4}
-13:31 Passing to {Period 5}
-13:38 {Period 5}
-14:13 Passing to {Period 6}
-14:20 {Period 6}
-14:55 Passing to {Period 7}
-15:02 {Period 7}
+9:20 Passing to {Period 2}/A
+9:27 {Period 2}/A
+10:07 {Period 2}/B
+10:47 Brunch
+10:57 Passing to {Period 3}
+11:04 {Period 3}
+11:44 Passing to {Period 4}
+11:51 {Period 4}
+12:31 Lunch
+13:16 Passing to {Period 5}
+13:23 {Period 5}
+14:03 Passing to {Period 6}
+14:10 {Period 6}
+14:50 Passing to {Period 7}
+14:57 {Period 7}
 15:37 Free
 
 * schedule-h # PM Modified Odd Block

@@ -1,0 +1,53 @@
+* regular # Regular Schedule
+7:15 Passing to {Period 0}
+7:20 {Period 0}
+8:05 Passing to {Period 1}
+8:15 {Period 1}
+9:05 Break
+9:10 Passing to {Period 2}
+9:15 {Period 2}
+10:05 Passing to {Period 3}
+10:10 {Period 3}
+11:00 Lunch A
+11:35 Passing to {Period 4}
+11:40 {Period 4}
+12:30 Passing to {Period 5}
+12:35 {Period 5}
+13:25 Passing to {Period 6}
+13:30 {Period 6}
+14:20 Passing to {Period 7}
+14:25 {Period 7}
+15:15 Free
+
+* even # Even Schedule
+7:15 Passing to {Period 0}
+7:20 {Period 0}
+8:05 Passing to {Period 2}
+8:15 {Period 2}
+9:45 Break
+9:50 Passing to {Period 4}
+9:55 {Period 4}
+11:25 Lunch A
+12:00 Passing to {Period 6}
+12:05 {Period 6}
+13:45 Free
+
+* odd # Odd Schedule
+7:15 Passing to {Period 0}
+7:20 {Period 0}
+8:05 Passing to {Period 1}
+8:15 {Period 1}
+9:45 Break
+9:50 Passing to {Period 3}
+9:55 {Period 3}
+11:25 Lunch A
+12:00 Passing to {Period 5}
+12:05 {Period 5}
+13:35 Passing to GMI
+13:40 GMI
+13:45 {Period 7}
+15:15 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

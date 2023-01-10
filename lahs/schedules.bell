@@ -61,20 +61,20 @@
 
 * schedule-f # Minimum Day
 8:40 {Period 1}
-9:10 Passing to {Period 2}
-9:17 {Period 2}
-9:47 Passing to {Period 3}
-9:54 {Period 3}
-10:24 Passing to {Period 4}
-10:31 {Period 4}
-11:01 Brunch
-11:11 Passing to {Period 5}
-11:18 {Period 5}
-11:48 Passing to {Period 6}
-11:55 {Period 6}
-12:25 Passing to {Period 7}
-12:32 {Period 7}
-13:02 Free
+9:08 Passing to {Period 2}
+9:15 {Period 2}
+9:43 Passing to {Period 3}
+9:50 {Period 3}
+10:18 Passing to {Period 4}
+10:25 {Period 4}
+10:53 Brunch
+11:03 Passing to {Period 5}
+11:10 {Period 5}
+11:38 Passing to {Period 6}
+11:45 {Period 6}
+12:13 Passing to {Period 7}
+12:20 {Period 7}
+12:48 Free
 
 * schedule-g # Assembly Schedule
 8:40 {Period 1}
@@ -212,10 +212,10 @@
 14:45 {Period 7}
 15:30 Free
 
-* psat-testing # Student Activity/PSAT Testing
-8:05 Passing to Student Activity/PSAT Testing
-8:10 Student Activity/PSAT Testing
-12:30 Free
+* psat-testing # Student Activity/PSAT or SAT Testing
+8:08 Passing to Student Activity/PSAT or SAT Testing
+8:15 Student Activity/PSAT or SAT Testing
+12:15 Free
 
 * challenge-day-assembly # Challenge Day Assembly (Grades 10-12)
 8:05 Passing to Group A Assembly, Group B Activity
@@ -315,7 +315,7 @@
 14:05 {Period 7}
 14:35 Free
 
-* finals-2022-fri # Friday Finals
+* finals-2022-mon # Monday Finals
 8:35 Passing to {Period 3}
 8:40 {Period 3}
 10:25 Brunch
@@ -323,7 +323,7 @@
 11:02 {Period 5}
 12:47 Free
 
-* finals-2022-mon # Monday Finals
+* finals-2022-tues # Tuesday Finals
 8:35 Passing to {Period 2}
 8:40 {Period 2}
 10:25 Brunch
@@ -331,17 +331,17 @@
 11:02 {Period 7}
 12:47 Free
 
-* finals-2022-tue # Tuesday Finals
+* finals-2022-wed # Wednesday Finals
 8:35 Passing to {Period 1}
 8:40 {Period 1}
 10:25 Brunch
-10:55 Passing to {Period 4}
-11:02 {Period 4}
+10:55 Passing to {Period 6}
+11:02 {Period 6}
 12:47 Free
 
-* finals-2022-wed # Wednesday Finals
-8:35 Passing to {Period 6}
-8:40 {Period 6}
+* finals-2022-thurs # Thursday Finals
+8:35 Passing to {Period 4}
+8:40 {Period 4}
 10:25 Free
 
 * am-staff-dev-2022-tues-thurs # AM Professional Dev

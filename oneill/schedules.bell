@@ -1,0 +1,56 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* monday # Monday Schedule
+7:45 {Early Bird}
+8:25 Passing to Advisory
+8:30 Advisory
+8:55 Passing to {Period 1}
+8:59 {Period 1}
+9:31 Passing to {Period 2}
+9:35 {Period 2}
+10:06 Passing to {Period 3}
+10:10 {Period 3}
+10:41 Passing to {Period 4A}
+10:45 {Period 4A}
+11:07 Passing to {Period 4B}
+11:11 {Period 4B}
+11:33 Passing to {Period 5A}
+11:37 {Period 5A}
+11:59 Passing to {Period 5B}
+12:03 {Period 5B}
+12:25 Passing to {Period 6}
+12:29 {Period 6}
+13:00 Passing to {Period 7}
+13:04 {Period 7}
+13:35 Passing to {Period 8}
+13:39 {Period 8}
+14:10 Free
+
+* normal # Normal Schedule
+7:45 {Early Bird}
+8:25 Passing to Advisory
+8:30 Advisory
+8:45 Passing to {Period 1}
+8:49 {Period 1}
+9:33 Passing to {Period 2}
+9:37 {Period 2}
+10:21 Passing to {Period 3}
+10:25 {Period 3}
+11:09 Passing to {Period 4A}
+11:13 {Period 4A}
+11:35 Passing to {Period 4B}
+11:39 {Period 4B}
+12:01 Passing to {Period 5A}
+12:05 {Period 5A}
+12:27 Passing to {Period 5B}
+12:31 {Period 5B}
+12:53 Passing to {Period 6}
+12:57 {Period 6}
+13:41 Passing to {Period 7}
+13:45 {Period 7}
+14:29 Passing to {Period 8}
+14:33 {Period 8}
+15:17 Free
+

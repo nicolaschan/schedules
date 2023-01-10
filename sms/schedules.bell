@@ -1,0 +1,47 @@
+* regular # Regular Schedule
+7:30 Student Arrival
+7:45 Homeroom
+7:50 Passing to {Period 1}
+7:53 {Period 1}
+8:43 Passing to {Period 2}
+8:46 {Period 2}
+9:36 Passing to {Period 3}
+9:39 {Period 3}
+10:29 Passing to {Period 4}
+10:32 {Period 4} A
+11:02 {Period 4} B
+11:32 {Period 4} C
+12:02 Passing to {Period 5}
+12:05 {Period 5}
+12:55 Passing to {Period 6}
+12:58 {Period 6}
+13:48 Passing to {Period 7}
+13:51 {Period 7}
+14:38 1st Dismissal
+14:41 Free
+
+* timberwolf # Timberwolf Time
+7:30 Passing to Homeroom
+7:45 Homeroom
+7:50 Timberwolf Time
+8:50 Passing to {Period 1}
+8:53 {Period 1}
+9:33 Passing to {Period 2}
+9:36 {Period 2}
+10:16 Passing to {Period 3}
+10:19 {Period 3}
+10:59 {Period 4} A
+11:29 {Period 4} B
+11:59 {Period 4} C
+12:29 Passing to {Period 5}
+12:32 {Period 5}
+13:12 Passing to {Period 6}
+13:15 {Period 6}
+13:55 Passing to {Period 7}
+13:58 {Period 7}
+14:38 1st Dismissal
+14:31 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

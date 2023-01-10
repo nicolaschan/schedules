@@ -1,0 +1,113 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* monday # Monday
+8:21 Passing to {Period 1}
+8:25 {Period 1}
+9:12 Passing to {Period 2}
+9:16 {Period 2}
+9:57 Passing to {Period 3}
+10:01 {Period 3}
+10:42 Break
+10:55 Passing to {Period 4}
+10:59 {Period 4}
+11:40 Passing to {Period 5}
+11:44 {Period 5}
+12:25 Lunch
+13:05 Passing to {Period 6}
+13:09 {Period 6}
+13:50 Passing to {Period 7}
+13:54 {Period 7}
+14:35 Passing to {Period 8}
+14:39 {Period 8}
+15:20 Free
+
+* tuesday # Tuesday
+8:21 Passing to {Period 2}
+8:25 {Period 2}
+9:27 Passing to {Period 3}
+9:31 {Period 3}
+10:27 Break
+10:40 Passing to {Period 4}
+10:44 {Period 4}
+11:40 Passing to {Period 6}
+11:44 {Period 6}
+12:40 Lunch
+13:20 Passing to {Period 7}
+13:24 {Period 7}
+14:20 Passing to {Period 8}
+14:24 {Period 8}
+15:20 Free
+
+* wednesday # Wednesday
+8:21 Passing to {Period 1}
+8:25 {Period 1}
+9:27 Passing to {Period 3}
+9:31 {Period 3}
+10:27 Break
+10:40 Passing to {Period 4}
+10:44 {Period 4}
+11:40 Passing to {Period 5}
+11:44 {Period 5}
+12:40 Lunch
+13:20 Passing to {Period 7}
+13:24 {Period 7}
+14:20 Passing to {Period 8}
+14:24 {Period 8}
+15:20 Free
+
+* friday # Friday
+8:21 Passing to {Period 1}
+8:25 {Period 1}
+9:27 Passing to {Period 2}
+9:31 {Period 2}
+10:27 Break
+10:40 Passing to {Period 3}
+10:44 {Period 3}
+11:40 Passing to {Period 5}
+11:44 {Period 5}
+12:40 Lunch
+13:20 Passing to {Period 6}
+13:24 {Period 6}
+14:20 Passing to {Period 7}
+14:24 {Period 7}
+15:20 Free
+
+* thursday # Thursday
+8:21 Passing to {Period 1}
+8:25 {Period 1}
+9:14 Passing to {Period 2}
+9:18 {Period 2}
+10:06 Break
+10:19 Passing to {Period 4}
+10:23 {Period 4}
+11:11 Passing to {Period 5}
+11:15 {Period 5}
+12:03 Lunch
+12:43 Passing to {Period 6}
+12:47 {Period 6}
+13:35 Passing to {Period 8}
+13:39 {Period 8}
+14:28 Free
+
+* minimum # Minimum Day
+8:21 Passing to {Period 1}
+8:25 {Period 1}
+8:53 Passing to {Period 2}
+8:57 {Period 2}
+9:25 Passing to {Period 3}
+9:29 {Period 3}
+9:57 Passing to {Period 4}
+10:01 {Period 4}
+10:29 Break
+10:42 Passing to {Period 5}
+10:46 {Period 5}
+11:13 Passing to {Period 6}
+11:17 {Period 6}
+11:45 Passing to {Period 7}
+11:49 {Period 7}
+12:17 Passing to {Period 8}
+12:21 {Period 8}
+12:50 Free
+

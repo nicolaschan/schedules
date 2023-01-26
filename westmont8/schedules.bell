@@ -1,0 +1,48 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* regular # Regular Schedule
+8:17 Passing to {Period 0}
+8:20 {Period 0}
+8:55 Passing to {Period 1}
+8:58 {Period 1}
+9:38 Passing to {Period 2}
+9:41 {Period 2}
+10:21 Passing to {Period 3}
+10:24 {Period 3}
+11:04 Passing to {Period 4}
+11:07 {Period 4}
+11:37 Passing to {Period 5}
+11:40 {Period 5}
+12:20 Passing to {Period 6}
+12:23 {Period 6}
+13:03 Passing to {Period 7}
+13:06 {Period 7}
+13:46 Passing to {Period 8}
+13:49 {Period 8}
+14:29 Passing to {Period 9}
+14:32 {Period 9}
+15:12 Free
+
+* wednesday # Assembly and PLC
+8:17 Passing to {Period 1}
+8:20 {Period 1}
+8:57 Passing to {Period 2}
+9:00 {Period 2}
+9:37 Passing to {Period 3}
+9:40 {Period 3}
+10:17 Passing to {Period 7}
+10:20 {Period 7}
+10:57 Passing to {Period 4}
+11:00 {Period 4}
+11:30 Passing to {Period 5}
+11:33 {Period 5}
+12:12 Passing to {Period 6}
+12:15 {Period 6}
+12:54 Passing to {Period 8}
+12:57 {Period 8}
+13:34 Passing to {Period 9}
+13:37 {Period 9}
+14:14 Free
+

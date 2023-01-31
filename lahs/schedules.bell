@@ -97,23 +97,26 @@
 
 * schedule-h # PM Modified Odd Block
 8:40 {Period 1}
-9:25 Passing to {Period 3}
-9:32 {Period 3}
-10:22 Brunch
-10:32 Passing to {Period 5}
-10:39 {Period 5}
-11:24 Passing to {Period 7}
-11:31 {Period 7}
-12:16 Free
+9:40 Passing to {Period 3}
+9:47 {Period 3}
+10:47 Brunch
+10:57 Passing to {Period 5}
+11:04 {Period 5}
+12:04 Passing to {Period 7}
+12:11 {Period 7}
+13:11 Lunch
+13:56 Free
 
 * schedule-i # PM Modified Even Block
 8:40 {Period 2}
-9:25 Passing to {Period 4}
-9:32 {Period 4}
-10:22 Brunch
-10:32 Passing to {Period 6}
-10:39 {Period 6}
-11:24 Free
+9:40 Academic Collaboration Time
+10:30 Passing to {Period 4}
+10:37 {Period 4}
+11:37 Brunch
+11:47 Passing to {Period 6}
+11:54 {Period 6}
+12:54 Lunch
+13:39 Free
 
 * weekend # Weekend
 

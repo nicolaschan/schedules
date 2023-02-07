@@ -1,4 +1,10 @@
 [{
+  "message": {
+    "enabled": true,
+    "text": "Publish your school's schedule",
+    "href": "https://edit.bell.plus"
+  }
+}, {
   "agent": {
     "browser": {
       "name": "Chrome"

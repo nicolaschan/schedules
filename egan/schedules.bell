@@ -104,6 +104,27 @@
 12:00 {Period 7}
 12:30 Free
 
+* assembly # Assembly
+8:25 Passing to A
+8:30 A
+9:10 Passing to B
+9:13 B
+9:53 Passing to C
+9:56 C
+10:37 Brunch
+10:51 Passing to D
+10:54 D
+11:34 Passing to E
+11:37 E
+12:17 Lunch
+12:54 Passing to F
+12:57 F
+13:37 Passing to G
+13:40 G
+14:20 Passing to H
+14:23 H
+15:03 Free
+
 * weekend # Weekend
 
 * holiday # Holiday

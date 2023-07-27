@@ -1,63 +1,68 @@
 * schedule-a # All Periods
-8:40 {Period 1}
-9:25 Passing to {Period 2}
-9:32 {Period 2}
-10:22 Brunch
-10:32 Passing to {Period 3}
-10:39 {Period 3}
-11:24 Passing to {Period 4}
-11:31 {Period 4}
-12:16 Lunch
-13:01 Passing to {Period 5}
-13:08 {Period 5}
-13:53 Passing to {Period 6}
-14:00 {Period 6}
-14:45 Passing to {Period 7}
-14:52 {Period 7}
-15:37 Free
+8:30 {Period 1}
+9:20 Passing to {Period 2}
+9:27 {Period 2}
+10:17 Brunch
+10:25 Passing to {Period 3}
+10:32 {Period 3}
+11:22 Passing to {Period 4}
+11:29 {Period 4}
+12:19 Lunch
+12:54 Passing to {Period 5}
+13:01 {Period 5}
+13:51 Passing to {Period 6}
+13:58 {Period 6}
+14:48 Passing to {Period 7}
+14:55 {Period 7}
+15:45 Free
 
 * schedule-b # Odd Block
-8:40 {Period 1}
-10:10 Brunch
-10:20 Passing to {Period 3}
-10:27 {Period 3}
-11:52 Lunch
-12:37 Passing to {Period 5}
-12:44 {Period 5}
-14:09 Passing to {Period 7}
-14:16 {Period 7}
-15:41 Free
+8:30 {Period 1}
+10:00 Brunch
+10:08 Passing to {Period 3}
+10:15 {Period 3}
+11:45 Lunch
+12:25 Passing to {Period 5}
+12:32 {Period 5}
+14:02 Passing to {Period 7}
+14:09 {Period 7}
+15:39 Free
 
 * schedule-c # Even Block
-8:40 {Period 2}
-10:10 Academic Collaboration Time
+8:30 {Period 2}
+10:00 Passing to Academic Collaboration Time
+10:07 Academic Collaboration Time
 11:00 Brunch
-11:10 Passing to {Period 4}
-11:17 {Period 4}
+11:08 Passing to {Period 4}
+11:15 {Period 4}
+12:45 Lunch
+13:25 Passing to {Period 6}
+13:32 {Period 6}
+15:02 Free
+
+* schedule-d # PM Modified Odd Block
+8:30 {Period 1}
+9:30 Passing to {Period 3}
+9:37 {Period 3}
+10:37 Brunch
+10:45 Passing to {Period 5}
+10:52 {Period 5}
+11:52 Passing to {Period 7}
+11:59 {Period 7}
+12:59 Lunch
+1:40 Free
+
+* schedule-e # PM Modified Even Block
+8:30 {Period 2}
+9:30 Passing to Academic Collaboration Time
+9:37 Academic Collaboration Time
+10:20 Brunch
+10:28 Passing to {Period 4}
+10:35 {Period 4}
+11:35 Passing to {Period 6}
+11:42 {Period 6}
 12:42 Lunch
-13:27 Passing to {Period 6}
-13:34 {Period 6}
-14:59 Free
-
-* schedule-d # AM Modified Odd Block
-11:30 {Period 1}
-12:15 Lunch
-13:00 Passing to {Period 3}
-13:07 {Period 3}
-13:52 Passing to {Period 5}
-13:59 {Period 5}
-14:44 Passing to {Period 7}
-14:51 {Period 7}
-15:36 Free
-
-* schedule-e # AM Modified Even Block
-11:30 {Period 2}
-12:15 Lunch
-13:00 Passing to {Period 4}
-13:07 {Period 4}
-13:52 Passing to {Period 6}
-13:59 {Period 6}
-14:44 Free
+1:25 Free
 
 * schedule-f # Minimum Day
 8:40 {Period 1}

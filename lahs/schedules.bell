@@ -82,46 +82,46 @@
 12:48 Free
 
 * schedule-g # Assembly Schedule
-8:40 {Period 1}
-9:20 Passing to {Period 2}/A
-9:27 {Period 2}/A
-10:07 {Period 2}/B
-10:47 Brunch
-10:57 Passing to {Period 3}
-11:04 {Period 3}
-11:44 Passing to {Period 4}
-11:51 {Period 4}
-12:31 Lunch
+8:30 {Period 1}
+9:13 Passing to {Period 2}/A
+9:20 {Period 2}/A
+10:03 Passing to {Period 2}/B
+10:10 {Period 2}/B
+10:53 Brunch
+11:01 Passing to {Period 3}
+11:08 {Period 3}
+11:51 Passing to {Period 4}
+11:58 {Period 4}
+12:41 Lunch
 13:16 Passing to {Period 5}
 13:23 {Period 5}
-14:03 Passing to {Period 6}
-14:10 {Period 6}
-14:50 Passing to {Period 7}
-14:57 {Period 7}
-15:37 Free
+14:06 Passing to {Period 6}
+14:13 {Period 6}
+14:56 Passing to {Period 7}
+15:03 {Period 7}
+15:46 Free
 
-* schedule-h # PM Modified Odd Block
-8:40 {Period 1}
-9:40 Passing to {Period 3}
-9:47 {Period 3}
-10:47 Brunch
-10:57 Passing to {Period 5}
-11:04 {Period 5}
-12:04 Passing to {Period 7}
-12:11 {Period 7}
-13:11 Lunch
-13:56 Free
+* schedule-h # AM Modified Odd Block
+10:30 {Period 1}
+11:30 Passing to {Period 3}
+11:37 {Period 3}
+12:37 Lunch
+13:12 Passing to {Period 5}
+13:19 {Period 5}
+14:19 Passing to {Period 7}
+14:26 {Period 7}
+15:26 Free
 
-* schedule-i # PM Modified Even Block
-8:40 {Period 2}
-9:40 Academic Collaboration Time
-10:30 Passing to {Period 4}
-10:37 {Period 4}
-11:37 Brunch
-11:47 Passing to {Period 6}
-11:54 {Period 6}
-12:54 Lunch
-13:39 Free
+* schedule-i # AM Modified Even Block
+10:30 {Period 2}
+11:30 Lunch
+12:05 Passing to {Period 4}
+12:12 {Period 4}
+13:12 Passing to Academic Collaboration Time
+13:19 Academic Collaboration Time
+14:02 Passing to {Period 6}
+14:09 {Period 6}
+15:09 Free
 
 * weekend # Weekend
 

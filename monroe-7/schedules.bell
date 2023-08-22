@@ -3,23 +3,25 @@
 * holiday # Holiday
 
 * normal # Normal Schedule
-8:00 Advisory
-8:18 Passing to {Period 1}
-8:22 {Period 1}
-9:04 Passing to {Period 2}
-9:08 {Period 2}
-9:50 Passing to {Period 3}
-9:54 {Period 3}
-10:36 Passing to {Period 4}
-10:40 {Period 4}
-11:22 Passing to Lunch 7
-11:26 Lunch 7
-11:56 Passing to {Period 5}
-12:00 {Period 5}
-12:42 Passing to {Period 6}
-12:46 {Period 6}
-13:28 Passing to {Period 7}
-13:32 {Period 7}
-14:14 Passing to {Period 8}
-14:18 {Period 8}
-15:00 Free
+7:45 Arrival
+7:55 Passing to {Period 1}
+8:00 {Period 1}
+8:46 Passing to {Period 2}
+8:49 {Period 2}
+9:39 Passing to {Period 3}
+9:42 {Period 3}
+10:27 Passing to {Period 4}
+10:30 {Period 4}
+11:15 Passing to Lunch 7
+11:18 Lunch 7
+11:48 Passing to {Period 5}
+11:51 {Period 5}
+12:36 Passing to {Period 6}
+12:39 {Period 6}
+13:24 Passing to {Period 7}
+13:27 {Period 7}
+14:12 Passing to {Period 8}
+14:15 {Period 8}
+15:00 Passing to Activities & Clubs
+15:05 Activities & Clubs
+16:00 Free

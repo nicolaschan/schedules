@@ -1,0 +1,50 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* regular # Regular Schedule
+7:40 Passing to {Period A}
+7:45 {Period A}
+8:28 Passing to {Period B}
+8:33 {Period B}
+9:16 Passing to {Period C}
+9:21 {Period C}
+10:04 Passing to {Period D}
+10:09 {Period D}
+10:57 Passing to {Period E1}
+11:02 {Period E1}
+11:22 Passing to {Period E2}
+11:26 {Period E2}
+11:46 Passing to {Period F1}
+11:51 {Period F1}
+12:11 Passing to {Period F2}
+12:15 {Period F2}
+12:35 Passing to {Period G}
+12:40 {Period G}
+13:23 Passing to {Period H}
+13:28 {Period H}
+14:11 Passing to {Period I}
+14:16 {Period I}
+14:59 Free
+
+* half-day # 1/2 Day Schedule
+7:40 Passing to {Period A}
+7:45 {Period A}
+8:08 Passing to {Period B}
+8:13 {Period B}
+8:36 Passing to {Period C}
+8:41 {Period C}
+9:04 Passing to {Period D}
+9:09 {Period D}
+9:37 Passing to {Period E}
+9:42 {Period E}
+10:05 Passing to {Period F}
+10:10 {Period F}
+10:33 Passing to {Period G}
+10:38 {Period G}
+11:01 Passing to {Period H}
+11:06 {Period H}
+11:29 Passing to {Period I}
+11:34 {Period I}
+11:57 Free
+

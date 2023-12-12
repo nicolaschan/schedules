@@ -1,0 +1,35 @@
+* regular # Regular Schedule
+8:26 Passing to {Period 1}
+8:30 {Period 1}
+9:30 Passing to {Period 2}
+9:34 {Period 2}
+10:29 Passing to {Period 3}
+10:33 {Period 3}
+11:28 Passing to {Period 4}
+11:32 {Period 4}
+12:27 Lunch 
+12:57 Passing to {Period 5}
+13:01 {Period 5}
+13:56 Passing to {Period 6}
+14:00 {Period 6}
+14:55 Free
+
+* wednesday # Wednesday Schedule
+8:26 Passing to {Period 1}
+8:30 {Period 1}
+9:20 Passing to {Period 2}
+9:24 {Period 2}
+10:06 Passing to {Period 3}
+10:10 {Period 3}
+10:52 Passing to {Period 4}
+10:56 {Period 4}
+11:38 Passing to {Period 5}
+11:42 {Period 5}
+12:24 Lunch
+12:54 Passing to {Period 6}
+12:58 {Period 6}
+13:40 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

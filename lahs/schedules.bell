@@ -128,7 +128,7 @@
 * holiday # Holiday
 
 * finals-tue # Tuesday Finals
-8:40 {Period 1}
+8:30 {Period 1}
 10:30 Brunch
 10:43 Passing to {Period 6}
 10:50 {Period 6}
@@ -138,14 +138,14 @@
 15:37 Free
 
 * finals-wed # Wednesday Finals
-8:40 {Period 2}
+8:30 {Period 2}
 10:30 Brunch
 10:43 Passing to {Period 5}
 10:50 {Period 5}
 12:50 Free
 
 * finals-thu # Thursday Finals
-8:40 {Period 3}
+8:30 {Period 3}
 10:30 Brunch
 10:43 Passing to {Period 4}
 10:50 {Period 4}

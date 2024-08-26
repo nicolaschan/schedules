@@ -1,0 +1,68 @@
+* Default Week
+Sun weekend
+Mon regular
+Tue ex-advisory
+Wed regular
+Thu regular
+Fri regular
+Sat weekend
+
+* Special Days
+08/14/2024 ex-advisory
+08/15/2024 ex-advisory
+08/16/2024 ex-advisory
+08/23/2024 half-day
+08/30/2024 105-dismissal
+09/02/2024 weekend
+09/05/2024 ex-day1 # Ex Day
+09/06/2024 ex-day2 # Ex Day
+09/20/2024 flex-day
+09/23/2024 no-school
+09/27/2024 flex-day
+10/08/2024 half-day
+10/09/2024 half-day
+10/14/2024 no-school
+10/15/2024 no-school
+10/25/2024 work-day
+10/29/2024 half-day
+11/01/2024 half-day
+11/06/2024 late-start
+11/11/2024 no-school
+11/21/2024 ex-day1 # Ex Day
+11/22/2024 ex-day2 # Ex Day
+11/27/2024 no-school # Thanksgiving Break
+11/28/2024 no-school # Thanksgiving Break
+11/29/2024 no-school # Thanksgiving Break
+12/05/2024 min-ex-day1 # Mini Ex Day
+12/06/2024 min-ex-day2 # Mini Ex Day
+12/16/2024 half-day
+12/17/2024 midterm
+12/18/2024 midterm
+12/19/2024 midterm
+12/23/2024 midterm
+12/24/2024-1/06/2025 no-school # Winter Break
+01/16/2025 ex-day1 # Ex Day
+01/17/2025 ex-day2 # Ex Day
+01/20/2025 no-school
+02/06/2025 min-ex-day1 # Mini Ex Day
+02/07/2025 min-ex-day2 # Mini Ex Day
+02/17/2025 no-school
+02/18/2025 no-school
+02/28/2025 flex-day
+03/07/2025 flex-day
+03/11/2025 half-day
+03/14/2025 no-school # PI DAY!!!
+03/20/2025 ex-day1 # Ex Day
+03/21/2025 ex-day2 # Ex Day
+03/31/2025-4/06/2025 no-school # Spring Break
+04/11/2025 half-day
+04/16/2025 ex-day1 # Ex Day
+04/17/2025 ex-day2 # Ex Day
+04/25/2025 work-day
+05/02/2025 no-school
+05/23/2025 phoenix-fest
+05/26/2025 no-school
+05/29/2025 half-day
+05/30/2025 finals
+06/02/2025-06/06/2025 finals
+06/07/2025-08/12/2025 no-school # Summer Break

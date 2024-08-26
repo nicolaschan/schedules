@@ -1,0 +1,164 @@
+* regular # Regular
+9:00 {Period 1}
+9:45 Walk to {Advisory}
+9:50 {Advisory}
+9:55 Walk to {Period 2}
+10:00 {Period 2}
+10:45 Walk to {Period 3}
+10:50 {Period 3}
+11:35 Walk to {Period 4}
+11:40 {Period 4}
+12:25 Lunch
+13:05 {Period 5}
+13:50 Walk to {Period 6}
+14:40 Free
+
+* ex-advisory # Extended Advisory
+9:00 {Period 1}
+9:40 Walk to {Advisory}
+9:45 {Advisory}
+10:15 Walk to {Period 2}
+10:20 {Period 2}
+11:00 Walk to {Period 3}
+11:05 {Period 3}
+11:45 Wlak to (Period 4)
+11:50 {Period 4}
+12:30 Lunch
+13:10 {Period 5}
+13:50 Walk to {Period 6}
+13:55 {Period 6}
+14:40 Free
+
+* ex-day1 # Ex Day
+9:00 {Period 1}
+10:35 Walk to {Advisory}
+10:40 {Advisory}
+10:45 Walk to {Period 3}
+10:50 {Period 3}
+12:25 Lunch
+13:05 {Period 5}
+14:40 Free
+
+* ex-day2 # Ex Day
+9:00 {Period 2}
+10:35 Walk to {Advisory}
+10:40 {Advisory}
+10:45 Walk to {Period 4}
+10:50 {Period 4}
+12:25 Lunch
+13:05 {Period 6}
+14:40 Free
+
+* min-ex-day1 # Mini Ex Day
+9:00 {Period 1}
+9:55 Walk to {Advisory}
+10:00 {Advisory}
+10:05 Walk to {Period 3}
+10:10 {Period 3}
+11:05 Walk to {Period 5}
+11:10 {Period 5}
+12:05 Free
+
+* min-ex-day2 # Mini Ex Day
+9:00 {Period 2}
+9:55 Walk to {Advisory}
+10:00 {Advisory}
+10:05 Walk to {Period 4}
+10:10 {Period 4}
+11:05 Walk to {Period 6}
+11:10 {Period 6}
+12:05 Free
+
+* workday-meet # Workday Meeting
+9:00 {Period 1}
+9:35 Walk to {Advisory}
+9:40 {Advisory}
+9:45 Walk to {Period 2}
+9:50 {Period 2}
+10:25 Walk to {Period 3}
+10:30 {Period 3}
+11:05 Walk to {Period 4}
+11:10 {Period 4}
+11:45 Lunch
+12:25 {Period 5}
+13:00 Walk to {Period 6}
+13:05 {Period 6}
+13:40 Get to your workday meeting!
+13:45 Workday Meeting
+14:35 Free
+
+* half-day # Half Day
+9:00 {Period 1}
+9:25 Walk to {Advisory}
+9:30 {Advisory}
+9:35 Wlak to {Period 2}
+9:40 {Period 2}
+10:05 Walk to {Period 3}
+10:10 {Period 3}
+10:35 Wlak to {Period 4}
+10:40 {Period 4}
+11:05 Walk to {Period 5}
+11:10 {Period 5}
+11:35 Walk to {Period 6}
+11:40 {Period 6}
+12:05 Free
+
+* midterm # Midterm
+9:00 Exam block 
+10:55 Break
+11:30 Exam block
+13:30 Free
+
+* finals # Final Exam
+9:00 Class Block
+9:30 Get to your exam!
+9:35 Exam Block
+12:05 Free
+
+* no-school # No School
+
+* flex-day # Flex Day
+9:00 Session 1
+11:30 Lunch
+12:10 Session 2
+14:40 Free
+
+* work-day # Community Work Day
+9:00 Do your work bois
+13:05 Free
+
+* phoenix-fest # Phoenix Fest YAY!!!
+9:00 PHOENIX FEST
+12:05 Free
+
+* 2-hr-delay # Two Hour Delay
+11:00 {Period 1}
+11:25 Walk to {Advisory}
+11:30 {Advisory}
+11:35 Walk to (Period 2)
+11:40 {Period 2}
+12:05 Walk to {Period 3}
+12:10 {Period 3}
+12:35 Lunch
+13:15 {Period 4}
+13:40 Walk t0 {Period 5}
+13:45 {Period 5}
+14:10 Walk to {Period 6}
+14:15 {Period 6}
+14:40 Free
+
+* 105-dismissal # 1:05 Dismissal
+9:00 {Period 1}
+9:35 Walk to {Advisory}
+9:40 {Advisory}
+9:45 Walkj to {Period 2}
+9:50 {Period 2}
+10:25 Walk to {Period 3}
+10:30 {Period 3}
+11:05 Walk to {Period 4}
+11:10 {Period 4}
+11:45 Walk to {Period 5}
+11:50 {Period 5}
+12:25 Walk to {Period 6}
+12:30 {Period 6}
+13:05 Free

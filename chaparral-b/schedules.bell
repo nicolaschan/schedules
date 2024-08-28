@@ -1,0 +1,48 @@
+* weekend # Weekend
+
+* holiday # Holiday
+
+* block1 # Block 1
+6:55 {Period 0}
+7:40 Passing to {Period 1}
+7:45 {Period 1}
+9:20 Passing to {Period 2}
+9:25 {Period 2}
+11:02 Passing to {Period 3}
+11:07 {Period 3}
+12:43 B Lunch
+13:20 Passing to {Period 4}
+13:25 {Period 4}
+15:00 Free
+
+* block2 # Block 2
+6:55 {Period 0}
+7:40 Passing to Advisement/Homeroom
+8:15 Advisement/Homeroom
+9:20 Passing to {Period 5}
+9:25 {Period 5}
+11:02 Passing to {Period 3}
+11:07 {Period 3}
+12:43 B Lunch
+13:20 Passing to {Period 7}
+13:25 {Period 7}
+15:00 Free
+
+* all # All Periods
+6:55 {Period 0}
+7:40 Passing to {Period 1}
+7:45 {Period 1}
+8:37 Passing to {Period 2}
+8:42 {Period 2}
+9:34 Passing to {Period 3}
+9:39 {Period 3}
+10:33 Passing to {Period 4}
+10:38 {Period 4}
+11:30 Passing to {Period 5}
+11:35 {Period 5}
+12:28 B Lunch
+13:05 Passing to {Period 6}
+13:10 {Period 6}
+14:03 Passing to {Period 7}
+14:08 {Period 7}
+15:00 Free

@@ -47,7 +47,7 @@
 11:52 Passing to {Period 7}
 11:59 {Period 7}
 12:59 Lunch
-1:40 Free
+13:40 Free
 
 * schedule-e # PM Modified Even Block
 9:00 {Block A}
@@ -59,7 +59,7 @@
 11:35 Passing to {Period 6}
 11:42 {Period 6}
 12:42 Lunch
-1:25 Free
+13:25 Free
 
 * schedule-f # Minimum Day
 8:40 Period 1
@@ -135,14 +135,14 @@
 15:37 Free
 
 * finals-2 # Thursday Finals
-8:30 Freestyle Finals
+8:30 {Period 2}
 10:30 Brunch
 10:43 Passing to {Period 5}
 10:50 {Period 5}
 12:50 Free
 
 * finals-3 # Friday Finals
-8:30 Freestyle Finals
+8:30 {Period 3}
 10:30 Brunch
 10:43 Passing to {Period 4}
 10:50 {Period 4}

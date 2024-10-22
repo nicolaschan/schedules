@@ -8,13 +8,11 @@
 11:22 Passing to {Period 4}
 11:29 {Period 4}
 12:19 Lunch
-12:54 Passing to {Period 5}
-13:01 {Period 5}
-13:51 Passing to {Period 6}
-13:58 {Period 6}
-14:48 Passing to {Period 7}
-14:55 {Period 7}
-15:45 Free
+12:54 Passing to {Block A}
+13:00 {Block A}
+14:00 Break EN/DM
+14:10 {Block B}
+15:10 Free
 
 * schedule-b # Odd Block
 8:30 {Period 1}
@@ -22,47 +20,48 @@
 10:08 Passing to {Period 3}
 10:15 {Period 3}
 11:45 Lunch
-12:25 Passing to {Period 5}
-12:32 {Period 5}
-14:02 Passing to {Period 7}
-14:09 {Period 7}
-15:39 Free
+12:25 Passing to {Block A}
+12:30 {Block A}
+13:43 Break EN/DM
+13:52 {Block B}
+15:05 Free
 
 * schedule-c # Even Block
 8:30 {Period 2}
-10:00 Passing to Academic Collaboration Time
-10:07 Academic Collaboration Time
+10:00 Passing to ACT/Tutorial
+10:07 ACT/Tutorial
 11:00 Brunch
 11:08 Passing to {Period 4}
 11:15 {Period 4}
 12:45 Lunch
-13:25 Passing to {Period 6}
-13:32 {Period 6}
-15:02 Free
+13:25 Passing to {Block A}
+13:30 {Block A}
+14:27 {Block B}
+15:25 Free
 
 * schedule-d # PM Modified Odd Block
 8:30 {Period 1}
 9:30 Passing to {Period 3}
 9:37 {Period 3}
 10:37 Brunch
-10:45 Passing to {Period 5}
-10:52 {Period 5}
-11:52 Passing to {Period 7}
-11:59 {Period 7}
-12:59 Lunch
-1:40 Free
+10:45 Passing to {Block A}
+11:15 {Block A}
+12:00 {Block B}
+12:45 Lunch
+13:40 Free
 
 * schedule-e # PM Modified Even Block
 8:30 {Period 2}
-9:30 Passing to Academic Collaboration Time
-9:37 Academic Collaboration Time
+9:30 Passing to ACT/Tutorial
+9:37 ACT/Tutorial
 10:20 Brunch
 10:28 Passing to {Period 4}
 10:35 {Period 4}
-11:35 Passing to {Period 6}
-11:42 {Period 6}
-12:42 Lunch
-1:25 Free
+11:35 Passing to {Block A}
+12:00 {Block A}
+12:30 {Block B}
+13:00 Lunch
+13:25 Free
 
 * schedule-f # Minimum Day
 8:40 {Period 1}
@@ -73,12 +72,12 @@
 10:18 Passing to {Period 4}
 10:25 {Period 4}
 10:53 Brunch
-11:03 Passing to {Period 5}
-11:10 {Period 5}
-11:38 Passing to {Period 6}
-11:45 {Period 6}
-12:13 Passing to {Period 7}
-12:20 {Period 7}
+11:03 Passing to Period 5
+11:10 Period 5
+11:38 Passing to Period 6
+11:45 Period 6
+12:13 Passing to Period 7
+12:20 Period 7
 12:48 Free
 
 * schedule-g # Assembly Schedule
@@ -93,67 +92,58 @@
 11:51 Passing to {Period 4}
 11:58 {Period 4}
 12:41 Lunch
-13:16 Passing to {Period 5}
-13:23 {Period 5}
-14:06 Passing to {Period 6}
-14:13 {Period 6}
-14:56 Passing to {Period 7}
-15:03 {Period 7}
-15:46 Free
+13:16 Passing to {Block A}
+13:40 {Block A}
+14:45 {Block B}
+15:50 Free
 
 * schedule-h # AM Modified Odd Block
 10:30 {Period 1}
 11:30 Passing to {Period 3}
 11:37 {Period 3}
 12:37 Lunch
-13:12 Passing to {Period 5}
-13:19 {Period 5}
-14:19 Passing to {Period 7}
-14:26 {Period 7}
-15:26 Free
+13:12 Passing to {Block A}
+13:20 {Block A}
+14:20 {Block B}
+15:20 Free
 
 * schedule-i # AM Modified Even Block
 10:30 {Period 2}
 11:30 Lunch
 12:05 Passing to {Period 4}
 12:12 {Period 4}
-13:12 Passing to Academic Collaboration Time
-13:19 Academic Collaboration Time
-14:02 Passing to {Period 6}
-14:09 {Period 6}
-15:09 Free
+13:12 Passing to ACT/Tutorial
+13:19 ACT/Tutorial
+14:02 Passing to {Block A}
+14:25 {Block A}
+14:55 {Block B}
+15:25 Free
 
 * weekend # Weekend
 
 * holiday # Holiday
 
-* finals-tue # Tuesday Finals
+* finals-1 # Wednesday Finals
 8:30 {Period 1}
 10:30 Brunch
-10:43 Passing to {Period 6}
-10:50 {Period 6}
-12:50 Lunch
-13:30 Passing to {Period 7}
-13:37 {Period 7}
-15:37 Free
+10:43 Passing to Freestyle Finals
+11:30 Freestyle Finals
+13:30 Freestyle Finals
+15:30 Free
 
-* finals-wed # Wednesday Finals
+* finals-2 # Thursday Finals
 8:30 {Period 2}
 10:30 Brunch
-10:43 Passing to {Period 5}
-10:50 {Period 5}
-12:50 Free
+10:43 Passing to Freestyle Finals
+11:10 Freestyle Finals
+13:10 Free
 
-* finals-thu # Thursday Finals
-8:30 {Period 3}
+* finals-3 # Friday Finals
+8:30 Freestyle Finals
 10:30 Brunch
 10:43 Passing to {Period 4}
 10:50 {Period 4}
 12:50 Free
-
-* finals-fri # Friday Finals
-8:40 {Period 4}
-10:25 Free
 
 * sbac-odd # SBAC/CAST Odd Block
 8:30 State Testing
@@ -163,10 +153,10 @@
 11:45 Lunch
 12:25 Passing to {Period 3}
 12:32 {Period 3}
-13:22 Passing to {Period 5}
-13:29 {Period 5}
-14:19 Passing to {Period 7}
-14:26 {Period 7}
+13:22 Passing to Period 5
+13:29 Period 5
+14:19 Passing to Period 7
+14:26 Period 7
 15:16 Free
 
 * sbac-even # SBAC/CAST Even Block
@@ -177,206 +167,18 @@
 11:45 Lunch
 12:25 Passing to {Period 4}
 12:32 {Period 4}
-13:22 Passing to {Period 6}
-13:29 {Period 6}
+13:22 Passing to Period 6
+13:29 Period 6
 14:19 Free
-
-* assembly # Assembly
-7:15 Passing to {Period 0}
-7:20 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-8:55 Passing to {Period 2}
-9:00 {Period 2}/Assembly A
-9:45 {Period 2}/Assembly B
-10:25 Brunch
-10:35 Passing to {Period 3}
-10:40 {Period 3}
-11:25 Passing to {Period 4}
-11:30 {Period 4}
-12:15 Lunch
-13:00 Passing to {Period 5}
-13:05 {Period 5}
-13:50 Passing to {Period 6}
-13:55 {Period 6}
-14:40 Passing to {Period 7}
-14:45 {Period 7}
-15:30 Free
-
-* eclipse # Eclipse
-7:15 Passing to {Period 0}
-7:20 {Period 0}
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-8:55 Passing to {Period 2}
-9:00 {Period 2}
-9:50 Eclipse Activity
-10:20 Brunch
-10:30 Passing to {Period 3}
-10:35 {Period 3}
-11:20 Passing to {Period 4}
-11:25 {Period 4}
-12:10 Lunch
-13:00 Passing to {Period 5}
-13:05 {Period 5}
-13:50 Passing to {Period 6}
-13:55 {Period 6}
-14:40 Passing to {Period 7}
-14:45 {Period 7}
-15:30 Free
 
 * psat-testing # Student Activity/PSAT or SAT Testing
 8:08 Passing to Student Activity/PSAT or SAT Testing
 8:15 Student Activity/PSAT or SAT Testing
 12:15 Free
 
-* challenge-day-assembly # Challenge Day Assembly (Grades 10-12)
-8:05 Passing to Group A Assembly, Group B Activity
-8:10 Group A Assembly, Group B Activity
-10:05 Brunch
-10:20 Passing to Group B Assembly, Group A Activity
-10:25 Group B Assembly, Group A Activity
-12:20 Free
-
-* course-selection-even-primary # Course Selection Even Block
-7:55 Passing to Counselor Drop In
-8:00 Counselor Drop In
-8:45 Passing to {Period 2}
-8:50 {Period 2}
-9:50 Course Information
-10:25 Brunch
-10:40 Passing to {Period 4}
-10:45 {Period 4}
-11:45 Course Information
-12:15 Lunch
-13:00 Passing to {Period 6}
-13:05 {Period 6}
-14:05 Course Information
-14:35 Passing to Counselor Drop In
-14:45 Counselor Drop In
+* smoma-trip # SF MOMA Field Trip
+9:00 MVHS Bus Arrival
+9:30 LAHS Bus Arrival
+10:00 SF MOMA Trip
+14:00 School Photo
 15:30 Free
-
-* course-selection-even-secondary # Course Selection Even Block
-7:55 Passing to Counselor Drop In
-8:00 Counselor Drop In
-8:45 Passing to {Period 2}
-8:50 {Period 2}
-9:50 Course Information
-10:25 Brunch
-10:40 Passing to {Period 4}
-10:45 {Period 4}
-11:45 Course Information
-12:15 Lunch
-13:00 Passing to {Period 6}
-13:05 {Period 6}
-14:05 Course Information
-14:35 Free
-
-* course-selection-odd # Course Selection Odd Block
-8:05 Passing to {Period 1}
-8:10 {Period 1}
-9:10 Course Information
-9:45 Brunch
-10:00 Passing to {Period 3}
-10:05 {Period 3}
-11:05 Course Information
-11:35 Lunch
-12:20 Passing to {Period 5}
-12:25 {Period 5}
-13:25 Course Information
-13:55 Passing to {Period 7}
-14:00 {Period 7}
-15:00 Course Information
-15:30 Free
-
-* distance-odd # Distance Learning Odd
-9:10 Passing to {Period 1}
-9:15 {Period 1}
-10:30 Brunch
-10:45 Passing to {Period 3}
-10:50 {Period 3}
-12:05 Lunch
-12:50 {Period 5}
-14:05 Passing to {Period 7}
-14:25 {Period 7}
-15:40 Free
-
-* distance-even # Distance Learning Even
-9:10 Passing to {Period 2}
-9:15 {Period 2}
-10:30 Brunch
-10:45 Passing to {Period 4}
-10:50 {Period 4}
-12:05 Lunch
-12:50 {Period 6}
-14:05 Free
-
-* async-workday # Asynchronous Workday
-9:05 Passing to {Period 1}
-9:15 {Period 1}
-9:45 Passing to {Period 2}
-9:55 {Period 2}
-10:25 Passing to {Period 3}
-10:35 {Period 3}
-11:05 Passing to {Period 4}
-11:15 {Period 4}
-11:45 Lunch
-12:45 {Period 5}
-13:15 Passing to {Period 6}
-13:25 {Period 6}
-13:55 Passing to {Period 7}
-14:05 {Period 7}
-14:35 Free
-
-* finals-2022-mon # Monday Finals
-8:35 Passing to {Period 3}
-8:40 {Period 3}
-10:25 Brunch
-10:55 Passing to {Period 5}
-11:02 {Period 5}
-12:47 Free
-
-* finals-2022-tues # Tuesday Finals
-8:35 Passing to {Period 2}
-8:40 {Period 2}
-10:25 Brunch
-10:55 Passing to {Period 7}
-11:02 {Period 7}
-12:47 Free
-
-* finals-2022-wed # Wednesday Finals
-8:35 Passing to {Period 1}
-8:40 {Period 1}
-10:25 Brunch
-10:55 Passing to {Period 6}
-11:02 {Period 6}
-12:47 Free
-
-* finals-2022-thurs # Thursday Finals
-8:35 Passing to {Period 4}
-8:40 {Period 4}
-10:25 Free
-
-* am-staff-dev-2022-tues-thurs # AM Professional Dev
-10:23 Passing to {Period 1}
-10:30 {Period 1}
-11:30 Lunch
-12:15 Passing to {Period 3}
-12:22 {Period 3}
-13:22 Passing to {Period 5}
-13:29 {Period 5}
-14:29 Passing to {Period 7}
-14:36 {Period 7}
-15:36 Free
-
-* am-staff-dev-2022-wed-fri # AM Professional Dev
-10:23 Passing to {Period 2}
-10:30 {Period 2}
-11:30 Lunch
-12:15 Passing to {Period 4}
-12:22 {Period 4}
-13:22 Passing to Academic Collaboration Time
-13:29 Academic Collaboration Time
-13:59 Passing to {Period 6}
-14:06 {Period 6}
-15:06 Free

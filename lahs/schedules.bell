@@ -381,7 +381,7 @@
 14:06 {Period 6}
 15:06 Free
 
-* finals-2024-wed # Wednesday Finals
+* finals-day-1 # Finals Day 1
 8:30 {Period 1}
 10:30 Brunch
 10:43 Passing to {Period 6}
@@ -391,14 +391,14 @@
 13:37 {Period 7}
 15:37 Free
 
-* finals-2024-thu # Thursday Finals
+* finals-day-2 # Finals Day 2
 8:30 {Period 2}
 10:30 Brunch
 10:43 Passing to {Period 5}
 10:50 {Period 5}
 12:50 Free
 
-* finals-2024-fri # Friday Finals
+* finals-day-3 # Finals Day 3
 8:30 {Period 3}
 10:30 Brunch
 10:43 Passing to {Period 4}

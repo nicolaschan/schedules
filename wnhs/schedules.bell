@@ -1,0 +1,54 @@
+* normal # Normal Schedule
+7:15 Passing to {Period 1}
+7:20 {Period 1}
+8:08 Passing to {Period 2}
+8:13 {Period 2}
+9:00 Passing to {Period 3}
+9:05 {Period 3}
+9:52 Passing to {Period 4A}
+9:57 {Period 4A}
+10:19 Passing to {Period 4B}
+10:23 {Period 4B}
+10:45 Passing to {Period 5A}
+10:50 {Period 5A}
+11:12 Passing to {Period 5B}
+11:16 {Period 5B}
+11:38 Passing to {Period 6A}
+11:43 {Period 6A}
+12:05 Passing to {Period 6B}
+12:09 {Period 6B}
+12:31 Passing to {Period 7}
+12:36 {Period 7}
+13:23 Passing to {Period 8}
+13:28 {Period 8}
+14:15 Free
+
+* late-start # Late Start
+7:10 Falcon Time
+7:55 Passing to {Period 1}
+8:03 {Period 1}
+8:44 Passing to {Period 2}
+8:49 {Period 2}
+9:29 Passing to {Period 3}
+9:34 {Period 3}
+10:14 Passing to {Period 4A}
+10:19 {Period 4A}
+10:39 Passing to {Period 4B}
+10:43 {Period 4B}
+11:03 Passing to {Period 5A}
+11:08 {Period 5A}
+11:28 Passing to {Period 5B}
+11:32 {Period 5B}
+11:52 Passing to {Period 6A}
+11:57 {Period 6A}
+12:17 Passing to {Period 6B}
+12:21 {Period 6B}
+12:41 Passing to {Period 7}
+12:46 {Period 7}
+13:30 Passing to {Period 8}
+13:35 {Period 8}
+14:15 Free
+
+* weekend # Weekend
+
+* holiday # Holiday

@@ -10,9 +10,9 @@
 12:19 Lunch
 12:54 Passing to {Block A}
 13:00 {Block A}
-14:00 Break EN/DM
-14:10 {Block B}
-15:10 Free
+13:55 Break EN/DM
+14:05 {Block B}
+15:00 Free
 
 * schedule-b # Odd Block
 8:30 {Period 1}
@@ -22,9 +22,9 @@
 11:45 Lunch
 12:25 Passing to {Block A}
 12:30 {Block A}
-13:43 Break EN/DM
-13:52 {Block B}
-15:05 Free
+13:48 Break EN/DM
+13:57 {Block B}
+15:15 Free
 
 * schedule-c # Even Block
 8:30 {Period 2}
@@ -36,8 +36,8 @@
 12:45 Lunch
 13:25 Passing to {Block A}
 13:30 {Block A}
-14:27 {Block B}
-15:25 Free
+14:25 {Block B}
+15:20 Free
 
 * schedule-d # PM Modified Odd Block
 8:30 {Period 1}
@@ -93,9 +93,9 @@
 11:58 {Period 4}
 12:41 Lunch
 13:16 Passing to {Block A}
-13:40 {Block A}
-14:45 {Block B}
-15:50 Free
+13:20 {Block A}
+14:25 {Block B}
+15:30 Free
 
 * schedule-h # AM Modified Odd Block
 10:30 {Period 1}
@@ -139,7 +139,7 @@
 13:10 Free
 
 * finals-3 # Friday Finals
-8:30 Freestyle Finals
+8:30 {Period 3}
 10:30 Brunch
 10:43 Passing to {Period 4}
 10:50 {Period 4}

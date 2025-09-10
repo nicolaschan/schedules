@@ -1,8 +1,8 @@
 * schedule-a # All Periods
 9:00 {Block A}
-9:58 Break EN/DM
-10:08 {Block B}
-11:06 Passing to {Period 4}
+9:55 Break EN/DM
+10:05 {Block B}
+11:00 Passing to {Period 4}
 11:29 {Period 4}
 12:19 Lunch
 12:54 Passing to {Period 5}
@@ -15,9 +15,8 @@
 
 * schedule-b # Odd Block
 9:00 {Block A}
-10:13 Break EN/DM
-10:22 {Block B}
-11:40 Pre-Lunch
+10:18 Break EN/DM
+10:27 {Block B}
 11:45 Lunch
 12:25 Passing to {Period 5}
 12:32 {Period 5}
@@ -27,8 +26,8 @@
 
 * schedule-c # Even Block
 9:00 {Block A}
-9:56 {Block B}
-10:52 Pre-Brunch
+9:55 {Block B}
+10:50 Pre-Brunch
 11:00 Brunch
 11:08 Passing to {Period 4}
 11:15 {Period 4}

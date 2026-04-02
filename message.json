@@ -5,11 +5,6 @@
     "href": "https://edit.bell.plus"
   }
 }, {
-  "message": {
-    "enabled": true,
-    "text": "Happy April Fools! Find a new 🦆 (Quack) theme, just today!"
-  }
-}, {
   "agent": {
     "browser": {
       "name": "Chrome"

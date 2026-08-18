@@ -1,1 +1,10 @@
-../calabasas/calendar.bell
+* Default Week
+Sun weekend
+Mon normal
+Tue normal
+Wed even
+Thu odd
+Fri normal
+Sat weekend
+
+* Special Days

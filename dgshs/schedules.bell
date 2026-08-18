@@ -1,1 +1,70 @@
-../calabasas/schedules.bell
+* normal # Normal Schedule
+7:30 {Period 0}
+8:14 Passing to {Period 1}
+8:20 {Period 1}
+9:07 Passing to {Period 2}
+9:12 {Period 2}
+9:59 Passing to {Period 3}
+10:04 {Period 3}
+10:51 Passing to {Period 4a}
+10:56 {Period 4a}
+11:19 Passing to {Period 4b}
+11:24 {Period 4b}
+11:46 Passing to {Period 5a}
+11:51 {Period 5a}
+12:14 Passing to {Period 5b}
+12:19 {Period 5b}
+12:41 Passing to {Period 6a}
+12:46 {Period 6a}
+13:09 Passing to {Period 6b}
+13:14 {Period 6b}
+13:36 Passing to {Period 7}
+13:41 {Period 7}
+14:28 Passing to {Period 8}
+14:33 {Period 8}
+15:20 Free
+
+* odd # Odd Block
+7:30 {Period 0}
+8:14 Passing to {Period 1}
+8:20 {Period 1}
+9:38 Passing to Access/Announcements
+9:44 Access/Announcements
+10:19 Passing to {Period 3a}
+10:25 {Period 3a}
+11:04 Passing to {Period 3b}
+11:09 {Period 3b}
+11:48 Passing to {Period 3c}
+11:53 {Period 3c}
+12:32 Passing to {Period 7}
+12:38 {Period 7}
+13:56 Passing to {Period 5}
+14:02 {Period 5}
+15:20 Free
+
+* even # Even Block
+7:30 {Period 0}
+8:14 Passing to {Period 4}
+8:20 {Period 4}
+9:38 Passing to Access/Announcements
+9:44 Access/Announcements
+10:19 Passing to {Period 2a}
+10:25 {Period 2a}
+11:04 Passing to {Period 2b}
+11:09 {Period 2b}
+11:48 Passing to {Period 2c}
+11:53 {Period 2c}
+12:32 Passing to {Period 8}
+12:38 {Period 8}
+13:56 Passing to {Period 6}
+14:02 {Period 6}
+15:20 Free
+
+
+
+* odd # Odd Block
+
+
+* weekend # Weekend
+
+* holiday # Holiday

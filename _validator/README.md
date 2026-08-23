@@ -45,5 +45,5 @@ gleam test
 gleam run -- ..
 ```
 
-Changing dependencies means updating `manifest.toml` with `gleam deps download`
-and then the `outputHash` in `package.nix`, which pins them for the pure build.
+Changing dependencies means running `gleam deps download` to update `manifest.toml`.
+The Nix build reads that file directly, so there is no separate hash to update.

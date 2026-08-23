@@ -1,57 +1,45 @@
 {
   lib,
   stdenvNoCC,
+  fetchurl,
+  runCommand,
   gleam,
   erlang,
   rebar3,
-  cacert,
   makeWrapper,
 }:
 
 let
   version = "1.0.0";
 
-  # Only these two files decide what gets downloaded, so keeping the source
-  # narrow means editing the validator does not refetch the dependencies.
-  manifest = lib.fileset.toSource {
-    root = ./.;
-    fileset = lib.fileset.unions [
-      ./gleam.toml
-      ./manifest.toml
-    ];
-  };
+  # manifest.toml is already a lockfile: it pins every package's version and the
+  # sha256 of its Hex tarball. Reading it here means the dependencies have one
+  # source of truth and no hash to maintain by hand.
+  #
+  # Fetching each package separately rather than running `gleam deps download`
+  # in a fixed-output derivation is deliberate. That command writes a
+  # packages.toml whose key order is randomised per run, so its output hash is
+  # not stable across machines. Gleam regenerates that file offline anyway.
+  manifest = builtins.fromTOML (builtins.readFile ./manifest.toml);
 
-  # The Hex packages. This is the one derivation allowed to reach the network,
-  # so its output is pinned by hash. manifest.toml already fixes the versions
-  # and their checksums, so the result is stable.
-  dependencies = stdenvNoCC.mkDerivation {
-    pname = "bell-validator-deps";
-    inherit version;
-    src = manifest;
+  fetchPackage =
+    package:
+    fetchurl {
+      url = "https://repo.hex.pm/tarballs/${package.name}-${package.version}.tar";
+      sha256 = lib.toLower package.outer_checksum;
+    };
 
-    nativeBuildInputs = [
-      gleam
-      cacert
-    ];
-
-    buildPhase = ''
-      runHook preBuild
-      export HOME="$TMPDIR"
-      gleam deps download
-      runHook postBuild
-    '';
-
-    installPhase = ''
-      runHook preInstall
-      cp -r build/packages "$out"
-      runHook postInstall
-    '';
-
-    dontFixup = true;
-    outputHashMode = "recursive";
-    outputHashAlgo = "sha256";
-    outputHash = "sha256-8RBHD4My7KQ5UkQLkV1nX8M5JbOBUkjtzp3aJIXx2Is=";
-  };
+  # Gleam looks for a tarball named after its own checksum, which is the value
+  # manifest.toml already records. Handing it a populated cache lets it unpack
+  # the dependencies through its normal path with no network.
+  hexCache = runCommand "gleam-hex-cache-${version}" { } (
+    ''
+      mkdir -p "$out/hex/hexpm/packages"
+    ''
+    + lib.concatMapStrings (package: ''
+      cp ${fetchPackage package} "$out/hex/hexpm/packages/${package.outer_checksum}.tar"
+    '') manifest.packages
+  );
 in
 stdenvNoCC.mkDerivation {
   pname = "bell-validator";
@@ -74,13 +62,14 @@ stdenvNoCC.mkDerivation {
     makeWrapper
   ];
 
-  # Dependencies are already on disk, so the build itself needs no network.
+  # Every tarball is already in the cache, so this needs no network.
   configurePhase = ''
     runHook preConfigure
     export HOME="$TMPDIR"
-    mkdir -p build
-    cp -r ${dependencies} build/packages
-    chmod -R u+w build
+    mkdir -p "$HOME/.cache/gleam"
+    cp -r ${hexCache}/. "$HOME/.cache/gleam/"
+    chmod -R u+w "$HOME/.cache/gleam"
+    gleam deps download
     runHook postConfigure
   '';
 
@@ -110,7 +99,6 @@ stdenvNoCC.mkDerivation {
   meta = {
     description = "Validates the bell.plus schedule data format";
     homepage = "https://github.com/nicolaschan/schedules";
-    licence = lib.licences.mit or null;
     mainProgram = "bell-validator";
   };
 }

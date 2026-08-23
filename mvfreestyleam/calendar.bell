@@ -1,1 +1,138 @@
-../mvhs/calendar.bell
+* Default Week
+Sun weekend
+Mon schedule-a
+Tue schedule-b 
+Wed schedule-c
+Thu schedule-b
+Fri schedule-c
+Sat weekend
+
+* Special Days
+11/11/2016 holiday # Veteran's Day
+11/23/2016 holiday # Teacher Service Day
+11/24/2016 holiday # Thanksgiving Day
+11/25/2016 holiday
+12/19/2016-01/02/2017 holiday # Holiday Recess
+01/03/2017 holiday # Teacher Service Day
+01/16/2017 holiday # MLK Day
+02/20/2017-02/24/2017 holiday # Winter Recess
+03/20/2017 holiday # Teacher Service Day
+04/10/2017-04/14/2017 holiday # Spring Recess
+04/19/2017 sbac-odd
+04/21/2017 sbac-odd
+05/29/2017 holiday # Memorial Day
+06/03/2017-08/13/2017 holiday # Summer Recess
+09/04/2017 holiday # Labor Day
+11/10/2017 holiday # Veteran's Day
+11/22/2017 holiday # Teacher Service Day
+11/23/2017 holiday # Thanksgiving Day
+11/24/2017 holiday
+12/18/2017-01/01/2018 holiday # Holiday Recess
+01/02/2018 holiday # Teacher Service Day
+01/15/2018 holiday # MLK Day
+02/19/2018-02/23/2018 holiday # Winter Recess
+03/19/2018 holiday # Teacher Service Day
+04/09/2018-04/13/2018 holiday # Spring Recess
+05/28/2018 holiday # Memorial Day
+06/02/2018-08/19/2018 holiday # Summer Recess
+09/03/2018 holiday # Labor Day
+10/10/2018 psat-testing
+11/12/2018 holiday # Veteran's Day
+11/16/2018 holiday # Poor Air Quality, No School
+11/21/2018-11/23/2018 holiday # Thanksgiving Break
+12/24/2018-01/04/2019 holiday # Holiday Break
+01/07/2019 holiday # Teacher Service Day
+01/21/2019 holiday # MLK Day
+02/18/2019-02/22/2019 holiday # Winter Recess
+03/18/2019-03/19/2019 holiday # Recess
+04/15/2019-04/19/2019 holiday # Spring Recess
+04/24/2019 sbac-odd
+04/26/2019 sbac-odd
+05/27/2019 holiday # Memorial Day
+06/08/2019-08/18/2019 holiday # Summer Recess
+10/16/2019 psat-testing # PSAT Testing
+11/11/2019 holiday # Veterans Day
+11/27/2019-12/01/2019 holiday # Thanksgiving Break
+12/21/2019-01/06/2020 holiday # Holiday Break
+01/20/2020 holiday # Martin Luther King Jr. Day
+02/17/2020-02/21/2020 holiday # Winter Break
+01/18/2021 holiday # MLK, Jr Day
+06/05/2021-08/10/2021 holiday # Summer Break
+08/11/2021 schedule-a # First Day of School
+08/12/2021 schedule-b
+08/13/2021 schedule-c
+09/06/2021 holiday # Labor Day
+09/14/2021 schedule-d # Staff Development
+09/15/2021 schedule-e # Staff Development
+10/04/2021 schedule-c # Special Schedule
+10/11/2021-10/12/2021 holiday # October Recess Days
+10/25/2021 schedule-b # Homecoming Week
+10/26/2021 schedule-c # Homecoming Week
+10/27/2021 schedule-g # Homecoming Week
+10/28/2021 schedule-a # Homecoming Week
+10/29/2021 schedule-f # Homecoming Week
+11/08/2021 schedule-b
+11/09/2021 schedule-c
+11/10/2021 schedule-b
+11/11/2021 holiday # Veteran's Day
+11/12/2021 schedule-c
+11/20/2021-11/28/2021 holiday # Thanksgiving Break
+12/18/2021-01/03/2022 holiday # Holiday Break
+01/17/2022 holiday # Martin Luther King Jr. Day
+02/01/2022 schedule-h # Staff Professional Dev
+02/02/2022 schedule-i # Staff Professional Dev
+02/03/2022 schedule-a
+02/04/2022 schedule-g # Rally
+04/19/2022 sbac-odd # Junior/Senior-Only Testing
+04/20/2022 sbac-even # Junior-Only Testing
+04/21/2022 sbac-odd # Junior-Only Testing
+04/22/2022 sbac-even # Junior-Only Testing
+04/25/2022 schedule-g # Diversity Assembly
+05/30/2022 holiday # Memorial Day
+06/02/2022 schedule-a
+06/09/2022-08/09/2022 holiday # Summer Break
+08/10/2022 schedule-a
+08/15/2022 schedule-g # Back to School Assembly
+10/10/2022 schedule-b
+10/11/2022 schedule-c
+10/12/2022 psat-testing
+10/13/2022-10/16/2022 holiday # October Recess Days
+10/17/2022 schedule-g # Homecoming Rally
+10/20/2022 schedule-a
+10/21/2022 schedule-f
+01/30/2023 schedule-g
+01/31/2023 schedule-h
+02/01/2023 schedule-i
+08/09/2023 schedule-a
+08/10/2023 schedule-a
+08/11/2023 schedule-a
+06/07/2024-08/11/2024 holiday # Summer Break
+08/19/2024 schedule-g
+09/02/2024 holiday # Labor Day
+09/10/2024 schedule-h
+09/11/2024 schedule-i
+10/10/2024-10/11/2024 holiday # End of Quarter No Classes
+10/14/2024 schedule-g # MVHS Homecoming Assembly
+10/17/2024 schedule-d # MVHS Homecoming Week (ODD)
+10/18/2024 schedule-e # MVHS Homecoming Parade (EVEN)
+10/21/2024 schedule-b
+10/22/2024 schedule-c
+10/23/2024 psat-testing
+11/11/2024 holiday # Veterans Day
+11/25/2024-11/29/2024 holiday # Thanksgiving Break
+12/17/2024 schedule-a
+12/18/2024 finals-1
+12/19/2024 finals-2
+12/20/2024 finals-3
+12/21/2024-01/06/2025 holiday # Holiday Break
+01/07/2025 schedule-a
+01/08/2025 schedule-a
+01/20/2025 holiday # MLK Day
+02/02/2025 schedule-g # Cultural Assembly
+02/11/2025 schedule-d
+02/12/2025 schedule-e
+02/15/2025-02/22/2025 holiday # Winter Break
+03/18/2025 schedule-h
+03/19/2025 schedule-i
+03/20/2025 schedule-a
+03/21/2025 holiday # End of Quarter No Classes

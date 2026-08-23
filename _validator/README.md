@@ -47,3 +47,6 @@ gleam run -- ..
 
 Changing dependencies means running `gleam deps download` to update `manifest.toml`.
 The Nix build reads that file directly, so there is no separate hash to update.
+
+Packaging is `buildGleamApplication` from [nix-gleam](https://github.com/arnarg/nix-gleam),
+which fetches each dependency from the checksums in `manifest.toml`.

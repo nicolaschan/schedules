@@ -4,10 +4,16 @@
   # nixpkgs is the only input: the Gleam compiler, Erlang and the Hex packages
   # all come from here or from the pinned dependency derivation, so nothing is
   # taken from the machine running the build.
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nix-gleam = {
+      url = "github:arnarg/nix-gleam";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
 
   outputs =
-    { self, nixpkgs }:
+    { self, nixpkgs, nix-gleam }:
     let
       systems = [
         "x86_64-linux"
@@ -22,7 +28,10 @@
           system:
           f {
             inherit system;
-            pkgs = nixpkgs.legacyPackages.${system};
+            pkgs = import nixpkgs {
+              inherit system;
+              overlays = [ nix-gleam.overlays.default ];
+            };
           }
         );
     in
@@ -31,7 +40,7 @@
         { pkgs, ... }:
         let
           bell-validator = pkgs.callPackage ./_validator/package.nix {
-            erlang = pkgs.beam28Packages.erlang;
+            erlang = pkgs.beamMinimal28Packages.erlang;
           };
         in
         {
@@ -45,7 +54,7 @@
         let
           bell-validator = {
             type = "app";
-            program = "${self.packages.${system}.bell-validator}/bin/bell-validator";
+            program = "${self.packages.${system}.bell-validator}/bin/bell_validator";
             meta.description = "Validate the bell.plus schedule data in a checkout";
           };
         in
@@ -61,7 +70,7 @@
           default = pkgs.mkShellNoCC {
             packages = [
               pkgs.gleam
-              pkgs.beam28Packages.erlang
+              pkgs.beamMinimal28Packages.erlang
               pkgs.rebar3
             ];
           };
@@ -76,7 +85,7 @@
 
           # And the validator has to be happy with the data in this repository.
           schedules = pkgs.runCommand "schedules-are-valid" { } ''
-            ${self.packages.${system}.bell-validator}/bin/bell-validator ${self}
+            ${self.packages.${system}.bell-validator}/bin/bell_validator ${self}
             touch "$out"
           '';
         }

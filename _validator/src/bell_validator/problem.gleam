@@ -1,7 +1,7 @@
 import gleam/int
+import gleam/option.{type Option, None, Some}
 import gleam/order
 import gleam/string
-import gleam/option.{type Option, None, Some}
 
 /// Something wrong with a school's data. `line` is absent for problems about a
 /// file as a whole rather than one line of it.

@@ -8,6 +8,7 @@ target = "erlang"
 gleam_stdlib = ">= 0.44.0 and < 2.0.0"
 simplifile = ">= 2.0.0 and < 3.0.0"
 gleam_json = ">= 2.0.0 and < 4.0.0"
+gleam_time = ">= 1.10.0 and < 2.0.0"
 
 [dev_dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"

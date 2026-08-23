@@ -54,11 +54,11 @@
         default = pkgs.mkShellNoCC { inputsFrom = [ (validator pkgs) ]; };
       });
 
-      # Running the validator builds it, which runs its tests.
+      # Running the validator builds it, which runs its tests. A derivation has
+      # to leave something behind, so keep the summary it printed.
       checks = forAllSystems (pkgs: {
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
-          ${lib.getExe (validator pkgs)} ${self}
-          touch "$out"
+          ${lib.getExe (validator pkgs)} ${self} > "$out"
         '';
       });
     };

@@ -6,6 +6,7 @@ import bell_validator/rules
 import gleam/list
 import gleam/option.{None, Some}
 import gleam/string
+import gleam/time/calendar
 import gleeunit
 
 pub fn main() -> Nil {
@@ -123,9 +124,11 @@ pub fn bindings_are_read_like_the_client_test() {
 // --- dates -------------------------------------------------------------------
 
 pub fn leap_years_are_understood_test() {
-  assert dates.parse_date("02/29/2020") == Ok(dates.Date(2020, 2, 29))
+  assert dates.parse_date("02/29/2020")
+    == Ok(calendar.Date(2020, calendar.February, 29))
   assert dates.parse_date("02/29/2021") == Error(Nil)
-  assert dates.parse_date("02/29/2000") == Ok(dates.Date(2000, 2, 29))
+  assert dates.parse_date("02/29/2000")
+    == Ok(calendar.Date(2000, calendar.February, 29))
   assert dates.parse_date("02/29/1900") == Error(Nil)
 }
 
@@ -133,7 +136,8 @@ pub fn dates_must_be_zero_padded_test() {
   // The client compares against its own zero-padded formatting, so an
   // unpadded key never matches.
   assert dates.parse_date("3/12/2018") == Error(Nil)
-  assert dates.parse_date("03/12/2018") == Ok(dates.Date(2018, 3, 12))
+  assert dates.parse_date("03/12/2018")
+    == Ok(calendar.Date(2018, calendar.March, 12))
 }
 
 // --- a good school -----------------------------------------------------------
@@ -166,45 +170,58 @@ pub fn a_web_school_needs_no_data_files_test() {
 
 pub fn dangling_schedule_reference_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "Mon day", "Mon mondya"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(calendar, "Mon day", "Mon mondya")),
+    ),
     "no schedule named \"mondya\"",
   )
 }
 
 pub fn calendar_entry_without_a_name_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "01/01/2020 weekend # New Year", "01/01/2020 # New Year"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(
+        calendar,
+        "01/01/2020 weekend # New Year",
+        "01/01/2020 # New Year",
+      )),
+    ),
     "names no schedule",
   )
 }
 
 pub fn a_missing_weekday_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "Thu day\n", ""),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(calendar, "Thu day\n", "")),
+    ),
     "no entry for Thu",
   )
 }
 
 pub fn a_reversed_range_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "01/01/2020", "01/09/2020-01/02/2020"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(
+        calendar,
+        "01/01/2020",
+        "01/09/2020-01/02/2020",
+      )),
+    ),
     "ends before it starts",
   )
 }
 
 pub fn an_impossible_date_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "01/01/2020", "02/30/2020"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(calendar, "01/01/2020", "02/30/2020")),
+    ),
     "is not a real",
   )
 }
@@ -218,18 +235,24 @@ pub fn a_whitespace_only_line_is_rejected_test() {
 
 pub fn an_unnamed_section_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "* Default Week", "*"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(calendar, "* Default Week", "*")),
+    ),
     "section header has no name",
   )
 }
 
 pub fn an_unknown_section_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "* Default Week", "* Defualt Week"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(
+        calendar,
+        "* Default Week",
+        "* Defualt Week",
+      )),
+    ),
     "unknown section",
   )
 }
@@ -238,18 +261,20 @@ pub fn an_unknown_section_is_rejected_test() {
 
 pub fn an_out_of_range_time_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), schedules: Some(
-      string.replace(schedules, "8:00", "25:00"),
-    )),
+    rules.Data(
+      ..school(),
+      schedules: Some(string.replace(schedules, "8:00", "25:00")),
+    ),
     "is not a time of day",
   )
 }
 
 pub fn a_line_that_is_not_a_time_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), schedules: Some(
-      string.replace(schedules, "8:00 {A}", "Brunch time"),
-    )),
+    rules.Data(
+      ..school(),
+      schedules: Some(string.replace(schedules, "8:00 {A}", "Brunch time")),
+    ),
     "is not a H:MM time",
   )
 }
@@ -270,9 +295,10 @@ pub fn a_duplicate_date_is_rejected_test() {
 
 pub fn an_unknown_binding_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), schedules: Some(
-      string.replace(schedules, "{A}", "{Peroid 4}"),
-    )),
+    rules.Data(
+      ..school(),
+      schedules: Some(string.replace(schedules, "{A}", "{Peroid 4}")),
+    ),
     "{Peroid 4} is not in meta.json",
   )
 }
@@ -286,9 +312,10 @@ pub fn a_period_before_any_header_is_rejected_test() {
 
 pub fn a_bad_weekday_is_rejected_test() {
   rejected_for(
-    rules.Data(..school(), calendar: Some(
-      string.replace(calendar, "Mon day", "Munday day"),
-    )),
+    rules.Data(
+      ..school(),
+      calendar: Some(string.replace(calendar, "Mon day", "Munday day")),
+    ),
     "is not a weekday",
   )
 }
@@ -296,7 +323,10 @@ pub fn a_bad_weekday_is_rejected_test() {
 // --- the surrounding files ---------------------------------------------------
 
 pub fn a_non_numeric_correction_is_rejected_test() {
-  rejected_for(rules.Data(..school(), correction: Some("abc")), "should hold a number")
+  rejected_for(
+    rules.Data(..school(), correction: Some("abc")),
+    "should hold a number",
+  )
 }
 
 pub fn a_negative_correction_is_accepted_test() {

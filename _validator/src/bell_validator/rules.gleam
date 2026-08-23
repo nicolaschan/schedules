@@ -13,6 +13,7 @@ import gleam/option.{type Option, None, Some}
 import gleam/order
 import gleam/set.{type Set}
 import gleam/string
+import gleam/time/calendar
 
 /// The contents of a school's files. `None` means the file is not there.
 pub type Data {
@@ -125,12 +126,17 @@ fn read_source(content: Option(String)) -> #(Location, List(Problem)) {
             ])
             "redirect", _, Some(_) -> #(Elsewhere, [])
             "redirect", _, None -> #(Elsewhere, [
-              problem.in_file("source.json", "location \"redirect\" needs a \"to\""),
+              problem.in_file(
+                "source.json",
+                "location \"redirect\" needs a \"to\"",
+              ),
             ])
             other, _, _ -> #(Elsewhere, [
               problem.in_file(
                 "source.json",
-                "unknown location \"" <> other <> "\"; expected local, web or redirect",
+                "unknown location \""
+                  <> other
+                  <> "\"; expected local, web or redirect",
               ),
             ])
           }
@@ -173,7 +179,10 @@ fn read_meta(content: Option(String)) -> #(Meta, List(Problem)) {
         Ok(raw) -> {
           let custom = raw.kind == Some("custom")
           case raw.periods, custom {
-            Some(periods), _ -> #(Meta(Some(set.from_list(periods)), custom), [])
+            Some(periods), _ -> #(
+              Meta(Some(set.from_list(periods)), custom),
+              [],
+            )
             None, True -> #(Meta(None, True), [])
             None, False -> #(Meta(None, False), [
               problem.in_file("meta.json", "has no \"periods\" list"),
@@ -286,7 +295,9 @@ fn valid_time(time: String) -> Result(Nil, String) {
             True -> Ok(Nil)
             False ->
               Error(
-                "\"" <> time <> "\" is not a time of day (hour 0-23, minute 0-59)",
+                "\""
+                <> time
+                <> "\" is not a time of day (hour 0-23, minute 0-59)",
               )
           }
         _, _ -> Error("\"" <> time <> "\" is not a H:MM time")
@@ -559,7 +570,7 @@ fn special_rules(entries: List(Entry), file: String) -> List(Problem) {
       ]
       Ok(dates.Single(_)) -> []
       Ok(dates.Range(from, to)) ->
-        case dates.compare(from, to) {
+        case calendar.naive_date_compare(from, to) {
           order.Gt -> [
             problem.at(
               file,

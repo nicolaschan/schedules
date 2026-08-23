@@ -55,10 +55,14 @@
       });
 
       # Running the validator builds it, which runs its tests. A derivation has
-      # to leave something behind, so keep the summary it printed.
+      # to leave something behind, so keep the summary it printed and echo it so
+      # it shows up in the build log too. Writing then reading rather than
+      # piping through tee keeps the validator's exit status, without depending
+      # on pipefail being set.
       checks = forAllSystems (pkgs: {
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
           ${lib.getExe (validator pkgs)} ${self} > "$out"
+          cat "$out"
         '';
       });
     };

@@ -1,0 +1,13 @@
+name = "bell_validator"
+version = "1.0.0"
+description = "Validates the bell.plus schedule data format"
+licences = ["MIT"]
+target = "erlang"
+
+[dependencies]
+gleam_stdlib = ">= 0.44.0 and < 2.0.0"
+simplifile = ">= 2.0.0 and < 3.0.0"
+gleam_json = ">= 2.0.0 and < 4.0.0"
+
+[dev_dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"

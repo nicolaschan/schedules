@@ -1,0 +1,28 @@
+name: Validate schedules
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+# A pull request that supersedes another can cancel the older run.
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate schedule data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      # Builds the validator, which runs its own test suite, then runs it over
+      # every school in this checkout. Fails with a file:line for each problem.
+      - name: Check
+        run: nix flake check --print-build-logs

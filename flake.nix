@@ -30,49 +30,36 @@
           )
         );
 
-      validatorFor = pkgs: self.packages.${pkgs.stdenv.hostPlatform.system}.bell-validator;
+      validator = pkgs: self.packages.${pkgs.stdenv.hostPlatform.system}.default;
     in
     {
-      packages = forAllSystems (pkgs: rec {
-        default = bell-validator;
-
-        bell-validator = pkgs.buildGleamApplication {
+      packages = forAllSystems (pkgs: {
+        default = pkgs.buildGleamApplication {
           src = ./_validator;
 
-          # The default Erlang carries wxWidgets and the GUI tooling along for a
-          # program that reads files and prints lines.
-          erlangPackage = pkgs.beamMinimal28Packages.erlang;
+          # A program that reads files and prints lines has no use for the
+          # wxWidgets and GUI tooling the default Erlang brings with it.
+          erlangPackage = pkgs.beamMinimalPackages.erlang;
 
-          # buildGleamApplication does not run the tests, and a validator that
-          # builds without them proves nothing.
+          # Nothing else runs the tests, and a validator that builds without
+          # them proves nothing.
           doCheck = true;
           checkPhase = "gleam test";
 
-          meta = {
-            description = "Validates the bell.plus schedule data format";
-            homepage = "https://github.com/nicolaschan/schedules";
-            mainProgram = "bell_validator";
-          };
+          meta.mainProgram = "bell_validator";
         };
       });
 
-      # The shell takes its toolchain from the package rather than naming one of
-      # its own, so the two cannot drift apart.
       devShells = forAllSystems (pkgs: {
-        default = pkgs.mkShellNoCC { inputsFrom = [ (validatorFor pkgs) ]; };
+        default = pkgs.mkShellNoCC { inputsFrom = [ (validator pkgs) ]; };
       });
 
+      # Running the validator builds it, which runs its tests.
       checks = forAllSystems (pkgs: {
-        # Building the validator runs its test suite.
-        validator = validatorFor pkgs;
-
-        # And the validator has to be happy with the data in this repository.
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
-          ${lib.getExe (validatorFor pkgs)} ${self}
+          ${lib.getExe (validator pkgs)} ${self}
           touch "$out"
         '';
       });
-
-      formatter = forAllSystems (pkgs: pkgs.nixfmt-tree);
     };
 }

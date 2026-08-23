@@ -1,9 +1,6 @@
 {
   description = "bell.plus schedule data, and the validator that checks it";
 
-  # nixpkgs is the only input: the Gleam compiler, Erlang and the Hex packages
-  # all come from here or from the pinned dependency derivation, so nothing is
-  # taken from the machine running the build.
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-gleam = {
@@ -13,84 +10,69 @@
   };
 
   outputs =
-    { self, nixpkgs, nix-gleam }:
+    {
+      self,
+      nixpkgs,
+      nix-gleam,
+    }:
     let
-      systems = [
-        "x86_64-linux"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "aarch64-darwin"
-      ];
+      inherit (nixpkgs) lib;
 
       forAllSystems =
         f:
-        nixpkgs.lib.genAttrs systems (
+        lib.genAttrs lib.systems.flakeExposed (
           system:
-          f {
-            inherit system;
-            pkgs = import nixpkgs {
+          f (
+            import nixpkgs {
               inherit system;
               overlays = [ nix-gleam.overlays.default ];
-            };
-          }
+            }
+          )
         );
+
+      validatorFor = pkgs: self.packages.${pkgs.stdenv.hostPlatform.system}.bell-validator;
     in
     {
-      packages = forAllSystems (
-        { pkgs, ... }:
-        let
-          bell-validator = pkgs.callPackage ./_validator/package.nix {
-            erlang = pkgs.beamMinimal28Packages.erlang;
+      packages = forAllSystems (pkgs: rec {
+        default = bell-validator;
+
+        bell-validator = pkgs.buildGleamApplication {
+          src = ./_validator;
+
+          # The default Erlang carries wxWidgets and the GUI tooling along for a
+          # program that reads files and prints lines.
+          erlangPackage = pkgs.beamMinimal28Packages.erlang;
+
+          # buildGleamApplication does not run the tests, and a validator that
+          # builds without them proves nothing.
+          doCheck = true;
+          checkPhase = "gleam test";
+
+          meta = {
+            description = "Validates the bell.plus schedule data format";
+            homepage = "https://github.com/nicolaschan/schedules";
+            mainProgram = "bell_validator";
           };
-        in
-        {
-          inherit bell-validator;
-          default = bell-validator;
-        }
-      );
+        };
+      });
 
-      apps = forAllSystems (
-        { system, ... }:
-        let
-          bell-validator = {
-            type = "app";
-            program = "${self.packages.${system}.bell-validator}/bin/bell_validator";
-            meta.description = "Validate the bell.plus schedule data in a checkout";
-          };
-        in
-        {
-          inherit bell-validator;
-          default = bell-validator;
-        }
-      );
+      # The shell takes its toolchain from the package rather than naming one of
+      # its own, so the two cannot drift apart.
+      devShells = forAllSystems (pkgs: {
+        default = pkgs.mkShellNoCC { inputsFrom = [ (validatorFor pkgs) ]; };
+      });
 
-      devShells = forAllSystems (
-        { pkgs, ... }:
-        {
-          default = pkgs.mkShellNoCC {
-            packages = [
-              pkgs.gleam
-              pkgs.beamMinimal28Packages.erlang
-              pkgs.rebar3
-            ];
-          };
-        }
-      );
+      checks = forAllSystems (pkgs: {
+        # Building the validator runs its test suite.
+        validator = validatorFor pkgs;
 
-      checks = forAllSystems (
-        { system, pkgs, ... }:
-        {
-          # Building the validator runs its own test suite in the check phase.
-          validator = self.packages.${system}.bell-validator;
+        # And the validator has to be happy with the data in this repository.
+        schedules = pkgs.runCommand "schedules-are-valid" { } ''
+          ${lib.getExe (validatorFor pkgs)} ${self}
+          touch "$out"
+        '';
+      });
 
-          # And the validator has to be happy with the data in this repository.
-          schedules = pkgs.runCommand "schedules-are-valid" { } ''
-            ${self.packages.${system}.bell-validator}/bin/bell_validator ${self}
-            touch "$out"
-          '';
-        }
-      );
-
-      formatter = forAllSystems ({ pkgs, ... }: pkgs.nixfmt-tree);
+      formatter = forAllSystems (pkgs: pkgs.nixfmt-tree);
     };
 }

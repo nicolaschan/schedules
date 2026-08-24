@@ -1,9 +1,14 @@
-/// Remove every carriage return, the way the client's `remove('\r', str)` does.
+import gleam/list
+import gleam/string
+
+/// Remove every carriage return, as the client's `remove('\r', str)` does.
 ///
-/// This has to go through Erlang. Gleam's string functions work on grapheme
-/// clusters, and Unicode treats CR LF as a single cluster, so `string.replace`
-/// and `string.split` cannot see the CR on its own and leave it in place.
-/// Most files in this repository use CRLF, so getting this wrong makes every
-/// line end in an invisible character.
-@external(erlang, "bell_validator_ffi", "strip_carriage_returns")
-pub fn strip_carriage_returns(text: String) -> String
+/// Codepoint at a time: Gleam's string functions are grapheme-based and
+/// Unicode treats CR LF as one cluster, so `string.replace` cannot see the CR
+/// at all and leaves it in place.
+pub fn strip_carriage_returns(text: String) -> String {
+  text
+  |> string.to_utf_codepoints
+  |> list.filter(fn(point) { string.utf_codepoint_to_int(point) != 13 })
+  |> string.from_utf_codepoints
+}

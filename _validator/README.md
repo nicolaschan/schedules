@@ -1,28 +1,11 @@
 # Schedule validator
 
 Checks every school in this repository against the things the
-[bell client](https://github.com/nicolaschan/bell) cannot cope with.
-
-The rules are not style preferences. Each one exists because the client does
-something bad with the data otherwise, and each message says what:
-
-- A calendar entry naming a schedule that `schedules.bell` does not define makes
-  `Calendar.getSchedule` call a method on `undefined`, which throws and stops the
-  timer for that date. An entry with only a comment (`03/12/2018 # Snow Day`) is
-  the same defect: the client reads the `#` as the schedule name.
-- A `Default Week` missing a weekday throws on every such day that has no
-  special entry.
-- A date range that runs backwards, is not zero-padded `MM/DD/YYYY`, or names a
-  day that does not exist (`02/30/2018`) never terminates: the client steps
-  forward from the start looking for a formatted string equal to the end.
-- A line of only spaces in `schedules.bell` is kept by the client's line filter
-  and then read as a period, which throws.
-- Duplicate schedule names and duplicate dates silently discard the earlier one.
-- A `{binding}` absent from `meta.json` `periods` cannot be renamed or hidden on
-  the settings screen.
-
-`lexer.gleam` is a port of the client's `Lexer.ts` rather than an approximation,
-so the validator splits every line the same way the client does.
+[bell client](https://github.com/nicolaschan/bell) cannot cope with. The rules
+are not style preferences: each exists because the client throws, hangs or
+drops data otherwise, and each message in `src/bell_validator/rules.gleam` says
+which. `lexer.gleam` is a port of the client's `Lexer.ts` rather than an
+approximation, so the validator splits every line the same way the client does.
 
 ## Running it
 
@@ -33,9 +16,6 @@ nix run . -- .          # validate this checkout
 nix flake check         # run the test suite and validate this checkout
 ```
 
-Exit status is 0 when clean, 1 when something is wrong, 2 when the directory
-could not be read. Problems are printed as `school/file:line: message`.
-
 ## Working on it
 
 ```sh
@@ -45,9 +25,7 @@ gleam test
 gleam run -- ..
 ```
 
-Changing dependencies means running `gleam deps download` to update `manifest.toml`.
-The Nix build reads that file directly, so there is no separate hash to update.
-
 Packaging is `buildGleamApplication` from [nix-gleam](https://github.com/arnarg/nix-gleam),
-which fetches each dependency from the checksums in `manifest.toml`. The dev
-shell takes its toolchain from that package, so the two cannot drift apart.
+which fetches each dependency from the checksums in `manifest.toml`, so changing
+dependencies means running `gleam deps download` and nothing else. The dev shell
+takes its toolchain from that package, so the two cannot drift apart.

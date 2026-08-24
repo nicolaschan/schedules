@@ -2,10 +2,8 @@ import gleam/int
 import gleam/list
 import gleam/string
 
-/// Parse a run of ASCII digits whose length is between `min` and `max`.
-///
-/// The formats are written by hand, so leading `+`, whitespace and other
-/// things `int.parse` might tolerate elsewhere are rejected here.
+/// Stricter than `int.parse`, which accepts a leading `+` and other shapes
+/// these hand-written formats must not permit.
 pub fn parse(text: String, min min: Int, max max: Int) -> Result(Int, Nil) {
   let length = string.length(text)
   let all_digits =

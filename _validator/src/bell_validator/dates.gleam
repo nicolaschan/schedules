@@ -1,13 +1,8 @@
-//// Date keys from the `Special Days` section.
-////
-//// The client stores special days in a map keyed by the literal text, and
-//// expands `A-B` ranges by stepping a date forward until its formatted form
-//// equals `B` exactly. So a key that is not zero-padded `MM/DD/YYYY`, names a
-//// day that does not exist, or ends before it starts, is never reached by that
-//// loop and the browser hangs.
-////
-//// Only the parsing belongs here. Whether a date exists, and how two of them
-//// compare, come from `gleam/time/calendar`.
+//// Date keys from the `Special Days` section. The client keys them by their
+//// literal text and expands `A-B` ranges by stepping a date forward until its
+//// formatted form equals `B`. So a key that is not zero-padded `MM/DD/YYYY`
+//// matches nothing, and one that ends before it starts is never reached by
+//// that loop: the browser hangs.
 
 import bell_validator/digits
 import gleam/result
@@ -19,10 +14,6 @@ pub type DateKey {
   Range(from: Date, to: Date)
 }
 
-/// Parse a zero-padded `MM/DD/YYYY` that names a day which actually exists.
-///
-/// The padding is not fussiness: the client looks days up by comparing against
-/// its own zero-padded formatting, so `3/12/2018` never matches anything.
 pub fn parse_date(text: String) -> Result(Date, Nil) {
   case string.split(text, "/") {
     [month, day, year] -> {

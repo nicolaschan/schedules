@@ -1,10 +1,3 @@
-//// Checks every school directory in the schedules repository against the
-//// things the bell client cannot cope with.
-////
-//// Usage: `bell_validator [path-to-repository]`, defaulting to the working
-//// directory. Exits 0 when clean, 1 when something is wrong, 2 when the
-//// repository itself could not be read.
-
 import bell_validator/problem
 import bell_validator/rules
 import gleam/int
@@ -28,17 +21,12 @@ pub fn main() -> Nil {
     Ok(names) -> {
       let found = list.map(names, fn(name) { #(name, load(root, name)) })
       let schools = list.filter(found, fn(pair) { rules.is_school(pair.1) })
-      report(
-        list.map(schools, fn(pair) { pair.0 }),
-        list.flat_map(schools, report_for),
-      )
+      report(list.length(schools), list.flat_map(schools, report_for))
     }
   }
 }
 
-/// Directories that hold a school. Names starting with `_` are shared data
-/// rather than a school, matching how the bell server treats them, and dot
-/// directories are not ours.
+/// Names starting with `_` hold data shared between schools, not a school.
 fn schools(root: String) -> Result(List(String), String) {
   simplifile.read_directory(root)
   |> result.map_error(fn(error) {
@@ -81,8 +69,8 @@ fn read_file(path: String) -> Option(String) {
   |> option.from_result
 }
 
-fn report(names: List(String), problems: List(String)) -> Nil {
-  let schools = int.to_string(list.length(names))
+fn report(count: Int, problems: List(String)) -> Nil {
+  let schools = int.to_string(count)
   case problems {
     [] -> {
       io.println("bell-validator: " <> schools <> " schools, no problems")

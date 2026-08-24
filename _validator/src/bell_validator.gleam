@@ -50,10 +50,7 @@ fn load(root: String, name: String) -> rules.Data {
 fn report(schools: List(List(String))) -> Nil {
   let count = int.to_string(list.length(schools))
   case list.flatten(schools) {
-    [] -> {
-      io.println("bell-validator: " <> count <> " schools, no problems")
-      halt(0)
-    }
+    [] -> io.println("bell-validator: " <> count <> " schools, no problems")
     problems -> {
       list.each(problems, io.println_error)
       io.println_error(

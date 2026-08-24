@@ -8,7 +8,6 @@ import gleam/list
 import gleam/option.{type Option, None, Some}
 import gleam/set.{type Set}
 import gleam/string
-import gleam/time/calendar
 
 pub type Data {
   Data(
@@ -39,37 +38,46 @@ pub fn is_school(data: Data) -> Bool {
 
 /// Grouped by file in name order, whole-file problems before line problems.
 pub fn check(data: Data) -> List(String) {
-  let #(local, source_problems) = read_source(data.source)
-  let #(meta, meta_problems) = read_meta(data.meta, local)
+  let #(local, source_problems) =
+    read("source.json", data.source, False, False, source_rules)
+  let #(meta, meta_problems) =
+    read("meta.json", data.meta, local, Meta(None, False), meta_rules)
   let required = local && !meta.custom
   let #(defined, schedules_problems) =
-    read_schedules(data.schedules, meta.periods, required)
+    read("schedules.bell", data.schedules, required, None, fn(text) {
+      schedules_rules(text, meta.periods)
+    })
+  let #(_, calendar_problems) =
+    read("calendar.bell", data.calendar, required, Nil, fn(text) {
+      #(Nil, calendar_rules(text, defined))
+    })
+  let #(_, correction_problems) =
+    read("correction.txt", data.correction, required, Nil, fn(text) {
+      #(Nil, correction_rules(text))
+    })
 
   list.flatten([
-    checked("calendar.bell", data.calendar, required, calendar_rules(_, defined)),
-    checked("correction.txt", data.correction, required, correction_rules),
+    calendar_problems,
+    correction_problems,
     meta_problems,
     schedules_problems,
     source_problems,
   ])
 }
 
-fn checked(
+fn read(
   file: String,
   content: Option(String),
   required: Bool,
-  rules: fn(String) -> List(String),
-) -> List(String) {
-  case content {
-    Some(text) -> rules(text)
-    None -> missing(file, required)
-  }
-}
-
-fn missing(file: String, required: Bool) -> List(String) {
-  case required {
-    True -> [problem.in_file(file, "missing; a local school needs it")]
-    False -> []
+  absent: a,
+  rules: fn(String) -> #(a, List(String)),
+) -> #(a, List(String)) {
+  case content, required {
+    Some(text), _ -> rules(text)
+    None, True -> #(absent, [
+      problem.in_file(file, "missing; a local school needs it"),
+    ])
+    None, False -> #(absent, [])
   }
 }
 
@@ -84,20 +92,16 @@ fn source_decoder() -> decode.Decoder(Source) {
   decode.success(Source(location, url, to))
 }
 
-fn read_source(content: Option(String)) -> #(Bool, List(String)) {
-  case content {
-    None -> #(False, [])
-    Some(text) ->
-      case json.parse(text, source_decoder()) {
-        Error(_) -> #(False, [
-          problem.in_file(
-            "source.json",
-            "is not valid JSON with a string \"location\"",
-          ),
-        ])
-        Ok(Source("local", _, _)) -> #(True, [])
-        Ok(source) -> #(False, source_problems(source))
-      }
+fn source_rules(text: String) -> #(Bool, List(String)) {
+  case json.parse(text, source_decoder()) {
+    Error(_) -> #(False, [
+      problem.in_file(
+        "source.json",
+        "is not valid JSON with a string \"location\"",
+      ),
+    ])
+    Ok(Source("local", _, _)) -> #(True, [])
+    Ok(source) -> #(False, source_problems(source))
   }
 }
 
@@ -138,25 +142,17 @@ fn meta_decoder() -> decode.Decoder(Meta) {
   ))
 }
 
-fn read_meta(content: Option(String), required: Bool) -> #(Meta, List(String)) {
-  let unread = Meta(None, False)
-  case content {
-    None -> #(unread, missing("meta.json", required))
-    Some(text) ->
-      case json.parse(text, meta_decoder()) {
-        Error(_) -> #(unread, [
-          problem.in_file(
-            "meta.json",
-            "is not valid JSON with a string \"name\"",
-          ),
+fn meta_rules(text: String) -> #(Meta, List(String)) {
+  case json.parse(text, meta_decoder()) {
+    Error(_) -> #(Meta(None, False), [
+      problem.in_file("meta.json", "is not valid JSON with a string \"name\""),
+    ])
+    Ok(meta) ->
+      case meta.periods, meta.custom {
+        None, False -> #(meta, [
+          problem.in_file("meta.json", "has no \"periods\" list"),
         ])
-        Ok(meta) ->
-          case meta.periods, meta.custom {
-            None, False -> #(meta, [
-              problem.in_file("meta.json", "has no \"periods\" list"),
-            ])
-            _, _ -> #(meta, [])
-          }
+        _, _ -> #(meta, [])
       }
   }
 }
@@ -174,61 +170,51 @@ fn correction_rules(content: String) -> List(String) {
   }
 }
 
-fn read_schedules(
-  content: Option(String),
+fn schedules_rules(
+  text: String,
   periods: Option(Set(String)),
-  required: Bool,
 ) -> #(Option(Set(String)), List(String)) {
   let file = "schedules.bell"
-  case content {
-    None -> #(None, missing(file, required))
-    Some(text) -> {
-      let #(named, _, found) =
-        list.fold(
-          parse.schedules(text),
-          #(set.new(), False, []),
-          fn(state, line) {
-            let #(named, headed, found) = state
-            let #(named, headed, messages) = case line {
-              parse.Spaces(_) -> #(named, headed, [
-                "line holds only spaces; the client keeps it, reads it as a period, and throws",
-              ])
-              parse.Schedule(_, None, _) -> #(named, True, [
-                "schedule header has no name after the *",
-              ])
-              parse.Schedule(_, Some(name), _) ->
-                case set.contains(named, name) {
-                  True -> #(named, True, [
-                    "a second schedule named \""
-                    <> name
-                    <> "\"; the client keeps only this one and the earlier periods are lost",
-                  ])
-                  False -> #(set.insert(named, name), True, [])
-                }
-              parse.Period(_, time, label) -> #(
-                named,
-                headed,
-                list.flatten([
-                  time_problems(time),
-                  case headed {
-                    True -> []
-                    False -> [
-                      "period appears before any \"* name\" header, so it belongs to no schedule and is dropped",
-                    ]
-                  },
-                  unknown_bindings(label, periods),
-                ]),
-              )
-            }
-            #(named, headed, [
-              list.map(messages, problem.at(file, line.line, _)),
-              ..found
+  let #(named, _, found) =
+    list.fold(parse.schedules(text), #(set.new(), False, []), fn(state, line) {
+      let #(named, headed, found) = state
+      let #(named, headed, messages) = case line {
+        parse.Spaces(_) -> #(named, headed, [
+          "line holds only spaces; the client keeps it, reads it as a period, and throws",
+        ])
+        parse.Schedule(_, None, _) -> #(named, True, [
+          "schedule header has no name after the *",
+        ])
+        parse.Schedule(_, Some(name), _) ->
+          case set.contains(named, name) {
+            True -> #(named, True, [
+              "a second schedule named \""
+              <> name
+              <> "\"; the client keeps only this one and the earlier periods are lost",
             ])
-          },
+            False -> #(set.insert(named, name), True, [])
+          }
+        parse.Period(_, time, label) -> #(
+          named,
+          headed,
+          list.flatten([
+            time_problems(time),
+            case headed {
+              True -> []
+              False -> [
+                "period appears before any \"* name\" header, so it belongs to no schedule and is dropped",
+              ]
+            },
+            unknown_bindings(label, periods),
+          ]),
         )
-      #(Some(named), found |> list.reverse |> list.flatten)
-    }
-  }
+      }
+      #(named, headed, [
+        list.map(messages, problem.at(file, line.line, _)),
+        ..found
+      ])
+    })
+  #(Some(named), found |> list.reverse |> list.flatten)
 }
 
 fn time_problems(time: String) -> List(String) {
@@ -239,9 +225,7 @@ fn time_problems(time: String) -> List(String) {
         digits.parse(minute, min: 2, max: 2)
       {
         Ok(hour), Ok(minute) ->
-          case
-            calendar.is_valid_time_of_day(calendar.TimeOfDay(hour, minute, 0, 0))
-          {
+          case hour < 24 && minute < 60 {
             True -> []
             False -> [
               "\"" <> time <> "\" is not a time of day (hour 0-23, minute 0-59)",
@@ -337,7 +321,7 @@ fn day_in_section(
   seen: Set(#(Section, String)),
 ) -> List(String) {
   let repeat = case set.contains(seen, #(section, key)) {
-    True -> [second_entry(key)]
+    True -> ["a second entry for " <> key <> "; only the last one is used"]
     False -> []
   }
   case section {
@@ -351,10 +335,6 @@ fn day_in_section(
       }
     SpecialDays -> list.append(repeat, key_problems(key))
   }
-}
-
-fn second_entry(key: String) -> String {
-  "a second entry for " <> key <> "; only the last one is used"
 }
 
 fn key_problems(key: String) -> List(String) {

@@ -15,6 +15,8 @@ pub type CalendarLine {
   Day(line: Int, key: String, schedule: Option(String), display: String)
 }
 
+/// Codepoints, not `string.replace`: Gleam's string functions work on grapheme
+/// clusters and Unicode makes CR LF a single one, so a lone `\r` never matches.
 fn lines(content: String) -> List(#(Int, String)) {
   content
   |> string.to_utf_codepoints

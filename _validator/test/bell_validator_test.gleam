@@ -275,7 +275,7 @@ pub fn a_line_that_is_not_a_time_is_rejected_test() {
       ..school(),
       schedules: Some(string.replace(schedules, "8:00 {A}", "Brunch time")),
     ),
-    "is not a H:MM time",
+    "line starts with \"Brunch\", not a H:MM time",
   )
 }
 

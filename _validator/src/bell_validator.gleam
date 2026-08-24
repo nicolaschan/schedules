@@ -3,8 +3,7 @@ import bell_validator/rules
 import gleam/int
 import gleam/io
 import gleam/list
-import gleam/option.{type Option}
-import gleam/result
+import gleam/option
 import gleam/string
 import simplifile
 
@@ -13,39 +12,34 @@ pub fn main() -> Nil {
     [path, ..] -> path
     [] -> "."
   }
-  case schools(root) {
-    Error(message) -> {
-      io.println_error("bell-validator: " <> message)
+  case simplifile.read_directory(root) {
+    Error(error) -> {
+      io.println_error(
+        "bell-validator: cannot read " <> root <> ": " <> string.inspect(error),
+      )
       halt(2)
     }
-    Ok(names) -> {
-      let found = list.map(names, fn(name) { #(name, load(root, name)) })
-      let schools = list.filter(found, fn(pair) { rules.is_school(pair.1) })
-      report(list.length(schools), list.flat_map(schools, report_for))
+    Ok(entries) -> {
+      let schools = schools(root, entries)
+      report(list.length(schools), list.flat_map(schools, problems))
     }
   }
 }
 
 /// Names starting with `_` hold data shared between schools, not a school.
-fn schools(root: String) -> Result(List(String), String) {
-  simplifile.read_directory(root)
-  |> result.map_error(fn(error) {
-    "cannot read " <> root <> ": " <> string.inspect(error)
-  })
-  |> result.map(fn(entries) {
-    entries
-    |> list.filter(fn(name) {
-      !string.starts_with(name, ".") && !string.starts_with(name, "_")
-    })
-    |> list.filter(fn(name) {
-      simplifile.is_directory(root <> "/" <> name) == Ok(True)
-    })
-    |> list.sort(string.compare)
-  })
+fn schools(root: String, entries: List(String)) -> List(#(String, rules.Data)) {
+  entries
+  |> list.filter(fn(name) { !string.starts_with(name, "_") })
+  |> list.sort(string.compare)
+  |> list.map(fn(name) { #(name, load(root, name)) })
+  |> list.filter(fn(school) { rules.is_school(school.1) })
 }
 
+/// Reads through symlinks, as the bell server does.
 fn load(root: String, name: String) -> rules.Data {
-  let read = fn(file) { read_file(root <> "/" <> name <> "/" <> file) }
+  let read = fn(file) {
+    option.from_result(simplifile.read(root <> "/" <> name <> "/" <> file))
+  }
   rules.Data(
     source: read("source.json"),
     meta: read("meta.json"),
@@ -55,18 +49,12 @@ fn load(root: String, name: String) -> rules.Data {
   )
 }
 
-fn report_for(school: #(String, rules.Data)) -> List(String) {
+fn problems(school: #(String, rules.Data)) -> List(String) {
   let #(name, data) = school
   data
   |> rules.check
   |> list.sort(problem.compare)
   |> list.map(problem.to_string(name, _))
-}
-
-/// Reads through symlinks, as the bell server does.
-fn read_file(path: String) -> Option(String) {
-  simplifile.read(path)
-  |> option.from_result
 }
 
 fn report(count: Int, problems: List(String)) -> Nil {

@@ -96,8 +96,7 @@ pub fn calendar(content: String) -> List(CalendarLine) {
 pub fn bindings(label: String) -> List(String) {
   label
   |> string.split("{")
-  |> list.map(string.split(_, "}"))
-  |> list.flatten
+  |> list.flat_map(string.split(_, "}"))
   |> list.index_map(fn(piece, index) { #(index, piece) })
   |> list.filter(fn(pair) { int.is_odd(pair.0) })
   |> list.map(fn(pair) { pair.1 })

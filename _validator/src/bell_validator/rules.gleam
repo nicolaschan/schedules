@@ -202,7 +202,7 @@ fn correction_rules(content: String) -> List(Problem) {
     Error(_) -> [
       problem.in_file(
         "correction.txt",
-        "should hold a number of milliseconds, but holds \"" <> trimmed <> "\"",
+        "should hold a number of milliseconds, not \"" <> trimmed <> "\"",
       ),
     ]
   }
@@ -237,7 +237,7 @@ fn schedules_rules(
           Ok(problem.at(
             file,
             number,
-            "line holds only spaces; the client keeps it and then reads it as a period, which throws",
+            "line holds only spaces; the client keeps it, reads it as a period, and throws",
           ))
         parse.Schedule(number, None, _) ->
           Ok(problem.at(file, number, "schedule header has no name after the *"))
@@ -279,7 +279,7 @@ fn valid_time(time: String) -> Result(Nil, String) {
           }
         _, _ -> Error("\"" <> time <> "\" is not a H:MM time")
       }
-    _ -> Error("line starts with \"" <> time <> "\", which is not a H:MM time")
+    _ -> Error("line starts with \"" <> time <> "\", not a H:MM time")
   }
 }
 
@@ -435,7 +435,7 @@ fn unnamed_rules(entries: List(Entry), file: String) -> List(Problem) {
         Ok(problem.at(
           file,
           entry.line,
-          "entry names no schedule; the client reads the \"#\" as the schedule name and throws looking it up",
+          "entry names no schedule; the client reads the \"#\" as the name and throws looking it up",
         ))
       Some(_) -> Error(Nil)
     }
@@ -469,7 +469,7 @@ fn week_rules(entries: List(Entry), file: String) -> List(Problem) {
       problem.at(
         file,
         day.line,
-        "a second entry for " <> day.key <> "; only this one is used",
+        "a second entry for " <> day.key <> "; only the last one is used",
       )
     })
 
@@ -500,9 +500,7 @@ fn special_rules(entries: List(Entry), file: String) -> List(Problem) {
       problem.at(
         file,
         entry.line,
-        "a second entry for "
-          <> entry.key
-          <> "; only the last one for a date is used",
+        "a second entry for " <> entry.key <> "; only the last one is used",
       )
     })
 

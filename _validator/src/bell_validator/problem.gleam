@@ -17,11 +17,11 @@ pub fn in_file(file: String, message: String) -> Problem {
 
 /// `school/file:line: message`, so editors and CI logs can jump to it.
 pub fn to_string(school: String, problem: Problem) -> String {
-  let where = case problem.line {
-    Some(line) -> school <> "/" <> problem.file <> ":" <> int.to_string(line)
-    None -> school <> "/" <> problem.file
+  let line = case problem.line {
+    Some(line) -> ":" <> int.to_string(line)
+    None -> ""
   }
-  where <> ": " <> problem.message
+  school <> "/" <> problem.file <> line <> ": " <> problem.message
 }
 
 pub fn compare(a: Problem, b: Problem) -> order.Order {

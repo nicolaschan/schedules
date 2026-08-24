@@ -12,31 +12,32 @@ pub fn main() -> Nil {
     [path, ..] -> path
     [] -> "."
   }
-  case simplifile.read_directory(root) {
+  let schools = root <> "/schools"
+  case simplifile.read_directory(schools) {
     Error(error) -> {
       io.println_error(
-        "bell-validator: cannot read " <> root <> ": " <> string.inspect(error),
+        "bell-validator: cannot read "
+        <> schools
+        <> ": "
+        <> string.inspect(error),
       )
       halt(2)
     }
-    Ok(entries) -> report(school_problems(root, entries))
+    Ok(names) -> report(source_problems(schools, names))
   }
 }
 
-fn school_problems(root: String, entries: List(String)) -> List(List(String)) {
-  entries
-  |> list.filter(fn(name) { !string.starts_with(name, "_") })
+fn source_problems(schools: String, names: List(String)) -> List(List(String)) {
+  names
   |> list.sort(string.compare)
-  |> list.map(fn(name) { #(name, load(root, name)) })
-  |> list.filter(fn(school) { rules.is_school(school.1) })
-  |> list.map(fn(school) {
-    rules.check(school.1) |> list.map(problem.to_string(school.0, _))
+  |> list.map(fn(name) {
+    rules.check(load(schools, name)) |> list.map(problem.to_string(name, _))
   })
 }
 
-fn load(root: String, name: String) -> rules.Data {
+fn load(schools: String, name: String) -> rules.Data {
   let read = fn(file) {
-    option.from_result(simplifile.read(root <> "/" <> name <> "/" <> file))
+    option.from_result(simplifile.read(schools <> "/" <> name <> "/" <> file))
   }
   rules.Data(
     source: read("source.json"),
@@ -47,10 +48,10 @@ fn load(root: String, name: String) -> rules.Data {
   )
 }
 
-fn report(schools: List(List(String))) -> Nil {
-  let count = int.to_string(list.length(schools))
-  case list.flatten(schools) {
-    [] -> io.println("bell-validator: " <> count <> " schools, no problems")
+fn report(sources: List(List(String))) -> Nil {
+  let count = int.to_string(list.length(sources))
+  case list.flatten(sources) {
+    [] -> io.println("bell-validator: " <> count <> " sources, no problems")
     problems -> {
       list.each(problems, io.println_error)
       io.println_error(
@@ -58,7 +59,7 @@ fn report(schools: List(List(String))) -> Nil {
         <> int.to_string(list.length(problems))
         <> " problem(s) across "
         <> count
-        <> " schools",
+        <> " sources",
       )
       halt(1)
     }

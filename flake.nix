@@ -38,7 +38,6 @@
           erlangPackage = pkgs.beamMinimalPackages.erlang;
           rebar3Package = pkgs.beamMinimalPackages.rebar3;
 
-          # Nothing else runs the tests, and stdenv would look for a makefile.
           doCheck = true;
           checkPhase = "gleam test";
 
@@ -52,8 +51,6 @@
         default = pkgs.mkShellNoCC { inputsFrom = [ (validator pkgs) ]; };
       });
 
-      # The summary is what this derivation leaves behind; cat it so it reaches
-      # the build log too.
       checks = forAllSystems (pkgs: {
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
           ${lib.getExe (validator pkgs)} ${self} > "$out"

@@ -1,55 +1,42 @@
-//// The two `.bell` formats, following the client's `ScheduleParser.ts` and
-//// `CalendarParser.ts` step for step.
-
 import bell_validator/lexer
-import bell_validator/text
 import gleam/int
 import gleam/list
 import gleam/option.{type Option}
 import gleam/string
 
 pub type ScheduleLine {
-  /// `* name # Display`
   Schedule(line: Int, name: Option(String), display: String)
-  /// `8:25 {A}`, with `time` as written so the rules can judge it.
   Period(line: Int, time: String, label: String)
-  /// A line of only spaces: the client filters empty lines but not these, so
-  /// it reaches `head.split(':')` with `head` undefined and throws.
   Spaces(line: Int)
 }
 
 pub type CalendarLine {
-  /// `* Default Week`, or `*` alone, which makes the client's `tail.reduce()`
-  /// throw on an empty array.
   Section(line: Int, name: Option(String))
-  /// `Mon schedule-a` or `03/12/2018 holiday # Note`.
   Day(line: Int, key: String, schedule: Option(String), display: String)
 }
 
 fn lines(content: String) -> List(#(Int, String)) {
   content
-  |> text.strip_carriage_returns
+  |> string.to_utf_codepoints
+  |> list.filter(fn(point) { string.utf_codepoint_to_int(point) != 13 })
+  |> string.from_utf_codepoints
   |> string.split("\n")
   |> list.index_map(fn(line, index) { #(index + 1, line) })
 }
 
 fn name_and_display(tokens: List(String)) -> #(Option(String), String) {
   let tokens = lexer.trim(" ", tokens)
+  let after_name = drop_token(tokens)
+  let after_hash = drop_token(after_name)
   let name = case tokens {
-    // `#` is a separator token, so a line starting with one names nothing:
-    // the client takes the `#` as the name and throws.
     [] | ["#", ..] -> option.None
     [first, ..] -> option.Some(first)
   }
-  let display =
-    tokens
-    |> list.drop(1)
-    |> lexer.trim(" ", _)
-    // the '#'
-    |> list.drop(1)
-    |> lexer.trim(" ", _)
-    |> string.concat
-  #(name, display)
+  #(name, string.concat(after_hash))
+}
+
+fn drop_token(tokens: List(String)) -> List(String) {
+  tokens |> list.drop(1) |> lexer.trim(" ", _)
 }
 
 pub fn schedules(content: String) -> List(ScheduleLine) {
@@ -92,7 +79,6 @@ pub fn calendar(content: String) -> List(CalendarLine) {
   })
 }
 
-/// The `{binding}` names in a period label, split as `FormatString.ts` does.
 pub fn bindings(label: String) -> List(String) {
   label
   |> string.split("{")

@@ -1,7 +1,3 @@
-//// A port of the bell client's `src/Lexer.ts`. The validator has to agree
-//// with the client about how a line splits into tokens; approximating it
-//// would let us approve files the app then reads differently.
-
 import gleam/list
 import gleam/string
 

@@ -19,23 +19,21 @@ pub fn main() -> Nil {
       )
       halt(2)
     }
-    Ok(entries) -> {
-      let schools = schools(root, entries)
-      report(list.length(schools), list.flat_map(schools, problems))
-    }
+    Ok(entries) -> report(school_problems(root, entries))
   }
 }
 
-/// Names starting with `_` hold data shared between schools, not a school.
-fn schools(root: String, entries: List(String)) -> List(#(String, rules.Data)) {
+fn school_problems(root: String, entries: List(String)) -> List(List(String)) {
   entries
   |> list.filter(fn(name) { !string.starts_with(name, "_") })
   |> list.sort(string.compare)
   |> list.map(fn(name) { #(name, load(root, name)) })
   |> list.filter(fn(school) { rules.is_school(school.1) })
+  |> list.map(fn(school) {
+    rules.check(school.1) |> list.map(problem.to_string(school.0, _))
+  })
 }
 
-/// Reads through symlinks, as the bell server does.
 fn load(root: String, name: String) -> rules.Data {
   let read = fn(file) {
     option.from_result(simplifile.read(root <> "/" <> name <> "/" <> file))
@@ -49,28 +47,20 @@ fn load(root: String, name: String) -> rules.Data {
   )
 }
 
-fn problems(school: #(String, rules.Data)) -> List(String) {
-  let #(name, data) = school
-  data
-  |> rules.check
-  |> list.sort(problem.compare)
-  |> list.map(problem.to_string(name, _))
-}
-
-fn report(count: Int, problems: List(String)) -> Nil {
-  let schools = int.to_string(count)
-  case problems {
+fn report(schools: List(List(String))) -> Nil {
+  let count = int.to_string(list.length(schools))
+  case list.flatten(schools) {
     [] -> {
-      io.println("bell-validator: " <> schools <> " schools, no problems")
+      io.println("bell-validator: " <> count <> " schools, no problems")
       halt(0)
     }
-    _ -> {
+    problems -> {
       list.each(problems, io.println_error)
       io.println_error(
         "\nbell-validator: "
         <> int.to_string(list.length(problems))
         <> " problem(s) across "
-        <> schools
+        <> count
         <> " schools",
       )
       halt(1)
@@ -78,7 +68,7 @@ fn report(count: Int, problems: List(String)) -> Nil {
   }
 }
 
-@external(erlang, "bell_validator_ffi", "halt")
+@external(erlang, "erlang", "halt")
 fn halt(code: Int) -> Nil
 
 @external(erlang, "bell_validator_ffi", "arguments")

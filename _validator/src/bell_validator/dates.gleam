@@ -1,18 +1,8 @@
-//// Date keys from the `Special Days` section. The client keys them by their
-//// literal text and expands `A-B` ranges by stepping a date forward until its
-//// formatted form equals `B`. So a key that is not zero-padded `MM/DD/YYYY`
-//// matches nothing, and one that ends before it starts is never reached by
-//// that loop: the browser hangs.
-
 import bell_validator/digits
+import gleam/order
 import gleam/result
 import gleam/string
 import gleam/time/calendar.{type Date, Date}
-
-pub type DateKey {
-  Single(Date)
-  Range(from: Date, to: Date)
-}
 
 pub fn parse_date(text: String) -> Result(Date, Nil) {
   case string.split(text, "/") {
@@ -31,14 +21,18 @@ pub fn parse_date(text: String) -> Result(Date, Nil) {
   }
 }
 
-pub fn parse_key(text: String) -> Result(DateKey, Nil) {
+pub fn parse_key(text: String) -> Result(#(Date, Date), Nil) {
   case string.split(text, "-") {
-    [single] -> parse_date(single) |> result.map(Single)
+    [single] -> parse_date(single) |> result.map(fn(date) { #(date, date) })
     [from, to] -> {
       use from <- result.try(parse_date(from))
       use to <- result.try(parse_date(to))
-      Ok(Range(from, to))
+      Ok(#(from, to))
     }
     _ -> Error(Nil)
   }
+}
+
+pub fn ends_before_start(days: #(Date, Date)) -> Bool {
+  calendar.naive_date_compare(days.0, days.1) == order.Gt
 }

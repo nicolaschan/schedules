@@ -31,11 +31,6 @@ type Section {
 
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-pub fn is_school(data: Data) -> Bool {
-  [data.source, data.meta, data.correction, data.schedules, data.calendar]
-  |> list.any(fn(file) { file != None })
-}
-
 /// Grouped by file in name order, whole-file problems before line problems.
 pub fn check(data: Data) -> List(String) {
   let #(local, source_problems) =

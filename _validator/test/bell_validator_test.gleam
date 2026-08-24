@@ -357,11 +357,6 @@ pub fn a_school_without_a_source_is_accepted_test() {
   accepted(rules.Data(..school(), source: None))
 }
 
-pub fn a_directory_without_school_data_is_not_a_school_test() {
-  assert !rules.is_school(rules.Data(None, None, None, None, None))
-  assert rules.is_school(rules.Data(..school(), schedules: None))
-}
-
 pub fn a_web_source_without_a_url_is_rejected_test() {
   rejected_for(
     rules.Data(..school(), source: Some("{\"location\": \"web\"}")),

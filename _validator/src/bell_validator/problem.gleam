@@ -8,6 +8,6 @@ pub fn in_file(file: String, message: String) -> String {
   file <> ": " <> message
 }
 
-pub fn to_string(school: String, problem: String) -> String {
-  school <> "/" <> problem
+pub fn to_string(source: String, problem: String) -> String {
+  source <> "/" <> problem
 }

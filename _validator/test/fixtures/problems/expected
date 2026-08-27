@@ -1,0 +1,7 @@
+missing-files/calendar.bell: missing; a local school needs it
+missing-files/correction.txt: missing; a local school needs it
+missing-files/meta.json: missing; a local school needs it
+missing-files/schedules.bell: missing; a local school needs it
+no-url/source.json: location "web" needs a "url"
+
+bell-validator: 5 problem(s) across 2 sources

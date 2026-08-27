@@ -42,23 +42,32 @@
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
           ${lib.getExe (validator pkgs)} ${self} > "$out"
           cat "$out"
+          grep -qE '^bell-validator: [1-9][0-9]* sources, no problems$' "$out"
         '';
 
         problems = pkgs.runCommand "validator-reports-problems" { } ''
           bell_validator=${lib.getExe (validator pkgs)}
-          root=${self}/_validator/test/fixtures/one-problem
-          expected=${self}/_validator/test/fixtures/one-problem.expected
+          fixtures=${self}/_validator/test/fixtures
+          actual=$PWD/actual
 
-          status=0
-          $bell_validator "$root" 2> "$out" || status=$?
-          cat "$out"
-          [ "$status" = 1 ] || { echo "given a root, exited $status, wanted 1"; exit 1; }
-          diff -u "$expected" "$out"
+          reports() {
+            local wanted=$1 fixture=$2
+            shift 2
+            local status=0
+            "$@" 2> "$actual" || status=$?
+            cat "$actual"
+            [ "$status" = "$wanted" ] || {
+              echo "$fixture: exited $status, wanted $wanted"
+              exit 1
+            }
+            diff -u "$fixtures/$fixture/expected" "$actual"
+          }
 
-          status=0
-          (cd "$root" && $bell_validator) 2> from-cwd || status=$?
-          [ "$status" = 1 ] || { echo "given no root, exited $status, wanted 1"; exit 1; }
-          diff -u "$expected" from-cwd
+          reports 1 problems $bell_validator "$fixtures/problems"
+          cd "$fixtures/problems" && reports 1 problems $bell_validator
+          cd "$fixtures/no-schools" && reports 2 no-schools $bell_validator
+
+          touch "$out"
         '';
       });
     };

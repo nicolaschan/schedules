@@ -3,7 +3,6 @@ import gleam/int
 import gleam/list
 import gleam/string
 
-/// A source and the problems its files hold.
 pub type Source {
   Source(name: String, problems: List(String))
 }

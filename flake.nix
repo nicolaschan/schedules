@@ -43,6 +43,23 @@
           ${lib.getExe (validator pkgs)} ${self} > "$out"
           cat "$out"
         '';
+
+        problems = pkgs.runCommand "validator-reports-problems" { } ''
+          bell_validator=${lib.getExe (validator pkgs)}
+          root=${self}/_validator/test/fixtures/one-problem
+          expected=${self}/_validator/test/fixtures/one-problem.expected
+
+          status=0
+          $bell_validator "$root" 2> "$out" || status=$?
+          cat "$out"
+          [ "$status" = 1 ] || { echo "given a root, exited $status, wanted 1"; exit 1; }
+          diff -u "$expected" "$out"
+
+          status=0
+          (cd "$root" && $bell_validator) 2> from-cwd || status=$?
+          [ "$status" = 1 ] || { echo "given no root, exited $status, wanted 1"; exit 1; }
+          diff -u "$expected" from-cwd
+        '';
       });
     };
 }

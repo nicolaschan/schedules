@@ -1,3 +1,4 @@
+import argv
 import bell_validator/problem
 import bell_validator/rules
 import gleam/int
@@ -7,23 +8,38 @@ import gleam/option
 import gleam/string
 import simplifile
 
+/// What the run has to say for itself, and how the process should end.
+type Outcome {
+  Passed(summary: String)
+  Failed(report: String, status: Int)
+}
+
 pub fn main() -> Nil {
-  let root = case arguments() {
+  let root = case argv.load().arguments {
     [path, ..] -> path
     [] -> "."
   }
+  case check(root) {
+    Passed(summary) -> io.println(summary)
+    Failed(report:, status:) -> {
+      io.println_error(report)
+      halt(status)
+    }
+  }
+}
+
+fn check(root: String) -> Outcome {
   let schools = root <> "/schools"
   case simplifile.read_directory(schools) {
-    Error(error) -> {
-      io.println_error(
-        "bell-validator: cannot read "
-        <> schools
-        <> ": "
-        <> string.inspect(error),
+    Error(error) ->
+      Failed(
+        report: "bell-validator: cannot read "
+          <> schools
+          <> ": "
+          <> string.inspect(error),
+        status: 2,
       )
-      halt(2)
-    }
-    Ok(names) -> report(source_problems(schools, names))
+    Ok(names) -> summarise(source_problems(schools, names))
   }
 }
 
@@ -48,26 +64,22 @@ fn load(schools: String, name: String) -> rules.Data {
   )
 }
 
-fn report(sources: List(List(String))) -> Nil {
+fn summarise(sources: List(List(String))) -> Outcome {
   let count = int.to_string(list.length(sources))
   case list.flatten(sources) {
-    [] -> io.println("bell-validator: " <> count <> " sources, no problems")
-    problems -> {
-      list.each(problems, io.println_error)
-      io.println_error(
-        "\nbell-validator: "
-        <> int.to_string(list.length(problems))
-        <> " problem(s) across "
-        <> count
-        <> " sources",
+    [] -> Passed("bell-validator: " <> count <> " sources, no problems")
+    problems ->
+      Failed(
+        report: string.join(problems, "\n")
+          <> "\n\nbell-validator: "
+          <> int.to_string(list.length(problems))
+          <> " problem(s) across "
+          <> count
+          <> " sources",
+        status: 1,
       )
-      halt(1)
-    }
   }
 }
 
 @external(erlang, "erlang", "halt")
 fn halt(code: Int) -> Nil
-
-@external(erlang, "bell_validator_ffi", "arguments")
-fn arguments() -> List(String)

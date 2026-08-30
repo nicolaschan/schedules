@@ -42,6 +42,32 @@
         schedules = pkgs.runCommand "schedules-are-valid" { } ''
           ${lib.getExe (validator pkgs)} ${self} > "$out"
           cat "$out"
+          grep -qE '^bell-validator: [1-9][0-9]* sources, no problems$' "$out"
+        '';
+
+        problems = pkgs.runCommand "validator-reports-problems" { } ''
+          bell_validator=${lib.getExe (validator pkgs)}
+          fixtures=${self}/_validator/test/fixtures
+          actual=$PWD/actual
+
+          reports() {
+            local wanted=$1 fixture=$2
+            shift 2
+            local status=0
+            "$@" 2> "$actual" || status=$?
+            cat "$actual"
+            [ "$status" = "$wanted" ] || {
+              echo "$fixture: exited $status, wanted $wanted"
+              exit 1
+            }
+            diff -u "$fixtures/$fixture/expected" "$actual"
+          }
+
+          reports 1 problems $bell_validator "$fixtures/problems"
+          cd "$fixtures/problems" && reports 1 problems $bell_validator
+          cd "$fixtures/no-schools" && reports 2 no-schools $bell_validator
+
+          touch "$out"
         '';
       });
     };

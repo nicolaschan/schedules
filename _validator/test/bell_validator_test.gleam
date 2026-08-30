@@ -2,6 +2,7 @@ import bell_validator/dates
 import bell_validator/lexer
 import bell_validator/parse
 import bell_validator/problem
+import bell_validator/report
 import bell_validator/rules
 import gleam/list
 import gleam/option.{None, Some}
@@ -376,4 +377,43 @@ pub fn a_local_school_missing_a_file_is_rejected_test() {
     rules.Data(..school(), calendar: None),
     "missing; a local school needs it",
   )
+}
+
+// --- report ------------------------------------------------------------------
+
+pub fn no_sources_at_all_pass_test() {
+  assert report.of([])
+    == report.Passed("bell-validator: 0 sources, no problems")
+}
+
+pub fn sources_without_problems_pass_test() {
+  let clean = [report.Source("aewms", []), report.Source("agoura", [])]
+  assert report.of(clean)
+    == report.Passed("bell-validator: 2 sources, no problems")
+}
+
+/// Three problems across two sources: the counts are different numbers, so a
+/// report that confused them would say so.
+pub fn problems_are_listed_under_their_source_then_counted_test() {
+  let found = [
+    report.Source("agoura", ["meta.json: no \"periods\"", "calendar.bell: bad"]),
+    report.Source("aewms", ["source.json: no \"url\""]),
+  ]
+  assert report.of(found)
+    == report.Failed(
+      "agoura/meta.json: no \"periods\"
+agoura/calendar.bell: bad
+aewms/source.json: no \"url\"
+
+bell-validator: 3 problem(s) across 2 sources",
+      report.Problems,
+    )
+}
+
+pub fn an_unreadable_schools_directory_is_its_own_exit_test() {
+  assert report.unreadable("./schools", "Enoent")
+    == report.Failed(
+      "bell-validator: cannot read ./schools: Enoent",
+      report.Unreadable,
+    )
 }

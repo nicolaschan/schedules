@@ -1,10 +1,26 @@
 * Default Week
-Sun weekend
-Mon normal
-Tue normal
-Wed even
-Thu odd
-Fri normal
-Sat weekend
+Sun no-school
+Mon mon-tue-fri
+Tue mon-tue-fri
+Wed wed-thu
+Thu wed-thu
+Fri mon-tue-fri
+Sat no-school
 
 * Special Days
+09/07/2026 no-school # Labor Day
+10/12/2026 no-school # Non-Attendance Day
+11/23/2026 no-school # Teacher Conferences
+11/24/2026 no-school # Teacher In Service / Thanksgiving Recess
+11/25/2026 no-school # Thanksgiving Recess
+11/26/2026 no-school # Thanksgiving Recess
+11/27/2026 no-school # Thanksgiving Recess
+12/21/2026-01/02/2027 no-school # Winter Break
+01/04/2027 no-school # Teacher Institute
+01/18/2027 no-school # Martin Luther King, Jr. Day
+02/15/2027 no-school # Presidents' Day
+02/26/2027 no-school # Teacher Institute
+03/26/2027-04/02/2027 no-school # Spring Break
+04/03/2027 no-school # Spring Break (last day)
+05/31/2027 no-school # Last Day of School (Seniors)
+06/01/2027 no-school # Last Day of School

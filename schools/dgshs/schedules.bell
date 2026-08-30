@@ -1,4 +1,54 @@
-* normal # Normal Schedule
+* assembly # Assembly Day
+8:20 {Period 1}
+8:55 Passing to {Period 2}
+9:00 {Period 2}
+9:35 Passing to {Period 3}
+9:40 {Period 3}
+10:15 Passing to {Period 4a}
+10:20 {Period 4a}
+10:39 Passing to {Period 4b}
+10:43 {Period 4b}
+11:02 Passing to {Period 5a}
+11:07 {Period 5a}
+11:26 Passing to {Period 5b}
+11:30 {Period 5b}
+11:49 Passing to {Period 6a}
+11:54 {Period 6a}
+12:13 Passing to {Period 6b}
+12:17 {Period 6b}
+12:36 Passing to {Period 7}
+12:41 {Period 7}
+13:16 Passing to {Period 8}
+13:21 {Period 8}
+13:56 Passing to Assembly
+14:05 Assembly
+15:15 Free
+
+* early-130 # 1:30 PM Early Dismissal
+8:20 {Period 1}
+8:50 Passing to {Period 2}
+8:55 {Period 2}
+9:25 Passing to {Period 3}
+9:30 {Period 3}
+10:00 Passing to {Period 4a}
+10:05 {Period 4a}
+10:24 Passing to {Period 4b}
+10:28 {Period 4b}
+10:47 Passing to {Period 5a}
+10:52 {Period 5a}
+11:11 Passing to {Period 5b}
+11:15 {Period 5b}
+11:34 Passing to {Period 6a}
+11:39 {Period 6a}
+11:58 Passing to {Period 6b}
+12:02 {Period 6b}
+12:20 Passing to {Period 7}
+12:25 {Period 7}
+12:55 Passing to {Period 8}
+13:00 {Period 8}
+13:30 Free
+
+* mon-tue-fri # Monday, Tuesday, and Friday
 7:30 {Period 0}
 8:14 Passing to {Period 1}
 8:20 {Period 1}
@@ -24,46 +74,22 @@
 14:33 {Period 8}
 15:20 Free
 
-* odd # Odd Block
+* no-school # No School
+
+* wed-thu # Wednesday and Thursday
 7:30 {Period 0}
 8:14 Passing to {Period 1}
 8:20 {Period 1}
 9:38 Passing to Access/Announcements
 9:44 Access/Announcements
-10:19 Passing to {Period 3a}
-10:25 {Period 3a}
-11:04 Passing to {Period 3b}
-11:09 {Period 3b}
-11:48 Passing to {Period 3c}
-11:53 {Period 3c}
+10:19 Passing to A
+10:25 A
+11:04 Passing to B
+11:09 B
+11:48 Passing to C
+11:53 C
 12:32 Passing to {Period 7}
 12:38 {Period 7}
-13:56 Passing to {Period 5}
-14:02 {Period 5}
+13:56 Passing to {Period 8}
+14:02 {Period 8}
 15:20 Free
-
-* even # Even Block
-7:30 {Period 0}
-8:14 Passing to {Period 4}
-8:20 {Period 4}
-9:38 Passing to Access/Announcements
-9:44 Access/Announcements
-10:19 Passing to {Period 2a}
-10:25 {Period 2a}
-11:04 Passing to {Period 2b}
-11:09 {Period 2b}
-11:48 Passing to {Period 2c}
-11:53 {Period 2c}
-12:32 Passing to {Period 8}
-12:38 {Period 8}
-13:56 Passing to {Period 6}
-14:02 {Period 6}
-15:20 Free
-
-
-
-
-
-* weekend # Weekend
-
-* holiday # Holiday
